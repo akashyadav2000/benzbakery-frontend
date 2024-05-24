@@ -61,7 +61,7 @@ function Signup() {
 
     if (validateInputs()) {
       try {
-        const result = await axios.post("https://benzbakery.onrender.com/signup", { name, email, password });
+        const result = await axios.post("https://benzbakery-backend.onrender.com/signup", { name, email, password });
         const user = { name, email }; // Assuming the response contains user details
         dispatch(login(user));
         setFeedbackMessage("Registration successful...");

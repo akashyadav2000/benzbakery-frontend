@@ -55,7 +55,7 @@ function Login() {
     e.preventDefault();
     if (validateInputs()) {
       try {
-        const response = await axios.post("https://benzbakery.onrender.com/login", {
+        const response = await axios.post("https://benzbakery-backend.onrender.com/login", {
           email,
           password,
         });

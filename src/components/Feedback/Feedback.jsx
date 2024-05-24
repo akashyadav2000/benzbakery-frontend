@@ -43,7 +43,7 @@ function Feedback() {
       const formData = { name, email, productName, message };
 
       try {
-        const res = await axios.post("https://benzbakery.onrender.com/feedback", formData, {
+        const res = await axios.post("https://benzbakery-backend.onrender.com/feedback", formData, {
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",

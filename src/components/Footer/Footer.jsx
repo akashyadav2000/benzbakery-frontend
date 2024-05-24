@@ -40,7 +40,7 @@ function Footer() {
     e.preventDefault();
     if (validateInputs()) {
       try {
-        const result = await axios.post("https://benzbakery.onrender.com/newsLetter", { email });
+        const result = await axios.post("https://benzbakery-backend.onrender.com/newsLetter", { email });
         // const user = { email };
         // dispatch(login(user));
         setFeedbackMessage("Thank you for subscribing!...");
