@@ -16,16 +16,28 @@ function Header() {
   const user = useSelector(selectUser);
 
   const [showUserInfo, setShowUserInfo] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     setShowUserInfo(false);
   }, [location]);
 
   function toggleMobileMenu(menu) {
+    setMenuOpen(!menuOpen);
     menu.classList.toggle("open");
+  }
+
+  function closeMobileMenu() {
+    setMenuOpen(false);
+    const menu = document.getElementById("hamburger-icon");
+    if (menu) {
+      menu.classList.remove("open");
+    }
   }
 
   const handleCartClick = (e) => {
     e.preventDefault();
+    closeMobileMenu();
     if (isAuthenticated) {
       navigate("/Cart");
     } else {
@@ -35,6 +47,7 @@ function Header() {
 
   const handleLoginClick = (e) => {
     e.preventDefault();
+    closeMobileMenu();
     if (isAuthenticated) {
       setShowUserInfo(!showUserInfo);
     } else {
@@ -47,8 +60,10 @@ function Header() {
     setShowUserInfo(false);
     navigate("/Login");
   };
-  const handleCloseTab = () => {
-    window.close();
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    closeMobileMenu();
   };
 
   const ProductNavigation = (
@@ -61,7 +76,7 @@ function Header() {
   return (
     <>
       <header>
-        <Link to={"/"} className="logo" aria-label="benz_logo">
+        <Link to={"/"} className="logo" aria-label="benz_logo" onClick={handleScrollToTop}>
           <img src="./Images/Benz_Logo.png" alt="benz_logo" />
         </Link>
 
@@ -107,6 +122,7 @@ function Header() {
         <div
           id="hamburger-icon"
           onClick={(e) => toggleMobileMenu(e.currentTarget)}
+          className={menuOpen ? "open" : ""}
         >
           <div className="bar1"></div>
           <div className="bar2"></div>
@@ -114,10 +130,10 @@ function Header() {
 
           <ul className="mobile-menu">
             <li>
-              <Link to={"/"}>Home</Link>
+              <Link to={"/"} onClick={handleScrollToTop}>Home</Link>
             </li>
             <li>
-              <Link to={"Product"}>Product</Link>
+              <Link to={"Product"} className="drop-down">Product</Link>
             </li>
 
             <li>
@@ -142,7 +158,7 @@ function Header() {
 
           </ul>
         </div>
-      </header>
+      </header >
 
       {isAuthenticated && showUserInfo && (
         <div className="blur-bg">
@@ -161,7 +177,8 @@ function Header() {
             </button>
           </div>
         </div>
-      )}
+      )
+      }
     </>
   );
 }

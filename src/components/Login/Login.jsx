@@ -41,7 +41,7 @@ function Login() {
           password
         )
           ? ""
-          : "Password must be 8+ characters with 1 special character and 1 number.",
+          : "Password must be 8 characters long, include special character and number.",
     };
 
     setErrorMessages(updatedErrorMessages);

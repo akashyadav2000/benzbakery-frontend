@@ -15,7 +15,7 @@ function Display() {
           to be able to savor it.
         </p>
         <div className="home-btn">
-          <Link to={"/Cart"} className="slogan">
+          <Link to={"/Product"} className="slogan">
             Book Now
             <FontAwesomeIcon className="angle-right" icon={faAngleRight} />
           </Link>

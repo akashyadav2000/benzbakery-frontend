@@ -45,7 +45,7 @@ function Signup() {
         : "Invalid email address",
       password: /^(?=.*[A-Za-z])(?=.*[@#$%^&+=])(?=.*[0-9])[A-Za-z0-9@#$%^&+=]{8,}$/.test(password) && password.length <= 30
         ? ""
-        : "Password must be 8+ characters with 1 special character and 1 number.",
+        : "Password must be 8 characters long, include special character and number.",
       confirmPassword: password === confirmPassword ? "" : "Passwords do not match",
     };
 

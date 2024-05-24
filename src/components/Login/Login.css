@@ -289,11 +289,11 @@
     width: 315px;
     height: 525px;
     padding: 5px 20px;
-    background: rgb(255 255 255 / 25%);
+    background: rgb(255 255 255 / 40%);
   }
 
   .login-title {
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .login-title:before {
@@ -348,9 +348,11 @@
   }
 
   .login-feedback-message.error {
+    text-shadow: 1px 1px 1px rgb(255 255 255);
     font-size: 14px;
   }
   .login-feedback-message.success {
+    text-shadow: 1px 1px 1px rgb(255 255 255);
     font-size: 19.5px;
   }
 }
