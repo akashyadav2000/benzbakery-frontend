@@ -5,23 +5,23 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding-top: 60px;
+  padding-top: 6rem;
   /* height: 108.333vh; */
-  /* width: 400px; */
+  /* width: 40rem; */
   width: 100%;
   background: linear-gradient(to right, #fdf, #fee2f8);
   /* background: linear-gradient(to right, #fee2f8, #fee2f8); */
 }
 
 .signup-image-container {
-  width: 380px;
-  height: 595px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  width: 38rem;
+  height: 59.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
   transition: all 0.5s ease-in-out;
-  border: 3px solid #ffffff;
-  /* border: 3px solid #ff70cd; */
-  /* box-shadow: 0 0 8px #36c6ff, -8px 0 8px -5px rgba(0, 0, 0, 0); */
+  border: 0.3rem solid #ffffff;
+  /* border: .3rem solid #ff70cd; */
+  /* box-shadow: 0 0 .8rem #36c6ff, -.8rem 0 .8rem -.5rem rgba(0, 0, 0, 0); */
   border-right: none;
 }
 
@@ -29,48 +29,48 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
 }
 
 .signup-form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 380px;
-  height: 595px;
+  width: 38rem;
+  height: 59.5rem;
   /* background-color: whitesmoke; */
   background: linear-gradient(to left, #ffb2e4, #c5efff);
-  padding: 5px 19px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  padding: 0.5rem 1.9rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
   transition: all 0.5s ease-in-out;
-  /* border: 3px solid #ff70cd; */
-  border: 3px solid #ffffff;
-  /* box-shadow: 0 0 8px rgba(0, 0, 0, 0), 0 0 8px #36c6ff; */
+  /* border: .3rem solid #ff70cd; */
+  border: 0.3rem solid #ffffff;
+  /* box-shadow: 0 0 .8rem rgba(0, 0, 0, 0), 0 0 .8rem #36c6ff; */
   border-left: none;
 }
 
 /* .signup-title {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 500;
   position: relative;
   cursor: default;
-  margin-top: -6px;
-  margin-bottom: 10px;
+  margin-top: -.6rem;
+  margin-bottom: 1rem;
 } */
 
 .signup-title {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 500;
   position: relative;
   cursor: default;
-  /* margin-top: -5px; */
-  margin-bottom: 8px;
+  /* margin-top: -.5rem; */
+  margin-bottom: 0.8rem;
 }
 
 .signup-title::before {
@@ -78,41 +78,41 @@
   position: absolute;
   /* left: 0; */
   bottom: 0;
-  height: 3px;
-  width: 177px;
-  border-radius: 5px;
+  height: 0.3rem;
+  width: 17.7rem;
+  border-radius: 0.5rem;
   background: #ff4ec1;
 }
 
 /* .signup-user-details {
-  margin: 20px 0 12px 0;
-  margin: 0px 0 12px 0;
-  margin-bottom: 12px;
+  margin: 2rem 0 1.2rem 0;
+  margin: 0rem 0 1.2rem 0;
+  margin-bottom: 1.2rem;
 } */
 
 .signup-details {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  margin-bottom: 3px;
+  margin-bottom: 0.3rem;
   cursor: default;
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .signup-text-box {
   /* font-family: "Poppins", sans-serif; */
-  height: 44px;
-  width: 340px;
+  height: 4.4rem;
+  width: 34rem;
   outline: none;
-  font-size: 18px;
-  border-radius: 5px;
-  padding-left: 40px;
-  padding-right: 13px;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  padding-left: 4rem;
+  padding-right: 1.3rem;
   background-color: whitesmoke;
-  border: 1px solid #ff70cd;
+  border: 0.1rem solid #ff70cd;
   /* border-inline: none;
   border-top: none; */
-  border-bottom-width: 2px;
-  margin-bottom: 7px;
+  border-bottom-width: 0.2rem;
+  margin-bottom: 0.7rem;
   transition: all 0.3s ease;
   color: #cf661a;
   font-weight: 500;
@@ -127,49 +127,49 @@
   padding-right: 12.7%;
 }
 .signup-icon {
-  font-size: 21.5px;
+  font-size: 2.15rem;
   position: absolute;
   color: #cf661a;
-  margin-left: -331px;
-  margin-top: 11px;
+  margin-left: -33.1rem;
+  margin-top: 1.1rem;
 }
 
 .signup-password-eye {
   position: absolute;
   display: flex;
-  margin-top: -40px;
-  margin-left: 310px;
+  margin-top: -4rem;
+  margin-left: 31rem;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .signup-error-messages {
   /* font-family: "Poppins", sans-serif; */
   font-family: "Roboto Serif", serif;
-  font-size: 15px;
-  margin-top: -5px;
-  margin-bottom: 7px;
-  margin-left: 5px;
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.7rem;
+  margin-left: 0.5rem;
   font-weight: 500;
   color: red;
 }
 
 .signup-btn {
   font-family: "Poppins", sans-serif;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  height: 45px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 4.5rem;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   border: none;
   color: white;
-  text-shadow: 2px 2px 1px #cf661a;
-  font-size: 22px;
+  text-shadow: 0.2rem 0.2rem 0.1rem #cf661a;
+  font-size: 2.2rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
-  border: 2px solid white;
+  border: 0.2rem solid white;
   background: linear-gradient(to right, #ff95e6 20%, #ffb0ec 40%, aqua 100%);
 }
 
@@ -177,8 +177,8 @@
   transform: scale(101%);
   text-shadow: none;
   color: #ff00a6;
-  border: 2px solid #ff70cd;
-  box-shadow: 0 0 8px #ff70cd;
+  border: 0.2rem solid #ff70cd;
+  box-shadow: 0 0 0.8rem #ff70cd;
   background: linear-gradient(to left, #ffffff 20%, #ffffff 40%, #faffff 100%);
 }
 
@@ -190,7 +190,7 @@
   align-items: center;
   cursor: default;
   color: #000000;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -201,13 +201,13 @@
   cursor: pointer;
   font-weight: 500;
   color: white;
-  text-shadow: 2px 2px 3px black;
-  font-size: 20px;
+  text-shadow: 0.2rem 0.2rem 0.3rem black;
+  font-size: 2rem;
 }
 
 .login-link:hover {
   color: #0024ff;
-  text-shadow: 2px 2px 3px white;
+  text-shadow: 0.2rem 0.2rem 3rem white;
   transition: all 0.1s ease;
 }
 input[type="number"]::-webkit-inner-spin-button,
@@ -229,16 +229,16 @@ input[type="text"]::-webkit-outer-spin-button {
 }
 .signup-feedback-message.success {
   color: #0029ff;
-  font-size: 21px;
-  padding-block: 10px;
-  text-shadow: 1.5px 1px 1px rgb(255 255 255);
+  font-size: 2.1rem;
+  padding-block: 1rem;
+  text-shadow: 0.15rem 0.1rem 0.1rem rgb(255 255 255);
 }
 
 .signup-feedback-message.error {
-  font-size: 17.3px;
-  padding-block: 4px;
+  font-size: 1.73rem;
+  padding-block: 0.4rem;
   color: #ff0000;
-  text-shadow: 1.5px 1px 1px rgb(255 255 255);
+  text-shadow: 0.15rem 0.1rem 0.1rem rgb(255 255 255);
 }
 
 @media only screen and (max-width: 840px) {
@@ -254,14 +254,14 @@ input[type="text"]::-webkit-outer-spin-button {
     background-repeat: no-repeat;
   }
   .signup-container {
-    /* padding-top: 35px; */
+    /* padding-top: 3.5rem; */
     background: transparent;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(0.8rem);
   }
   .signup-form-container {
-    width: 360px;
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    width: 36rem;
+    border: 0.3rem solid #ffffff;
+    border-radius: 0.5rem;
     background: rgb(255 255 255 / 50%);
   }
   .signup-image-container {
@@ -269,11 +269,11 @@ input[type="text"]::-webkit-outer-spin-button {
   }
 
   .signup-icon {
-    margin-left: -310px;
+    margin-left: -31rem;
   }
 
   .signup-text-box {
-    width: 320px;
+    width: 32rem;
     background-color: rgba(255, 255, 255, 0.38);
   }
 
@@ -282,40 +282,40 @@ input[type="text"]::-webkit-outer-spin-button {
   }
 
   .signup-password-eye {
-    margin-left: 286px;
+    margin-left: 28.6rem;
   }
   .signup-feedback-message.error {
-    font-size: 16.5px;
+    font-size: 1.65rem;
   }
 }
 
 @media only screen and (max-width: 490px) {
   .signup-container {
-    padding-top: 35px;
-    backdrop-filter: blur(30px);
+    padding-top: 3.5rem;
+    backdrop-filter: blur(3rem);
   }
   .signup-form-container {
-    width: 315px;
-    height: 520px;
-    padding: 5px 20px;
+    width: 31.5rem;
+    height: 52rem;
+    padding: 0.5rem 2rem;
     background: rgb(255 255 255 / 40%);
   }
 
   .signup-title {
-    font-size: 21px;
+    font-size: 2.1rem;
   }
 
   .signup-title::before {
-    width: 141.2px;
+    width: 14.12rem;
   }
 
   .signup-text-box {
-    height: 40px;
-    width: 284px;
-    font-size: 16px;
+    height: 4rem;
+    width: 28.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
-    padding-left: 35px;
-    padding-right: 7px;
+    padding-left: 3.5rem;
+    padding-right: 0.7rem;
     background-color: rgba(255, 255, 255, 0.2);
   }
   .signup-text-box:focus-visible {
@@ -325,7 +325,7 @@ input[type="text"]::-webkit-outer-spin-button {
   .signup-btn {
     /* background: linear-gradient(115deg, cyan, #ffdaf2); */
     /* background: linear-gradient(115deg, #d3ffff, cyan); */
-    height: 42px;
+    height: 4.2rem;
   }
 
   .signup-btn:hover {
@@ -333,44 +333,44 @@ input[type="text"]::-webkit-outer-spin-button {
   }
 
   .signup-details {
-    font-size: 17px;
+    font-size: 1.7rem;
   }
 
   /* .signup-error-messages {
-    font-size: 13.9px;
+    font-size: 1.39rem;
   } */
 
   .signup-error-messages {
-    font-size: 13px;
+    font-size: 1.3rem;
   }
 
   .login-line {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .login-link {
-    font-size: 17px;
+    font-size: 1.7rem;
   }
 
   .signup-pass-box {
     padding-right: 13.7%;
   }
   .signup-icon {
-    font-size: 18px;
-    margin-left: -277px;
+    font-size: 1.8rem;
+    margin-left: -27.7rem;
   }
 
   .signup-password-eye {
-    margin-left: 252px;
-    margin-top: -36px;
-    font-size: 18px;
+    margin-left: 25.2rem;
+    margin-top: -3.6rem;
+    font-size: 1.8rem;
   }
   .signup-feedback-message.error {
-    text-shadow: 1px 1px 1px rgb(255 255 255);
-    font-size: 14px;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgb(255 255 255);
+    font-size: 1.4rem;
   }
   .signup-feedback-message.success {
-    text-shadow: 1px 1px 1px rgb(255 255 255);
-    font-size: 19.5px;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgb(255 255 255);
+    font-size: 1.95rem;
   }
 }

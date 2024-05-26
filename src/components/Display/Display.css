@@ -3,6 +3,7 @@
   background-image: url("/Images/Home-Background.jpg");
   background-position: center;
   background-size: cover;
+  object-fit: cover;
   color: #fff;
   text-align: center;
 }
@@ -11,34 +12,34 @@
   padding-top: 40vh;
   padding-inline: 3%;
   /* padding-top: 22%; */
-  font-size: 4rem;
-  text-shadow: 2px 2px #cf661a;
-  letter-spacing: 1px;
+  font-size: 6rem;
+  text-shadow: 0.2rem 0.2rem #cf661a;
+  letter-spacing: 0.1rem;
 }
 
 .home p {
   padding-inline: 3%;
-  padding-top: 0.8rem;
-  font-size: 1.7rem;
+  padding-top: 1.2rem;
+  font-size: 2.55rem;
   font-weight: 400;
-  line-height: 2rem;
-  text-shadow: 2px 2px #cf661a;
+  line-height: 3rem;
+  text-shadow: 0.2rem 0.2rem #cf661a;
 }
 
 .home-btn {
-  padding: 0.8rem;
-  margin-top: 2rem;
+  padding: 1.2rem;
+  margin-top: 3rem;
 }
 
 .home-btn .slogan {
-  padding: 0.85rem 2.3rem;
-  border: 2px solid rgb(255, 154, 169);
-  border-radius: 6px;
-  font-size: 1.2rem;
-  text-shadow: 2px 2px 2px #000000;
+  padding: 1.275rem 3.45rem;
+  border: 0.2rem solid rgb(255, 154, 169);
+  border-radius: 0.6rem;
+  font-size: 1.8rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #000000;
   font-weight: 600;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   color: white;
   background: radial-gradient(
     circle at 49.8% 44.4%,
@@ -48,15 +49,15 @@
 }
 
 .slogan .angle-right {
-  margin-left: 0.5rem;
-  font-size: 1rem;
+  margin-left: 0.75rem;
+  font-size: 1.5rem;
   text-align: center;
   animation: animate 0.5s ease infinite;
 }
 
 .slogan:hover {
   background: radial-gradient(circle at 49.8% 44.4%, #d5dee7, #b8e2a3 90%);
-  text-shadow: 2px 2px 4px white;
+  text-shadow: 0.2rem 0.2rem 0.4rem white;
 }
 
 .home-btn .slogan:hover {
@@ -65,27 +66,23 @@
 
 @keyframes animate {
   0% {
-    transform: translateX(-5px);
+    transform: translateX(-0.5rem);
   }
 
   100% {
-    transform: translateX(5px);
+    transform: translateX(0.5rem);
   }
 }
 
 @media (max-width: 800px) {
-  /* .home {
-    min-height: 100vh;
-  } */
-
   .home h1 {
     /* text-align: center; */
-    font-size: 3.5rem;
+    font-size: 5.25rem;
     /* padding-top: 35vh; */
   }
 
   .home p {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     /* text-align: center; */
   }
 }
@@ -98,21 +95,21 @@
   }
 
   .home-btn .slogan {
-    padding: 0.7rem 1.2rem;
-    border: 1px solid rgb(255, 154, 169);
+    padding: 1.05rem 1.8rem;
+    border: 0.1rem solid rgb(255, 154, 169);
   }
 }
 
 @media only screen and (max-width: 415px) {
   .home h1 {
     padding-top: 75%;
-    font-size: 2.2rem;
+    font-size: 3.3rem;
     padding-inline: 3%;
   }
   .home p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     padding-inline: 3%;
     font-weight: 500;
-    text-shadow: 1px 1px #cf661a;
+    text-shadow: 0.1rem 0.1rem #cf661a;
   }
 }

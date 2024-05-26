@@ -7,10 +7,12 @@ import CupCakeContainer from "../CupCake/CupCakeContainer";
 function Product() {
   return (
     <>
-      <CakeContainer />
-      <PastryContainer />
-      <CupCakeContainer />
-      <WeddingCakeContainer />
+      <div className="product-div">
+        <CakeContainer />
+        <PastryContainer />
+        <CupCakeContainer />
+        <WeddingCakeContainer />
+      </div>
     </>
   );
 }

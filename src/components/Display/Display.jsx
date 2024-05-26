@@ -7,7 +7,7 @@ import "./Display.css";
 function Display() {
   return (
     <>
-      <section id="home" className="home">
+      <div id="home" className="home">
         <h1>Every Flavor Has A Story</h1>
         <p>
           Love is like a cake, you have to cook it well
@@ -20,7 +20,7 @@ function Display() {
             <FontAwesomeIcon className="angle-right" icon={faAngleRight} />
           </Link>
         </div>
-      </section>
+      </div>
     </>
   );
 }

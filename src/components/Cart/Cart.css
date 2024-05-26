@@ -6,7 +6,7 @@
   /* background: linear-gradient(115deg, #ded6d6, #ededed); */
   min-height: 100vh;
   width: 100%;
-  padding: 110px 9% 3%;
+  padding: 11rem 9% 3%;
   display: flex;
 }
 
@@ -17,15 +17,15 @@
 .cart-item-container {
   display: flex;
   position: relative;
-  font-size: 14px;
+  font-size: 1.4rem;
   border: none;
-  padding: 20px;
+  padding: 2rem;
   background-color: rgb(255, 255, 255);
 }
 
 .cart-item-container::after {
   content: ""; /* Necessary for pseudo-elements */
-  border-bottom: 1px solid #6b6b6b;
+  border-bottom: 0.1rem solid #6b6b6b;
   width: 96%;
   position: absolute;
   bottom: 0; /* Align at the bottom */
@@ -39,31 +39,31 @@
   background-color: white;
   width: 35%;
   height: fit-content;
-  margin-left: 30px;
-  padding: 30px;
+  margin-left: 3rem;
+  padding: 3rem;
   color: #dd0202;
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 1.4;
 }
 
 .shopping-title {
-  font-size: 30px;
+  font-size: 3rem;
   padding-block: 1.9%;
   padding-left: 1.9%;
   background-color: white;
-  border-bottom: 1px solid #000000;
+  border-bottom: 0.1rem solid #000000;
 }
 
 .cart-left-part {
   background-color: #d903ff;
   margin-left: 2%;
-  width: 170px;
-  height: 205px;
+  width: 17rem;
+  height: 20.5rem;
 }
 
 .cart-left-part img {
-  width: 170px;
-  height: 205px;
+  width: 17rem;
+  height: 20.5rem;
   object-fit: cover;
 }
 
@@ -78,22 +78,22 @@
 }
 .cart-cakename {
   color: #cf661a;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
-  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
 }
 
 .cart-cake-details {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
-  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
 }
 
 .cart-cake-ingredient {
   color: #cf661a;
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 600;
-  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
 }
 
 .cart-price-container {
@@ -103,17 +103,17 @@
 }
 
 .item-quantity {
-  border: 1px solid #a7a7a7;
+  border: 0.1rem solid #a7a7a7;
   background-color: #ebebeb;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 .item-quantity .span {
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
-  padding: 5px 9px;
+  padding: 0.5rem 0.9rem;
 }
 
 /* .item-quantity .span span {
@@ -129,31 +129,31 @@
 }
 
 .item-count {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
-  padding-inline: 10px;
+  padding-inline: 1rem;
 }
 .cart-price-details {
   position: absolute;
   right: 1%;
-  font-size: 21px;
+  font-size: 2.1rem;
   font-weight: 500;
   color: #cf661a;
 }
 
 .remove-from-cart {
   position: absolute;
-  font-size: 25px;
-  /* top: 10px; */
-  top: -6px;
-  right: 18px;
-  width: 14px;
-  height: 14px;
+  font-size: 2.5rem;
+  /* top: 10rem; */
+  top: -0.6rem;
+  right: 1.8rem;
+  width: 1.4rem;
+  height: 1.4rem;
   cursor: pointer;
 }
 
 .item-delete-icon {
-  font-size: 23px;
+  font-size: 2.3rem;
   color: #000;
 }
 
@@ -162,22 +162,22 @@
   border: 0;
 }
 .bag-details-container {
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .price-header {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
-  /* margin: 35px 0 6px; */
-  margin: 0px 0 15px;
+  /* margin: 3.5rem 0 .6rem; */
+  margin: 0rem 0 1.5rem;
   color: #711d30;
 }
 
 .price-item {
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
   font-weight: 500;
-  line-height: 20px;
-  font-size: 18px;
+  line-height: 2rem;
+  font-size: 1.8rem;
   color: #000000;
 }
 
@@ -187,20 +187,20 @@
 
 .price-footer {
   font-weight: 500;
-  font-size: 20px;
-  padding-top: 16px;
-  border-top: 1px solid #000000;
+  font-size: 2rem;
+  padding-top: 1.6rem;
+  border-top: 0.1rem solid #000000;
   color: #ff5722;
-  line-height: 16px;
+  line-height: 1.6rem;
 }
 
 .btn-place-order {
   width: 100%;
-  letter-spacing: 0.6px;
-  font-size: 21px;
+  letter-spacing: 0.06rem;
+  font-size: 2.1rem;
   font-weight: 500;
   border: none;
-  padding: 9px 16px;
+  padding: 0.9rem 1.6rem;
   color: rgb(0, 0, 0);
   background: linear-gradient(to right, #ff91da, #d791ff);
   cursor: pointer;
@@ -223,47 +223,47 @@
 @media screen and (min-width: 1515px) and (max-width: 1650px) {
   .cart-container {
     transition: all 0.35s ease-in-out;
-    padding: 110px 6% 3%;
+    padding: 11rem 6% 3%;
   }
   /* .cart-right-part {
-    line-height: 22px;
+    line-height: 2.2rem;
   } */
 }
 
 @media screen and (min-width: 1421px) and (max-width: 1514px) {
   .cart-container {
     transition: all 0.35s ease-in-out;
-    padding: 110px 5% 3%;
+    padding: 11rem 5% 3%;
   }
 
   /* .cart-left-part {
-    width: 190px;
-    height: 235px;
+    width: 19rem;
+    height: 23.5rem;
   }
 
   .cart-left-part img {
-    width: 190px;
-    height: 235px;
+    width: 19rem;
+    height: 23.5rem;
   } */
 
   .cart-cake-details {
-    font-size: 17px;
+    font-size: 1.7rem;
   }
 
   .item-count {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   .item-quantity .span {
-    font-size: 18px;
-    padding: 6px 9px;
+    font-size: 1.8rem;
+    padding: 0.6rem 0.9rem;
   }
 
   .plus-minus-icon {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   .cart-right-part {
-    line-height: 21px;
+    line-height: 2.1rem;
   }
 }
 
@@ -271,66 +271,66 @@
   .cart-container {
     transition: all 0.35s ease-in-out;
     flex-direction: column;
-    padding: 110px 8% 3%;
+    padding: 11rem 8% 3%;
   }
   .cart-right-part {
-    line-height: 22px;
+    line-height: 2.2rem;
   }
   .cart-summary {
     margin-left: 0;
     width: auto;
-    margin-top: 25px;
-    padding: 20px 30px;
-    line-height: 10px;
+    margin-top: 2.5rem;
+    padding: 2rem 3rem;
+    line-height: 1rem;
   }
 }
 
 @media (max-width: 1135px) {
   .cart-container {
     transition: all 0.35s ease-in-out;
-    padding: 110px 6% 3%;
+    padding: 11rem 6% 3%;
   }
   /* 
   .cart-left-part {
-    width: 190px;
-    height: 225px;
+    width: 19rem;
+    height: 22.5rem;
   }
 
   .cart-left-part img {
-    width: 190px;
-    height: 225px;
+    width: 19rem;
+    height: 22.5rem;
   } */
 
   .cart-cake-details {
-    font-size: 17px;
+    font-size: 1.7rem;
   }
 
   .item-count {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   .item-quantity .span {
-    font-size: 18px;
-    padding: 6px 9px;
+    font-size: 1.8rem;
+    padding: 0.6rem 0.9rem;
   }
 
   .plus-minus-icon {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   .cart-right-part {
-    line-height: 20px;
+    line-height: 2rem;
   }
 }
 
 @media (max-width: 1035px) {
   .cart-container {
     transition: all 0.35s ease-in-out;
-    padding: 110px 5% 4%;
+    padding: 11rem 5% 4%;
   }
 
   .cart-cake-details {
-    font-size: 16px;
-    padding-bottom: 4px;
+    font-size: 1.6rem;
+    padding-bottom: 0.4rem;
   }
 
   .cart-cake-details-disable {
@@ -341,30 +341,30 @@
   }
 
   .cart-cakename {
-    padding-bottom: 4px;
+    padding-bottom: 0.4rem;
   }
 
   .cart-cake-ingredient {
-    padding-bottom: 4px;
+    padding-bottom: 0.4rem;
   }
 
   .cart-item-container {
-    font-size: 14px;
-    padding: 20px 10px 20px;
+    font-size: 1.4rem;
+    padding: 2rem 1rem 2rem;
   }
 
   .cart-left-part {
     margin-right: 1%;
-    width: 170px;
-    height: 200px;
+    width: 17rem;
+    height: 20rem;
     /* display: flex;
     align-items: center;
     background-color: transparent; */
   }
 
   .cart-left-part img {
-    width: 170px;
-    height: 200px;
+    width: 17rem;
+    height: 20rem;
   }
   .cart-right-part {
     padding-left: 4%;
@@ -372,31 +372,31 @@
   }
 
   .item-count {
-    font-size: 17px;
+    font-size: 1.7rem;
   }
 
   .item-quantity .span {
-    font-size: 16px;
-    padding: 5px 9px;
+    font-size: 1.6rem;
+    padding: 0.5rem 0.9rem;
   }
 
   .plus-minus-icon {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
   .remove-from-cart {
-    top: -5px;
+    top: -0.5rem;
   }
 
   .cart-price-details {
     right: 6%;
-    font-size: 20px;
+    font-size: 2rem;
   }
   .cart-right-part {
-    line-height: 20px;
+    line-height: 2rem;
   }
   .cart-right-part {
-    line-height: 20px;
+    line-height: 2rem;
     padding-left: 4%;
     padding-right: 5%;
   }
@@ -405,14 +405,14 @@
 @media (max-width: 869px) {
   .cart-container {
     transition: all 0.35s ease-in-out;
-    padding: 100px 4.5% 4%;
+    padding: 10rem 4.5% 4%;
   }
   .cart-item-container {
-    font-size: 14px;
-    padding: 10px 10px 10px 0px;
+    font-size: 1.4rem;
+    padding: 1rem 1rem 1rem 0rem;
   }
   .shopping-title {
-    font-size: 27px;
+    font-size: 2.7rem;
     padding-block: 1.7%;
     padding-left: 2.9%;
   }
@@ -420,23 +420,23 @@
   .cart-right-part {
     padding-left: 2%;
     padding-right: 2%;
-    line-height: 21px;
+    line-height: 2.1rem;
   }
 
   .cart-cakename {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 500;
-    padding-bottom: 0px;
+    padding-bottom: 0rem;
   }
 
   .cart-cake-ingredient {
     font-weight: 500;
-    padding-bottom: 0px;
+    padding-bottom: 0rem;
   }
 
   .cart-cake-details {
-    font-size: 15.5px;
-    padding-bottom: 0px;
+    font-size: 1.55rem;
+    padding-bottom: 0rem;
     display: -webkit-box;
     -webkit-line-clamp: 2; /* Number of lines to show */
     -webkit-box-orient: vertical;
@@ -448,64 +448,64 @@
   }
 
   .cart-left-part {
-    width: 130px;
-    height: 148px;
+    width: 13rem;
+    height: 14.8rem;
   }
 
   .cart-left-part img {
-    width: 130px;
-    height: 148px;
+    width: 13rem;
+    height: 14.8rem;
   }
   .item-delete-icon {
-    font-size: 20px;
+    font-size: 2rem;
   }
   .item-quantity .span {
-    padding: 4px 8px;
+    padding: 0.4rem 0.8rem;
   }
   .cart-price-details {
     right: 5%;
-    font-size: 19px;
+    font-size: 1.9rem;
   }
   .remove-from-cart {
-    top: -1px;
+    top: -0.1rem;
   }
   .price-header {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 600;
   }
   .price-footer {
-    line-height: 12px;
+    line-height: 1.2rem;
   }
   .price-item {
-    line-height: 19px;
-    font-size: 18px;
+    line-height: 1.9rem;
+    font-size: 1.8rem;
   }
   .btn-place-order {
-    font-size: 20px;
-    padding: 7.5px 16px;
+    font-size: 2rem;
+    padding: 0.75rem 1.6rem;
   }
 }
 
 @media (max-width: 769px) {
   .cart-summary {
-    padding: 20px 20px;
+    padding: 2rem 2rem;
   }
   .price-footer {
-    margin-top: -9px;
+    margin-top: -0.9rem;
   }
 }
 
 @media (max-width: 621px) {
   .cart-container {
     transition: all 0.35s ease-in-out;
-    padding: 100px 4.5% 4.5%;
+    padding: 10rem 4.5% 4.5%;
   }
   .cart-cakename {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
   }
   .shopping-title {
-    font-size: 25px;
+    font-size: 2.5rem;
     padding-block: 1.6%;
   }
   .cart-cake-ingredient {
@@ -517,121 +517,121 @@
   }
 
   .cart-left-part {
-    width: 100px;
-    height: 110px;
+    width: 10rem;
+    height: 11rem;
   }
 
   .cart-left-part img {
-    width: 100px;
-    height: 110px;
+    width: 10rem;
+    height: 11rem;
   }
   .cart-right-part {
     padding-left: 2.5%;
     padding-right: 1.5%;
   }
   .item-count {
-    font-size: 16px;
-    padding-inline: 8px;
+    font-size: 1.6rem;
+    padding-inline: 0.8rem;
   }
   .item-quantity .span {
-    font-size: 15.5px;
+    font-size: 1.55rem;
   }
   .cart-price-details {
     right: 3%;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   .price-header {
-    font-size: 17.5px;
+    font-size: 1.75rem;
   }
   .price-footer {
-    line-height: 10px;
+    line-height: 1rem;
   }
   .plus-minus-icon {
-    margin-left: -3px;
+    margin-left: -0.3rem;
   }
 }
 
 @media (max-width: 500px) {
   .cart-cake-details {
-    font-size: 14px;
-    word-spacing: -0.05em;
+    font-size: 1.4rem;
+    word-spacing: -0.005em;
   }
   .shopping-title {
-    font-size: 23px;
+    font-size: 2.3rem;
     padding-block: 2%;
   }
   .item-quantity .span {
-    padding: 3px 5px;
+    padding: 0.3rem 0.5rem;
   }
   .cart-left-part {
     margin-right: 1%;
-    width: 90px;
-    height: 95px;
+    width: 9rem;
+    height: 9.5rem;
   }
 
   .cart-left-part img {
-    width: 90px;
-    height: 95px;
+    width: 9rem;
+    height: 9.5rem;
   }
   .cart-price-details {
     right: 3%;
-    font-size: 17px;
+    font-size: 1.7rem;
   }
 
   .cart-cakename {
-    font-size: 17.5px;
+    font-size: 1.75rem;
   }
   .cart-price-details {
     right: 1%;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   .remove-from-cart {
-    right: 8px;
+    right: 0.8rem;
   }
   .price-item {
-    line-height: 15px;
-    font-size: 17px;
+    line-height: 1.5rem;
+    font-size: 1.7rem;
   }
   .price-footer {
-    margin-top: -10px;
+    margin-top: -1rem;
   }
 
   .price-footer {
     font-weight: 500;
-    font-size: 18px;
-    margin-top: -11px;
+    font-size: 1.8rem;
+    margin-top: -1.1rem;
   }
   .btn-place-order {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 469px) {
   .cart-container {
     transition: all 0.35s ease-in-out;
-    padding: 87px 4.5% 4.5%;
+    padding: 8.7rem 4.5% 4.5%;
   }
 }
 
 /* .item-count {
-  font-size: 15px;
-  padding-inline: 5px;
+  font-size: 1.5rem;
+  padding-inline: .5rem;
 }
 .item-right-part {
-  min-height: 68px;
-  margin-left: 80px;
+  min-height: 6.8rem;
+  margin-left: 8rem;
 }
 
 .price-cart {
-  font-size: 18px;
-  margin-top: 20px;
+  font-size: 1.8rem;
+  margin-top: 2rem;
 }
 
 .price-details {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .price-footer {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
 } */

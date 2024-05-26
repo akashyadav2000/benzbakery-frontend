@@ -2,10 +2,10 @@ footer {
   width: 100%;
   background: linear-gradient(to right, #00093c, #2d0b00);
   color: #fff;
-  padding: 20px 0 15px;
-  font-size: 22px;
+  padding: 2rem 0 1.5rem;
+  font-size: 2.2rem;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 2.3rem;
   text-align: justify;
 }
 
@@ -20,7 +20,7 @@ footer {
 
 .foot-col {
   flex-basis: 25%;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .foot-col:nth-child(2),
@@ -29,31 +29,31 @@ footer {
 }
 
 .foot-col .f-logo {
-  width: 6rem;
-  height: 6rem;
+  width: 9rem;
+  height: 9rem;
   object-fit: cover;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
 }
 
 .foot-col h3 {
   color: hotpink;
   font-weight: 500;
   width: fit-content;
-  margin-bottom: 35px;
+  margin-bottom: 3.5rem;
   position: relative;
 }
 
 .email-id {
   width: fit-content;
-  border-bottom: 2px solid hotpink;
-  margin: 15px 0;
+  border-bottom: 0.2rem solid hotpink;
+  margin: 1.5rem 0;
   font-weight: 500;
 }
 
 ul li {
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 ul li a {
@@ -66,20 +66,20 @@ ul li a:hover {
 }
 
 .newsletter {
-  padding-bottom: 15px;
+  padding-bottom: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 50px;
+  border-bottom: 0.1rem solid #ccc;
+  margin-bottom: 5rem;
 }
 
 .newsletter .icon {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .newsletter .icon_2 {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .newsletter .icon_2:hover {
@@ -89,17 +89,17 @@ ul li a:hover {
 .foot-col .far {
   border: transparent;
   text-align: center;
-  font-size: 32px;
+  font-size: 3.2rem;
   color: #ffffff;
-  margin-right: 15px;
+  margin-right: 1.5rem;
 }
 
 .newsletter input {
-  font-size: 22px;
+  font-size: 2.2rem;
   text-align: center;
-  width: 350px;
-  height: 28px;
-  padding-inline: 13px;
+  width: 35rem;
+  height: 2.8rem;
+  padding-inline: 1.3rem;
   background: transparent;
   color: #21ff2c;
   border: 0;
@@ -115,8 +115,8 @@ ul li a:hover {
 }
 
 .newsletter button .fas {
-  font-size: 30px;
-  margin-left: 10px;
+  font-size: 3rem;
+  margin-left: 1rem;
   color: #ccc;
 }
 
@@ -134,10 +134,10 @@ ul li a:hover {
 .link2,
 .link3,
 .link4 {
-  margin-right: 15px;
+  margin-right: 1.5rem;
   text-align: center;
-  padding: 13px;
-  font-size: 34px;
+  padding: 1.3rem;
+  font-size: 3.4rem;
   color: white;
   background: transparent;
   cursor: pointer;
@@ -145,29 +145,29 @@ ul li a:hover {
 
 .link1:hover {
   color: #0055ff;
-  box-shadow: 0 0 15px #0055ff;
+  box-shadow: 0 0 1.5rem #0055ff;
 }
 
 .link2:hover {
   color: #e23670;
-  box-shadow: 0 0 15px #e1306c;
+  box-shadow: 0 0 1.5rem #e1306c;
 }
 
 .link3:hover {
   color: #26a4f2;
-  box-shadow: 0 0 15px #1da1f2;
+  box-shadow: 0 0 1.5rem #1da1f2;
 }
 
 .link4:hover {
   color: #ff1a1a;
-  box-shadow: 0 0 15px #ff0000;
+  box-shadow: 0 0 1.5rem #ff0000;
 }
 
 .rooter-hr {
   width: 97%;
   border: 0;
-  border-bottom: 1px solid #ccc;
-  margin: -10px auto 13px;
+  border-bottom: 0.1rem solid #ccc;
+  margin: -1rem auto 1.3rem;
 }
 
 .copyright {
@@ -177,21 +177,21 @@ ul li a:hover {
 
 .underline {
   width: 100%;
-  height: 5px;
+  height: 0.5rem;
   background: #767676;
-  border-radius: 3px;
+  border-radius: 0.3rem;
   position: absolute;
-  top: 25px;
+  top: 2.5rem;
   left: 0;
   overflow: hidden;
 }
 
 .underline span {
   position: absolute;
-  width: 15px;
+  width: 1.5rem;
   height: 100%;
   background: white;
-  border-radius: 3px;
+  border-radius: 0.3rem;
   animation: 1.3s linear infinite;
   animation-name: run;
 }
@@ -199,9 +199,9 @@ ul li a:hover {
 .newsletter-error-messages {
   font-family: "Roboto Serif", serif;
   text-align: center;
-  font-size: 17.3px;
-  margin-top: -49px;
-  margin-bottom: 41px;
+  font-size: 1.73rem;
+  margin-top: -4.9rem;
+  margin-bottom: 4.1rem;
   color: #ff0000;
   font-weight: 400;
 }
@@ -213,18 +213,18 @@ ul li a:hover {
 }
 .newsletter-message.success {
   color: rgb(0, 255, 0);
-  font-size: 20px;
-  margin-top: -38px;
-  margin-bottom: 38px;
+  font-size: 2rem;
+  margin-top: -3.8rem;
+  margin-bottom: 3.8rem;
 }
 
 .newsletter-message.error {
-  font-size: 17.3px;
-  margin-top: -49px;
-  margin-bottom: 41px;
+  font-size: 1.73rem;
+  margin-top: -4.9rem;
+  margin-bottom: 4.1rem;
   font-weight: 400;
   color: #ff0000;
-  /* text-shadow: 1.5px 1px 1px rgb(0, 0, 0); */
+  /* text-shadow: .15rem .1rem .1rem rgb(0, 0, 0); */
 }
 
 @keyframes run {
@@ -251,27 +251,27 @@ ul li a:hover {
   .link2,
   .link3,
   .link4 {
-    margin-right: 10px;
-    padding: 13px;
-    font-size: 33px;
+    margin-right: 1rem;
+    padding: 1.3rem;
+    font-size: 3.3rem;
   }
   .newsletter input {
     font-size: 90%;
-    width: 260px;
-    padding-inline: 9px;
+    width: 26rem;
+    padding-inline: 0.9rem;
   }
 
   .newsletter .icon_2 {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
   .newsletter .icon {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
   ul li {
-    margin-bottom: 13px;
+    margin-bottom: 1.3rem;
   }
   .newsletter-message.success {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 
@@ -279,12 +279,12 @@ ul li a:hover {
   .foot-col-image {
     display: flex;
     align-items: center;
-    margin-bottom: -10px;
+    margin-bottom: -1rem;
   }
   .foot-col .f-logo {
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: 12px;
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-bottom: 1.2rem;
   }
 }
 @media (max-width: 1168px) {
@@ -301,17 +301,17 @@ ul li a:hover {
     justify-content: space-evenly;
   }
   footer {
-    font-size: 21px;
+    font-size: 2.1rem;
   }
   .foot-col h3 {
-    margin-bottom: 33px;
-    font-size: 23.5px;
+    margin-bottom: 3.3rem;
+    font-size: 2.35rem;
   }
   .link1,
   .link2,
   .link3,
   .link4 {
-    font-size: 31px;
+    font-size: 3.1rem;
   }
 }
 
@@ -326,8 +326,8 @@ ul li a:hover {
     justify-content: space-between;
   }
   .foot-col h3 {
-    margin-bottom: 31px;
-    font-size: 23px;
+    margin-bottom: 3.1rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -336,13 +336,13 @@ ul li a:hover {
     flex-basis: 42%;
   }
   .foot-col h3 {
-    margin-bottom: 29px;
-    font-size: 22.5px;
+    margin-bottom: 2.9rem;
+    font-size: 2.25rem;
   }
   .foot-col .f-logo {
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 10px;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -350,68 +350,68 @@ ul li a:hover {
   .foot-col-image {
     display: flex;
     align-items: center;
-    margin-bottom: -10px;
+    margin-bottom: -1rem;
   }
   footer {
-    font-size: 19.5px;
+    font-size: 1.95rem;
   }
 
   .foot-col-image {
     flex-basis: 100%;
   }
   .foot-col h3 {
-    margin-bottom: 29px;
-    font-size: 22.5px;
+    margin-bottom: 2.9rem;
+    font-size: 2.25rem;
   }
   .foot-col .f-logo {
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 10px;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
   }
   .social-icons {
-    padding-top: 10px;
-    padding-bottom: 8px;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
   }
   .newsletter {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
   .newsletter input {
-    font-size: 21px;
+    font-size: 2.1rem;
     width: 88%;
   }
   .newsleter-container {
     flex-basis: 100%;
-    padding-bottom: 12px;
+    padding-bottom: 1.2rem;
   }
   .link1,
   .link2,
   .link3,
   .link4 {
-    margin-right: 17px;
-    padding: 8px;
+    margin-right: 1.7rem;
+    padding: 0.8rem;
   }
   .footer-link {
     display: flex;
     flex-wrap: wrap;
   }
   .newsletter-error-messages {
-    margin-top: -37px;
-    margin-bottom: 40px;
+    margin-top: -3.7rem;
+    margin-bottom: 4rem;
   }
   .newsletter-message.error {
-    margin-top: -37px;
-    margin-bottom: 40px;
+    margin-top: -3.7rem;
+    margin-bottom: 4rem;
   }
   .newsletter-message.success {
-    margin-top: -30px;
-    margin-bottom: 39px;
+    margin-top: -3rem;
+    margin-bottom: 3.9rem;
   }
 }
 
 @media (max-width: 425px) {
   footer {
-    font-size: 18.5px;
-    padding-left: 5px;
+    font-size: 1.85rem;
+    padding-left: 0.5rem;
   }
   .foot-col {
     flex-basis: 100%;
@@ -421,37 +421,37 @@ ul li a:hover {
     flex-basis: 100%;
   }
   .foot-col h3 {
-    margin-bottom: 26px;
-    font-size: 21px;
+    margin-bottom: 2.6rem;
+    font-size: 2.1rem;
   }
 
   .footer-link {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
-    margin-bottom: -15px;
+    margin-left: 2rem;
+    margin-bottom: -1.5rem;
   }
   .footer-link li {
     width: 50%;
   }
   .newsletter input {
-    font-size: 19px;
+    font-size: 1.9rem;
   }
   .social-icons {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
   }
   .newsletter-error-messages {
-    margin-top: -39px;
-    margin-bottom: 38px;
+    margin-top: -3.9rem;
+    margin-bottom: 3.8rem;
   }
   .newsletter-message.error {
-    margin-top: -39px;
-    margin-bottom: 38px;
+    margin-top: -3.9rem;
+    margin-bottom: 3.8rem;
   }
   .newsletter-message.success {
-    margin-top: -28px;
+    margin-top: -2.8rem;
     font-weight: 400;
-    margin-bottom: 37px;
+    margin-bottom: 3.7rem;
   }
 }

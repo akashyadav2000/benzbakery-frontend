@@ -61,6 +61,7 @@ function Footer() {
 
   return (
     <>
+      <span className="white"></span>
       <footer>
         <div className="foot-row">
           <div className="foot-col foot-col-image">

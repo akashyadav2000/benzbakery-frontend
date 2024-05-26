@@ -3,7 +3,7 @@
   /* background-image: linear-gradient(100deg, #eaf7ff 20%, #482e17 100%); */
   /* background-image: linear-gradient(100deg, #000000 20%, #3e98ca 100%); */
 
-  padding-top: 75px;
+  padding-top: 7.5rem;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -13,45 +13,45 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* gap: 20px; */
+  /* gap: 2rem; */
 }
 .feedback-title {
   font-family: "Roboto Serif", serif;
   font-weight: 500;
   color: #4facfe;
-  font-size: 35px;
+  font-size: 3.5rem;
 }
 .hr {
-  border: 1px solid grey;
-  width: 265px;
-  margin-top: 3px;
-  margin-bottom: 35px;
+  border: 0.1rem solid grey;
+  width: 26.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 3.5rem;
 }
 
 .feedback-details {
   font-family: "Roboto Serif", serif;
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .contact-inputs {
   font-family: "Poppins", serif;
-  width: 400px;
-  height: 45px;
+  width: 40rem;
+  height: 4.5rem;
   outline: none;
-  margin-bottom: 18px;
-  padding-inline: 10px;
-  font-size: 18px;
+  margin-bottom: 1.8rem;
+  padding-inline: 1rem;
+  font-size: 1.8rem;
   font-weight: 400;
   background-color: white;
   color: #0090ff;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   resize: none;
-  border: 1px solid #7a7a7a;
-  border-bottom-width: 2px;
+  border: 0.1rem solid #7a7a7a;
+  border-bottom-width: 0.2rem;
   transition: all 0.3s ease;
-  /* backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(.2rem);
   background-color: rgba(0, 0, 0, 0.25); */
 }
 
@@ -61,15 +61,15 @@
 }
 
 .contact-left textarea {
-  height: 140px;
-  padding-top: 15px;
-  border-radius: 4px;
+  height: 14rem;
+  padding-top: 1.5rem;
+  border-radius: 0.4rem;
 }
 
 .contact-inputs::placeholder {
   color: grey;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .feedback-submit {
@@ -78,15 +78,15 @@
   /* align-items: center; */
   justify-content: center;
   width: 100%;
-  margin-block: 5px;
-  padding: 8px;
-  font-size: 23px;
+  margin-block: 0.5rem;
+  padding: 0.8rem;
+  font-size: 2.3rem;
   font-weight: 500;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
   color: #fff;
-  gap: 10px;
-  border: 2px solid white;
-  border-radius: 4px;
+  gap: 1rem;
+  border: 0.2rem solid white;
+  border-radius: 0.4rem;
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -94,35 +94,35 @@
 
 .feedback-submit:hover {
   transform: scale(105%);
-  text-shadow: 1px 1px 2px rgb(255, 250, 250);
+  text-shadow: 0.1rem 0.1rem 0.2rem rgb(255, 250, 250);
   background: linear-gradient(to right, #ff91da, #d791ff);
   color: #000000;
 }
 .contact-right img {
   width: auto;
-  height: 600px;
-  border-radius: 5px;
+  height: 60rem;
+  border-radius: 0.5rem;
 }
 
 .container {
   width: 100%;
   height: 100%;
   z-index: 2;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1rem);
   position: fixed;
   left: 0%;
   bottom: 0%;
 }
 
 .popup {
-  width: 380px;
+  width: 38rem;
   background: #fff;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 0 20px 20px;
+  padding: 0 2rem 2rem;
   color: #333;
-  box-shadow: 0.1px 0.1px 20px 0px;
+  box-shadow: 0.01rem 0.01rem 2rem 0rem;
   visibility: hidden;
   transition: tranform 0.4s, top 0.4s;
 }
@@ -133,42 +133,42 @@
   position: fixed;
 }
 .popup img {
-  width: 95px;
-  margin-top: -50px;
+  width: 9.5rem;
+  margin-top: -5rem;
   border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 .popup h2 {
-  font-size: 37px;
+  font-size: 3.7rem;
   font-weight: 500;
-  margin: 20px 0 10px;
+  margin: 2rem 0 1rem;
 }
 .popup p {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
-  /* margin: 30px 0 10px; */
+  /* margin: 3rem 0 1rem; */
 }
 .popup button {
   display: block;
   width: 100%;
-  margin-top: 40px;
-  padding: 12px 0;
+  margin-top: 4rem;
+  padding: 1.2rem 0;
   background: #6fd649;
   color: #000;
   border: none;
   outline: none;
-  font-size: 21px;
+  font-size: 2.1rem;
   font-weight: 500;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   cursor: pointer;
 }
 
 .feedback-error-messages {
   font-family: "Roboto Serif", serif;
-  font-size: 15px;
-  margin-top: -16px;
-  margin-bottom: 8px;
-  margin-left: 6px;
+  font-size: 1.5rem;
+  margin-top: -1.6rem;
+  margin-bottom: 0.8rem;
+  margin-left: 0.6rem;
   font-weight: 500;
   color: red;
 }
@@ -180,22 +180,22 @@
 }
 /* .feedback-message.success {
   color: #0029ff;
-  font-size: 21px;
-  padding-block: 10px;
-  text-shadow: 1.5px 1px 1px rgb(255 255 255);
+  font-size: 2.1rem;
+  padding-block: 1rem;
+  text-shadow: .15rem .1rem .1rem rgb(255 255 255);
 } */
 
 .feedback-message.error {
   width: 100%;
-  font-size: 17.3px;
-  padding-block: 4px;
+  font-size: 1.73rem;
+  padding-block: 0.4rem;
   color: #ff0000;
-  text-shadow: 1.5px 1px 1px rgb(255 255 255);
+  text-shadow: 0.15rem 0.1rem 0.1rem rgb(255 255 255);
 }
 
 @media (max-width: 1150px) {
   .contact-right img {
-    width: 380px;
+    width: 38rem;
   }
 }
 
@@ -210,10 +210,10 @@
     background-image: linear-gradient(100deg, #f0f2f5 20%, #b1c3e2 100%);
   }
   .feedback-title {
-    font-size: 30px;
+    font-size: 3rem;
   }
   .hr {
-    width: 228px;
+    width: 22.8rem;
   }
 }
 
@@ -222,22 +222,22 @@
     flex-direction: column;
   }
   .popup {
-    width: 340px;
-    padding: 0 20px 25px;
+    width: 34rem;
+    padding: 0 2rem 2.5rem;
   }
   .popup h2 {
-    font-size: 33px;
-    margin: 15px 0 10px;
+    font-size: 3.3rem;
+    margin: 1.5rem 0 1rem;
   }
   .popup p {
-    font-size: 19px;
+    font-size: 1.9rem;
   }
   .popup img {
-    width: 85px;
-    margin-top: -50px;
+    width: 8.5rem;
+    margin-top: -5rem;
   }
   .popup button {
-    margin-top: 40px;
+    margin-top: 4rem;
   }
 }
 
@@ -246,63 +246,63 @@
     width: 80vw;
   }
   .popup {
-    width: 280px;
-    padding: 0 15px 20px;
+    width: 28rem;
+    padding: 0 1.5rem 2rem;
   }
   .popup h2 {
     color: limegreen;
-    font-size: 28px;
-    margin: 13px 0 10px;
+    font-size: 2.8rem;
+    margin: 1.3rem 0 1rem;
   }
   .popup p {
-    font-size: 17px;
+    font-size: 1.7rem;
   }
   .popup img {
-    width: 70px;
-    margin-top: -36px;
+    width: 7rem;
+    margin-top: -3.6rem;
   }
   .popup button {
-    margin-top: 25px;
-    padding: 9px 0;
+    margin-top: 2.5rem;
+    padding: 0.9rem 0;
   }
 }
 @media (max-width: 427px) {
   .feedback-details {
-    font-size: 18px;
-    margin-bottom: 2px;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
   }
   .contact-inputs {
     width: 85vw;
-    height: 40px;
-    margin-bottom: 16px;
-    padding-inline: 10px;
-    font-size: 16px;
+    height: 4rem;
+    margin-bottom: 1.6rem;
+    padding-inline: 1rem;
+    font-size: 1.6rem;
   }
   .feedback-error-messages {
-    font-size: 14px;
-    margin-bottom: 7px;
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
     font-weight: 500;
     color: red;
   }
   .feedback-message.error {
-    font-size: 15px;
-    padding-block: 3px;
+    font-size: 1.5rem;
+    padding-block: 0.3rem;
   }
   .feedback-submit {
-    margin-block: 4px;
-    padding: 7px;
-    font-size: 20px;
+    margin-block: 0.4rem;
+    padding: 0.7rem;
+    font-size: 2rem;
   }
   .hr {
-    width: 206px;
-    margin-bottom: 25px;
+    width: 20.6rem;
+    margin-bottom: 2.5rem;
   }
   .feedback-title {
-    font-size: 27px;
+    font-size: 2.7rem;
   }
   .contact-left textarea {
-    height: 132px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 13.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }

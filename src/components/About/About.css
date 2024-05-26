@@ -27,54 +27,54 @@
   width: 70%;
   transform: translate(-50%, -50%);
   background: rgb(255 255 255 / 75%);
-  /* backdrop-filter: blur(4px); */
-  padding: 5px 3%;
-  border-radius: 4px;
+  /* backdrop-filter: blur(.4rem); */
+  padding: 0.5rem 3%;
+  border-radius: 0.4rem;
 }
 
 .about_details p {
   font-family: "Poppins", cursive;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 400;
   text-align: justify;
-  margin-block: 15px;
+  margin-block: 1.5rem;
   color: #d35800;
 }
 
 @keyframes animate {
   0% {
-    transform: translateX(-5px);
+    transform: translateX(-0.5rem);
   }
 
   100% {
-    transform: translateX(5px);
+    transform: translateX(0.5rem);
   }
 }
 
 @media (max-width: 768px) {
   .about-photo h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
     padding-top: 50%;
   }
 
   .about-photo details {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
 
 .value-title {
   font-family: "Roboto Serif", serif;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: 500;
   color: rgb(236, 35, 119);
-  padding-top: 20px;
-  margin-bottom: -12px;
+  padding-top: 2rem;
+  margin-bottom: -1.2rem;
 }
 
 .value {
-  margin-top: 3.5rem;
-  margin-bottom: 3.5rem;
+  margin-top: 5.25rem;
+  margin-bottom: 5.25rem;
   background: linear-gradient(to top, #e9defa, #fdcbf1);
 }
 
@@ -83,21 +83,21 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  /* margin-bottom: 20px; */
-  gap: 0 30px;
+  /* margin-bottom: 2rem; */
+  gap: 0 3rem;
 }
 
 .v-cell {
-  /* flex: 1 1 20rem; */
+  /* flex: 1 1 30rem; */
   text-align: center;
-  width: 300px;
-  margin-top: 2.5rem;
-  /* margin-right: 1.4rem; */
-  margin-bottom: 1.5rem;
+  width: 30rem;
+  margin-top: 3.75rem;
+  /* margin-right: 2.1rem; */
+  margin-bottom: 2.25rem;
 }
 
 .v-cell img {
-  height: 75px;
+  height: 7.5rem;
   width: auto;
   object-fit: cover;
   background-size: cover;
@@ -105,22 +105,22 @@
 
 .v-cell h2 {
   font-family: "Roboto Serif", serif;
-  padding: 9px;
+  padding: 0.9rem;
   color: rgb(0, 0, 255);
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
 }
 
 .v-cell p {
   font-family: "Poppins", cursive;
-  padding: 8px;
-  width: 300px;
+  padding: 0.8rem;
+  width: 30rem;
   text-align: center;
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.95rem;
   font-weight: 500;
-  letter-spacing: 0px;
+  letter-spacing: 0rem;
 }
 
 @media (max-width: 1530px) {
@@ -131,8 +131,8 @@
     width: 85%;
   }
   .about_details p {
-    font-size: 21px;
-    margin-block: 13px;
+    font-size: 2.1rem;
+    margin-block: 1.3rem;
     text-shadow: none;
   }
 }
@@ -142,15 +142,15 @@
     padding: 12.5% 5% 5%;
   }
   .about_details p {
-    font-size: 20px;
-    margin-block: 10px;
+    font-size: 2rem;
+    margin-block: 1rem;
   }
 }
 
 @media (max-width: 885px) {
   .about_details p {
-    font-size: 19px;
-    margin-block: 10px;
+    font-size: 1.9rem;
+    margin-block: 1rem;
   }
   .about_details {
     top: 75%;
@@ -158,36 +158,36 @@
 }
 @media (max-width: 757px) {
   .about_details p {
-    font-size: 18px;
-    margin-block: 10px;
+    font-size: 1.8rem;
+    margin-block: 1rem;
   }
 }
 @media (max-width: 650px) {
   .about_details p {
-    font-size: 17px;
-    margin-block: 10px;
+    font-size: 1.7rem;
+    margin-block: 1rem;
   }
 }
 @media (max-width: 700px) {
   .value-title {
-    font-size: 2.5rem;
+    font-size: 37.5rem;
   }
   .v-cell {
     width: auto;
-    margin-top: 2.4rem;
+    margin-top: 3.6rem;
     margin-right: 0;
     margin-bottom: 0rem;
   }
   .v-cell img {
-    height: 65px;
+    height: 6.5rem;
   }
   .v-cell h2 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 500;
   }
   .v-cell p {
-    width: 280px;
-    font-size: 1rem;
+    width: 28rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
   .v-row {
@@ -203,7 +203,7 @@
   .about-photo {
     display: none;
     height: 70%;
-    margin-top: -8.4rem;
+    margin-top: -12.6rem;
     min-height: 80vh;
     max-width: 99%;
     padding: 0;
@@ -211,11 +211,11 @@
     /* background-image: url("/Images/About-mobile-bg.jpg"); */
   }
   .mobile-bg {
-    /* margin-top: -4rem;
+    /* margin-top: -6rem;
     position: absolute; */
     display: block;
     height: 30%;
-    margin-top: -55px;
+    margin-top: -5.5rem;
     min-height: 75vh;
     width: 100%;
     padding: 0;
@@ -227,47 +227,47 @@
     position: initial;
     transform: none;
     /* background: rgb(255 255 255 / 75%); */
-    /* backdrop-filter: blur(4px); */
+    /* backdrop-filter: blur(.4rem); */
     width: 100%;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 13px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 1.3rem;
   }
 
   .about_details p {
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 1rem;
     color: rgb(0, 0, 0);
   }
 
   .value-title {
-    font-size: 1.8rem;
-    margin-bottom: 0px;
+    font-size: 2.7rem;
+    margin-bottom: 0rem;
   }
   .value {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
   }
   .v-cell {
-    margin-top: 1.1rem;
-    margin-right: 0px;
-    margin-bottom: 1rem;
+    margin-top: 1.65rem;
+    margin-right: 0rem;
+    margin-bottom: 1.5rem;
   }
   .v-cell img {
-    height: 3.5rem;
-    width: 4rem;
+    height: 5.25rem;
+    width: 6rem;
     object-fit: contain;
   }
   .v-cell h2 {
-    padding: 4px;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    padding: 0.4rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
   }
   .v-cell p {
-    padding: 0px;
-    font-size: 13px;
+    padding: 0rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
   }
 }
