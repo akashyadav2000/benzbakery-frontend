@@ -1039,7 +1039,7 @@ header .user-cart a {
   }
 
   .mobile-menu {
-    width: 30%;
+    width: 36rem;
     top: 46px;
     padding-top: 7px;
     padding-bottom: 50px;
@@ -1110,16 +1110,75 @@ header .user-cart a {
   html {
     font-size: 31%;
   }
+  .mobile-menu {
+    width: 40rem;
+  }
 }
 @media (max-width: 577px) {
   html {
     font-size: 27%;
+  }
+  .mobile-menu {
+    width: 46rem;
   }
 }
 
 @media (max-width: 500px) {
   html {
     font-size: 24%;
+  }
+  .mobile-menu {
+    width: 50rem;
+  }
+}
+
+@media (max-width: 420px) {
+  #hamburger-icon {
+    margin-right: 12px;
+  }
+  .mobile-menu {
+    background: linear-gradient(to right, #fdcbf1, #d4f3ff);
+    padding-top: 50px;
+    top: 46px;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+  }
+  .mobile-menu li {
+    background-color: whitesmoke;
+    opacity: 1;
+    border: 1px solid #00e7ff;
+    box-shadow: 1px 1px 15px #ff6ccc;
+    width: 180px;
+    line-height: 35px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .mobile-menu li:hover {
+    border: 1px solid #00e7ff;
+    box-shadow: 1px 1px 15px #00e7ff;
+  }
+  .open .mobile-menu {
+    align-items: center;
+    padding-top: 50px;
+  }
+  .mobile-menu li a {
+    font-size: 19px;
+  }
+  .cart {
+    height: 30.7px;
+    margin-right: 8px;
+  }
+  .login {
+    height: 30.7px;
+  }
+  .cart-count {
+    right: 25.45px;
+    font-size: 14px;
+    top: -7.5px;
   }
 }
 
