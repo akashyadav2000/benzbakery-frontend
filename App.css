@@ -192,21 +192,15 @@ header .user-cart a {
 }
 
 #hamburger-icon div {
-  /* width: 30px;
-  height: 4px;
-  margin: 6px 0; */
-  width: 3rem;
-  height: 0.4rem;
-  margin: 0.6rem 0;
+  width: 25px;
+  height: 3.4px;
+  margin: 4.5px 0;
   transition: 0.4s;
   background-color: rgb(255, 90, 173);
 }
 
 .open .bar1 {
-  /* -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px); */
-  -webkit-transform: rotate(-45deg) translate(-0.6rem, 0.6rem);
-  transform: rotate(-45deg) translate(-0.6rem, 0.6rem);
+  transform: rotate(-45deg) translate(-6.7px, 3px);
 }
 
 .open .bar2 {
@@ -214,27 +208,20 @@ header .user-cart a {
 }
 
 .open .bar3 {
-  /* -webkit-transform: rotate(45deg) translate(-6px, -8px);
-  transform: rotate(45deg) translate(-6px, -8px); */
-  -webkit-transform: rotate(45deg) translate(-0.6rem, -0.8rem);
-  transform: rotate(45deg) translate(-0.6rem, -0.8rem);
+  transform: rotate(45deg) translate(-8.5px, -4px);
 }
 
 .mobile-menu {
   background: linear-gradient(105deg, rgb(255 169 235), rgb(199 239 255/0.9));
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
+  /* align-items: start;
+  justify-content: start; */
   margin: 0;
-  /* width: 250px;
-  top: 60px;
-  padding-top: 15px;
-   padding-bottom: 100px; */
-  width: 25rem;
-  top: 6rem;
-  padding-top: 1.5rem;
-  padding-bottom: 10rem;
+  width: 36rem;
+  top: 46px;
+  padding-top: 12px;
+  /* padding-bottom: 50px; */
   position: absolute;
   right: 0;
   height: 100vh;
@@ -249,30 +236,22 @@ header .user-cart a {
 .mobile-menu li {
   opacity: 1;
   width: auto;
-  /* border-radius: 2px;
-  line-height: 25px;
-  margin-bottom: 5px;
-  margin-top: 25px;
-  padding-left: 25px; */
-  border-radius: 0.2rem;
-  line-height: 2.5rem;
-  margin-bottom: 0.5rem;
-  margin-top: 2.5rem;
-  padding-left: 2.5rem;
+  border-radius: 1px;
+  line-height: 20.5px;
+  margin-block: 12.5px;
+  padding-left: 15px;
   text-align: left;
 }
 
 .mobile-menu li a {
   font-family: "Roboto Serif", serif;
   color: #000000;
-  /* font-size: 23px; */
-  font-size: 2.3rem;
+  font-size: 21px;
   font-weight: 400;
 }
 
 .mobile-menu li a:hover {
-  color: black;
-  transform: scale(1.14);
+  color: #ffffff;
 }
 /* .drop-down {
   padding-left: 2rem;
@@ -654,22 +633,18 @@ header .user-cart a {
     rgb(253, 240, 233) 2.2%,
     rgb(255, 194, 203) 96.2%
   );
-  /* padding: 20px 0; */
 }
 
 .product-2-pastrys {
   background: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
-  /* padding: 20px 0; */
 }
 
 .product-3-cup-cakes {
   background: linear-gradient(to top, #83eaf1, #dbf3fa);
-  /* padding: 20px 0; */
 }
 
 .product-4-wedding-cakes {
   background: linear-gradient(to right, #e9defa, #f5e3e6);
-  /* padding: 20px 0; */
 }
 
 .wed-cake-row {
@@ -1024,37 +999,6 @@ header .user-cart a {
     margin-right: 20px;
     display: block;
   }
-  #hamburger-icon div {
-    width: 25px;
-    height: 3.4px;
-    margin: 4.5px 0;
-  }
-
-  .open .bar1 {
-    transform: rotate(-45deg) translate(-6.7px, 3px);
-  }
-
-  .open .bar3 {
-    transform: rotate(45deg) translate(-8.5px, -4px);
-  }
-
-  .mobile-menu {
-    width: 36rem;
-    top: 46px;
-    padding-top: 7px;
-    padding-bottom: 50px;
-  }
-  .mobile-menu li a {
-    font-size: 19px;
-    font-weight: 400;
-  }
-  .mobile-menu li {
-    border-radius: 1px;
-    line-height: 20.5px;
-    margin-bottom: 7.5px;
-    margin-top: 17.5px;
-    padding-left: 15px;
-  }
   header .user-cart {
     position: absolute;
     right: 43px;
@@ -1166,7 +1110,12 @@ header .user-cart a {
     padding-top: 50px;
   }
   .mobile-menu li a {
-    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    font-size: 19.5px;
+  }
+  .mobile-menu li a:hover {
+    color: #ff2cce;
   }
   .cart {
     height: 30.7px;
