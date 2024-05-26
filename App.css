@@ -1077,6 +1077,9 @@ header .user-cart a {
 }
 
 @media (max-width: 420px) {
+  html {
+    font-size: 28%;
+  }
   #hamburger-icon {
     margin-right: 12px;
   }
@@ -1115,7 +1118,7 @@ header .user-cart a {
     font-size: 19.5px;
   }
   .mobile-menu li a:hover {
-    color: #ff2cce;
+    color: #ff5aad;
   }
   .cart {
     height: 30.7px;
