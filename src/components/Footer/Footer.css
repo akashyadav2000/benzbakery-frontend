@@ -416,7 +416,7 @@ ul li a:hover {
 
 @media (max-width: 420px) {
   footer {
-    font-size: 3.2rem;
+    font-size: 3.3rem;
     line-height: 3.7rem;
     /* padding-left: 0.5rem; */
   }
@@ -464,11 +464,14 @@ ul li a:hover {
   .link4 {
     margin-right: 4rem;
     padding: 1.3rem;
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
   .social-icons {
     margin-top: -3.2%;
     margin-bottom: 2.3rem;
+  }
+  .copyright {
+    font-size: 3.5rem;
   }
   /* .footer-link {
     display: flex;
