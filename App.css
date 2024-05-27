@@ -907,7 +907,22 @@ header .user-cart a {
   .wed-cake-col img {
     height: 47.7rem;
   }
+  .wed-cake-row {
+    padding-bottom: 4rem;
+  }
+  .cake-row {
+    padding-bottom: 2rem;
+  }
+  /* .wed-cake-col img {
+    margin-bottom: -0.28rem;
+} */
 }
+@media (max-width: 1020px) {
+  .wed-cake-col img {
+    height: 47.73rem;
+  }
+}
+
 @media screen and (max-width: 962px) and (max-height: 601px) {
   html {
     font-size: 39%;
@@ -1095,6 +1110,9 @@ header .user-cart a {
   .cake-col img {
     margin-bottom: -0.17rem;
   }
+  .wed-cake-col {
+    box-shadow: 0 1rem 1.5rem rgb(236, 35, 119);
+  }
 }
 
 @media (max-width: 649px) {
@@ -1127,8 +1145,14 @@ header .user-cart a {
     padding-bottom: 0.3rem;
     padding-top: 0.25rem;
   } */
+  .cake-col img {
+    margin-bottom: -0.18rem;
+  }
   .cake-col {
     box-shadow: 0 1.5rem 2.5rem rgb(236, 35, 119);
+  }
+  .wed-cake-col {
+    box-shadow: 0 2rem 2.5rem rgb(236, 35, 119);
   }
 }
 @media (max-width: 577px) {
@@ -1155,7 +1179,7 @@ header .user-cart a {
     box-shadow: 0 1.5rem 2.5rem rgb(236, 35, 119);
   }
   .cake-col img {
-    margin-bottom: -0.2rem;
+    margin-bottom: -0.22rem;
   }
 }
 

@@ -241,6 +241,51 @@ ul li a:hover {
     width: 95%;
   }
 }
+
+@media (max-width: 1230px) {
+  footer {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+  /* .foot-row {
+    width: 95%;
+  } */
+
+  .newsletter .icon {
+    font-size: 3.2rem;
+  }
+  .newsletter .icon_2 {
+    font-size: 3.2rem;
+  }
+  .link1,
+  .link2,
+  .link3,
+  .link4 {
+    margin-right: 2.5rem;
+    /* padding: 1.3rem; */
+    font-size: 3.8rem;
+  }
+  .newsletter input {
+    font-size: 2.4rem;
+  }
+  .underline {
+    top: 2.9rem;
+  }
+  /* .social-icons {
+    margin-top: -3.2%;
+    margin-bottom: 2.3rem;
+  }
+  .copyright {
+    font-size: 3.5rem;
+  } */
+}
+
+@media (max-width: 1160px) {
+  footer {
+    font-size: 2.6em;
+    line-height: 2.8rem;
+  }
+}
 /* 
 @media (max-width: 1379px) {
   .social-icons {
@@ -416,7 +461,7 @@ ul li a:hover {
 
 @media (max-width: 420px) {
   footer {
-    font-size: 3.3rem;
+    font-size: 3.4rem;
     line-height: 3.7rem;
     /* padding-left: 0.5rem; */
   }
@@ -428,6 +473,12 @@ ul li a:hover {
     align-items: center;
     margin-bottom: -1rem;
   } */
+  .foot-col .f-logo {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+  }
+
   .underline {
     top: 4.3rem;
   }
