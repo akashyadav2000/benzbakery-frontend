@@ -241,7 +241,7 @@ input[type="text"]::-webkit-outer-spin-button {
   text-shadow: 0.15rem 0.1rem 0.1rem rgb(255 255 255);
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 540px) {
   .signup-mobile-bg {
     display: flex;
     justify-content: center;

@@ -238,12 +238,12 @@
   text-shadow: 0.15rem 0.1rem 0.1rem rgb(255 255 255);
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 540px) {
   .login-mobile-bg {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url(/Images/signup-login-bg.jpg);
     background-size: cover;
@@ -269,7 +269,7 @@
   }
 
   .login-text-box {
-    width: 320rem;
+    width: 32rem;
     background-color: rgba(255, 255, 255, 0.38);
   }
   .login-pass-box {

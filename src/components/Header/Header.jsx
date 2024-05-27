@@ -77,7 +77,7 @@ function Header() {
     <>
       <header>
         <Link to={"/"} className="logo" aria-label="benz_logo" onClick={handleScrollToTop}>
-          <img src="./Images/Benz_Logo.png" alt="benz_logo" />
+          <img src="./Images/Benz_Logo1.png" alt="benz_logo" />
         </Link>
 
         <nav className="navigate">
