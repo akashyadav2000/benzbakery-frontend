@@ -224,7 +224,6 @@ ul li a:hover {
   margin-bottom: 4.1rem;
   font-weight: 400;
   color: #ff0000;
-  /* text-shadow: .15rem .1rem .1rem rgb(0, 0, 0); */
 }
 
 @keyframes run {
@@ -239,10 +238,10 @@ ul li a:hover {
 
 @media (max-width: 1628px) {
   .foot-row {
-    width: 97%;
+    width: 95%;
   }
 }
-
+/* 
 @media (max-width: 1379px) {
   .social-icons {
     margin-top: -7%;
@@ -273,27 +272,31 @@ ul li a:hover {
   .newsletter-message.success {
     font-size: 1.8rem;
   }
-}
+} */
 
-@media (max-width: 1180px) {
+/* @media (max-width: 1180px) { */
+@media (max-width: 900px) {
   .foot-col-image {
     display: flex;
     align-items: center;
-    margin-bottom: -1rem;
+    /* margin-bottom: -1rem; */
   }
-  .foot-col .f-logo {
-    width: 7.5rem;
-    height: 7.5rem;
-    margin-bottom: 1.2rem;
-  }
-}
-@media (max-width: 1168px) {
   .foot-col {
     flex-basis: auto;
   }
+  /* .foot-col .f-logo {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-bottom: 1.2rem;
+  } */
 }
+/* @media (max-width: 1168px) {
+  .foot-col {
+    flex-basis: auto;
+  }
+} */
 
-@media (max-width: 830px) {
+/* @media (max-width: 830px) {
   .foot-col-image {
     flex-basis: 100%;
   }
@@ -313,9 +316,9 @@ ul li a:hover {
   .link4 {
     font-size: 3.1rem;
   }
-}
+} */
 
-@media (max-width: 778px) {
+/* @media (max-width: 778px) {
   .foot-col-image {
     display: block;
   }
@@ -329,9 +332,9 @@ ul li a:hover {
     margin-bottom: 3.1rem;
     font-size: 2.3rem;
   }
-}
+} */
 
-@media (max-width: 638px) {
+/* @media (max-width: 638px) {
   .foot-col-image {
     flex-basis: 42%;
   }
@@ -344,10 +347,10 @@ ul li a:hover {
     height: 6rem;
     margin-bottom: 1rem;
   }
-}
+} */
 
 @media (max-width: 575px) {
-  .foot-col-image {
+  /* .foot-col-image {
     display: flex;
     align-items: center;
     margin-bottom: -1rem;
@@ -389,12 +392,15 @@ ul li a:hover {
   .link4 {
     margin-right: 1.7rem;
     padding: 0.8rem;
-  }
-  .footer-link {
+  } */
+  /* .footer-link {
     display: flex;
     flex-wrap: wrap;
+  } */
+  .foot-row {
+    width: 99%;
   }
-  .newsletter-error-messages {
+  /* .newsletter-error-messages {
     margin-top: -3.7rem;
     margin-bottom: 4rem;
   }
@@ -405,43 +411,98 @@ ul li a:hover {
   .newsletter-message.success {
     margin-top: -3rem;
     margin-bottom: 3.9rem;
-  }
+  } */
 }
 
-@media (max-width: 425px) {
+@media (max-width: 420px) {
   footer {
-    font-size: 1.85rem;
-    padding-left: 0.5rem;
+    font-size: 3rem;
+    /* padding-left: 0.5rem; */
+  }
+  /* .foot-col-image {
+    display: block;
+  } */
+  /* .foot-col-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: -1rem;
+  } */
+
+  .foot-row {
+    width: 95%;
   }
   .foot-col {
+    flex-basis: 95%;
+  }
+  /* .foot-col-image {
+    flex-basis: 100%;
+  } */
+  .newsletter input {
+    font-size: 3rem;
+    /* width: 85%; */
+  }
+  .newsleter-container {
+    flex-basis: 100%;
+    /* padding-bottom: 1.2rem; */
+  }
+  /* .footer-link {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  /* .foot-row {
+    justify-content: space-between;
+  } */
+  /* .foot-col {
     flex-basis: 100%;
   }
   .foot-col:nth-child(2),
   .foot-col:nth-child(3) {
     flex-basis: 100%;
-  }
-  .foot-col h3 {
-    margin-bottom: 2.6rem;
-    font-size: 2.1rem;
-  }
-
-  .footer-link {
+  } */
+  /* .footer-link {
     display: flex;
     flex-wrap: wrap;
     margin-left: 2rem;
     margin-bottom: -1.5rem;
-  }
-  .footer-link li {
+  } */
+  /* .footer-link li {
     width: 50%;
+  } */
+  /* .foot-col h3 {
+    margin-bottom: 2.9rem;
+    font-size: 2.25rem;
+  } */
+  /* .foot-col .f-logo {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+  } */
+  /* .social-icons {
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
   }
-  .newsletter input {
+  .newsletter {
+    margin-bottom: 4rem;
+  } */
+
+  /* .foot-col h3 {
+    margin-bottom: 3.1rem;
+    font-size: 2.3rem;
+  } */
+
+  /* .foot-col h3 {
+    margin-bottom: 2.6rem;
+    font-size: 2.1rem;
+  } */
+
+  /* .newsletter input {
     font-size: 1.9rem;
   }
   .social-icons {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
-  }
-  .newsletter-error-messages {
+  } */
+  /* .newsletter-error-messages {
     margin-top: -3.9rem;
     margin-bottom: 3.8rem;
   }
@@ -453,5 +514,5 @@ ul li a:hover {
     margin-top: -2.8rem;
     font-weight: 400;
     margin-bottom: 3.7rem;
-  }
+  } */
 }
