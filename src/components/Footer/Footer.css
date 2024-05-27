@@ -416,7 +416,8 @@ ul li a:hover {
 
 @media (max-width: 420px) {
   footer {
-    font-size: 3rem;
+    font-size: 3.1rem;
+    line-height: 3.7rem;
     /* padding-left: 0.5rem; */
   }
   /* .foot-col-image {
@@ -427,9 +428,13 @@ ul li a:hover {
     align-items: center;
     margin-bottom: -1rem;
   } */
+  .underline {
+    top: 4.3rem;
+  }
 
   .foot-row {
     width: 95%;
+    justify-content: space-around;
   }
   .foot-col {
     flex-basis: 95%;
@@ -438,12 +443,32 @@ ul li a:hover {
     flex-basis: 100%;
   } */
   .newsletter input {
-    font-size: 3rem;
+    font-size: 4rem;
+    width: 85%;
+    height: 5rem;
     /* width: 85%; */
   }
   .newsleter-container {
-    flex-basis: 100%;
+    flex-basis: 95%;
     /* padding-bottom: 1.2rem; */
+  }
+  .newsletter .icon {
+    font-size: 3.6rem;
+  }
+  .newsletter .icon_2 {
+    font-size: 3.6rem;
+  }
+  .link1,
+  .link2,
+  .link3,
+  .link4 {
+    margin-right: 4rem;
+    padding: 1.3rem;
+    font-size: 5rem;
+  }
+  .social-icons {
+    margin-top: -3.2%;
+    margin-bottom: 2.3rem;
   }
   /* .footer-link {
     display: flex;
