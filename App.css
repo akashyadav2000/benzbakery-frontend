@@ -1178,7 +1178,7 @@ header .user-cart a {
     background: linear-gradient(to right, #fdcbf1, #d4f3ff);
     padding-top: 0px;
     top: 50px;
-    height: 100dvh;
+    height: 100lvh;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -1229,7 +1229,10 @@ header .user-cart a {
     font-size: 4.9rem;
   }
   .cake-col img {
-    margin-bottom: -0.34rem;
+    margin-bottom: -0.37rem;
+  }
+  .wed-cake-col img {
+    margin-bottom: -0.31rem;
   }
 }
 
