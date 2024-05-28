@@ -4,15 +4,14 @@
   position: relative;
   display: inline-block;
   /* background-color: rgba(255, 214, 172, 0.3); */
-  background-image: url("/Images/about-background.jpg");
 }
 .about-photo {
   height: 100vh;
   display: block; /* Removes the bottom whitespace of the image */
   width: 100%;
   /* background: rgba(27, 27, 27, 0.2); */
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6px);
+  /* background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px); */
   /* padding: 6% 4.5% 2.5%; */
   /* padding: 12.5rem 7rem 5.75rem; */
   object-fit: cover;
@@ -332,6 +331,11 @@
   }
 }
 
+@media (max-width: 420px) {
+  .about-photo {
+    height: 100svh;
+  }
+}
 /* @media (max-width: 1530px) {
   .about-photo {
     padding: 6.5% 4% 3%;
