@@ -1181,6 +1181,7 @@ header .user-cart a {
     height: 100dvh;
     width: 100%;
     align-items: center;
+    justify-content: center;
   }
   .mobile-menu li {
     background-color: whitesmoke;
