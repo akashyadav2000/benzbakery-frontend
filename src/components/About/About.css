@@ -318,8 +318,10 @@
   /* .about_details p {
     font-size: 3rem;
   } */
+
   .v-row {
     flex-direction: column;
+    padding-bottom: 2rem;
   }
   .v-cell {
     margin-bottom: 1rem;
