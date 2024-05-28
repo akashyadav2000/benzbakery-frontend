@@ -350,41 +350,56 @@ ul li a:hover {
 }
 @media (max-width: 739px) {
   footer {
-    font-size: 2.85rem;
-    line-height: 3rem;
+    font-size: 3.1rem;
+    line-height: 4rem;
   }
   .newsletter input {
-    font-size: 2.6rem;
-    height: 3rem;
+    font-size: 3rem;
+    height: 3.4rem;
   }
   .link1,
   .link2,
   .link3,
   .link4 {
-    font-size: 4.5rem;
+    font-size: 4.8rem;
+    margin-right: 3.3rem;
+  }
+  .social-icons {
+    margin-top: 13%;
   }
   .underline {
-    top: 3.2rem;
+    top: 4rem;
   }
 }
 
 @media (max-width: 670px) {
   footer {
-    font-size: 3.4rem;
-    line-height: 3.8rem;
+    font-size: 3.55rem;
+    line-height: 4.6rem;
   }
   .newsletter input {
-    font-size: 2.6rem;
-    height: 3rem;
+    font-size: 3.3rem;
+    height: 4rem;
+  }
+  .newsletter .icon {
+    font-size: 3.7rem;
+  }
+  .newsletter .icon_2 {
+    font-size: 3.7rem;
   }
   .link1,
   .link2,
   .link3,
   .link4 {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
+    margin-right: 3rem;
   }
   .underline {
-    top: 3.2rem;
+    top: 4.4rem;
+  }
+  .foot-col .f-logo {
+    width: 10rem;
+    height: 10rem;
   }
 }
 /* @media (max-width: 577px) {
@@ -407,7 +422,7 @@ ul li a:hover {
     padding-bottom: 0.8rem;
   }
 } */
-@media (max-width: 577px) {
+@media (max-width: 627px) {
   /* footer {
     font-size: 3.3rem;
     line-height: 3.5rem;
