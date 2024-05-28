@@ -238,12 +238,39 @@
   text-shadow: 0.15rem 0.1rem 0.1rem rgb(255 255 255);
 }
 
-@media only screen and (max-width: 54px) {
+@media only screen and (max-width: 649px) {
   .login-mobile-bg {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/Images/signup-login-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .login-container {
+    background: transparent;
+    backdrop-filter: blur(0.8rem);
+  }
+  .login-form-container {
+    width: 36rem;
+    border: 0.3rem solid #ffffff;
+    border-radius: 0.5rem;
+    background: rgb(255 255 255 / 50%);
+  }
+  .login-image-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 84px) {
+  .login-mobile-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     width: 100%;
     background-image: url(/Images/signup-login-bg.jpg);
     background-size: cover;

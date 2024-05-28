@@ -848,11 +848,17 @@ header .user-cart a {
   }
 }
 
-/* @media (max-width: 1366px) {
+@media screen and (min-width: 1439px) and (max-width: 1600px) {
   html {
-    font-size: 50.6%;
+    font-size: 58%;
   }
-} */
+}
+
+@media screen and (min-width: 1365px) and (max-width: 1440px) {
+  html {
+    font-size: 55.6%;
+  }
+}
 
 @media screen and (min-width: 1280px) and (max-width: 1366px) {
   html {

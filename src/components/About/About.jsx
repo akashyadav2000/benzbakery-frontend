@@ -27,7 +27,7 @@ function About() {
       </div>
 
 
-      <section className="value" id="product" style={{ padding: "0px 5%" }}>
+      <section className="value" id="product">
         <h1 className="value-title">Our Value</h1>
         <div className="v-row">
           <div className="v-cell">
