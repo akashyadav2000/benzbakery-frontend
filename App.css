@@ -1176,9 +1176,9 @@ header .user-cart a {
   }
   .mobile-menu {
     background: linear-gradient(to right, #fdcbf1, #d4f3ff);
-    padding-top: 50px;
-    top: 46px;
-    height: 100vh;
+    padding-top: 0px;
+    top: 50px;
+    height: 100dvh;
     width: 100%;
     align-items: center;
   }
@@ -1201,7 +1201,8 @@ header .user-cart a {
   }
   .open .mobile-menu {
     align-items: center;
-    padding-top: 50px;
+    justify-content: center;
+    /* padding-top: 50px; */
   }
   .mobile-menu li a {
     display: flex;
@@ -1225,6 +1226,9 @@ header .user-cart a {
   }
   .title {
     font-size: 4.9rem;
+  }
+  .cake-col img {
+    margin-bottom: -0.34rem;
   }
 }
 
