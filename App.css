@@ -1178,7 +1178,7 @@ header .user-cart a {
     background: linear-gradient(to right, #fdcbf1, #d4f3ff);
     padding-top: 0px;
     top: 50px;
-    height: 100lvh;
+    height: 100svh;
     width: 100%;
     align-items: center;
     justify-content: center;
