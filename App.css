@@ -1010,8 +1010,8 @@ header .user-cart a {
     font-size: 36%;
   }
   header .logo img {
-    height: 38.5px;
-    margin-left: 18px;
+    height: 39px;
+    margin-left: 15px;
   }
   header {
     height: 50px;
@@ -1034,7 +1034,7 @@ header .user-cart a {
   }
   header .user-cart {
     position: absolute;
-    right: 43px;
+    right: 40px;
   }
   .cart {
     height: 31.7px;
