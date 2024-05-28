@@ -321,6 +321,13 @@
   .v-row {
     flex-direction: column;
   }
+  .v-cell {
+    margin-bottom: 1rem;
+  }
+  .v-cell p {
+    width: 80vw;
+    line-height: 4rem;
+  }
 }
 
 /* @media (max-width: 1530px) {
