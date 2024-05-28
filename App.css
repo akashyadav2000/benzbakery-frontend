@@ -1182,6 +1182,7 @@ header .user-cart a {
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
   }
   .mobile-menu li {
     background-color: whitesmoke;

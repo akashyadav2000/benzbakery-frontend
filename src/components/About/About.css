@@ -331,11 +331,6 @@
   }
 }
 
-@media (max-width: 420px) {
-  .about-photo {
-    height: 100svh;
-  }
-}
 /* @media (max-width: 1530px) {
   .about-photo {
     padding: 6.5% 4% 3%;
