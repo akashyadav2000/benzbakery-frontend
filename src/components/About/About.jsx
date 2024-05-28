@@ -64,7 +64,7 @@ function About() {
           </div>
 
           <div className="v-cell">
-            <img src="./Images/q.png" alt="Quality Products" />
+            <img src="./Images/Quality.png" alt="Quality Products" />
             <h2> BEST IN QUALITYS</h2>
             <p>
               From our ingredients to our kitchen operations & services,
