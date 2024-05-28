@@ -135,10 +135,19 @@
     width: 85%;
   }
 }
-@media (max-width: 1160px) {
-  .v-cell img {
-    height: 7.5rem;
+
+/* @media (max-width: 1280px) {
+  .v-cell p {
+    font-size: 2.1rem;
   }
+  .v-cell h2 {
+    font-size: 2.3rem;
+  }
+} */
+@media (max-width: 1366px) {
+  /* .v-cell img {
+    height: 7.5rem;
+  } */
   .v-cell p {
     font-size: 2rem;
   }
@@ -147,9 +156,48 @@
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1230px) {
+  /* .v-cell img {
+    height: 7.5rem;
+  } */
+
+  .v-cell img {
+    height: 7.6rem;
+  }
+
+  .value-title {
+    font-size: 3.9rem;
+  }
+  .v-cell p {
+    font-size: 2.1rem;
+  }
+  .v-cell h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 1160px) {
+  .v-cell img {
+    height: 7.5rem;
+  }
+
+  .value-title {
+    font-size: 4rem;
+  }
   .v-cell {
-    width: 41rem;
+    width: 30rem;
+  }
+  .v-cell p {
+    font-size: 2.2rem;
+  }
+  .v-cell h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .v-cell {
+    width: 42rem;
   }
   .v-cell p {
     width: 40rem;
@@ -161,22 +209,66 @@
     font-size: 2.6rem;
   }
   .value-title {
-    font-size: 4.2rem;
+    font-size: 4.8rem;
   }
   .v-cell {
     width: 44rem;
   }
   .v-cell img {
-    height: 8.5rem;
+    height: 8.8rem;
   }
   .v-cell h2 {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
   }
   .v-cell p {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     width: 46rem;
   }
 }
+
+@media (max-width: 740px) {
+  .about_details p {
+    font-size: 2.8rem;
+  }
+  .value-title {
+    font-size: 5rem;
+  }
+  .v-cell {
+    width: 49rem;
+  }
+  .v-cell img {
+    height: 9rem;
+  }
+  .v-cell h2 {
+    font-size: 3rem;
+  }
+  .v-cell p {
+    font-size: 2.65rem;
+    width: 51rem;
+  }
+}
+
+/* @media (max-width: 669px) {
+  .about_details p {
+    font-size: 3.35rem;
+  }
+  .value-title {
+    font-size: 5.7rem;
+  }
+  .v-cell {
+    width: 49rem;
+  }
+  .v-cell img {
+    height: 9.7rem;
+  }
+  .v-cell h2 {
+    font-size: 3.7rem;
+  }
+  .v-cell p {
+    font-size: 2.25rem;
+    width: 51rem;
+  }
+} */
 
 /* @media (max-width: 818px) {
   .about_details p {
@@ -199,23 +291,23 @@
 
 @media (max-width: 669px) {
   .about_details p {
-    font-size: 3rem;
+    font-size: 3.35rem;
   }
   .value-title {
-    font-size: 4.8rem;
+    font-size: 5.2rem;
   }
   .v-cell {
-    width: 48rem;
+    width: 51rem;
   }
   .v-cell img {
-    height: 9.5rem;
+    height: 10.3rem;
   }
   .v-cell h2 {
-    font-size: 3.1rem;
+    font-size: 3.4rem;
   }
   .v-cell p {
-    font-size: 2.8rem;
-    width: 54rem;
+    font-size: 3.2rem;
+    width: 55rem;
   }
   .about_details {
     width: 91%;
