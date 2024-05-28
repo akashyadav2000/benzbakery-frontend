@@ -446,7 +446,7 @@ ul li a:hover {
   }
 
   .foot-row {
-    width: 99%;
+    width: 95%;
     justify-content: space-around;
   }
   .foot-col {
@@ -486,6 +486,13 @@ ul li a:hover {
   .copyright {
     font-size: 3.5rem;
     padding-block: 3px;
+  }
+}
+
+@media (max-width: 420px) {
+  .foot-row {
+    width: 97%;
+    justify-content: space-between;
   }
 }
 
