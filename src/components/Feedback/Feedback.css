@@ -18,7 +18,7 @@
 .feedback-title {
   font-family: "Roboto Serif", serif;
   font-weight: 500;
-  color: #4facfe;
+  color: #3498ff;
   font-size: 3.5rem;
 }
 .hr {
@@ -87,7 +87,7 @@
   gap: 1rem;
   border: 0.2rem solid white;
   border-radius: 0.4rem;
-  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  background-image: linear-gradient(to right, #3498ff 0%, #00f2fe 100%);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -193,20 +193,47 @@
   text-shadow: 0.15rem 0.1rem 0.1rem rgb(255 255 255);
 }
 
-@media (max-width: 1150px) {
+/* @media (max-width: 1150px) {
   .contact-right img {
     width: 38rem;
   }
-}
+} */
 
 @media (max-width: 950px) {
-  .contact-inputs {
-    width: 70vw;
-  }
   .contact-right {
     display: none;
   }
-  .contact-container {
+  .contact-inputs {
+    width: 58vw;
+    height: 5.5rem;
+    margin-bottom: 2.8rem;
+    padding-inline: 2rem;
+    font-size: 2.4rem;
+  }
+  .feedback-details {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
+  .contact-left textarea {
+    height: 19rem;
+  }
+  .feedback-title {
+    font-size: 4rem;
+  }
+  .hr {
+    width: 30rem;
+    margin-bottom: 5.5rem;
+  }
+  .feedback-submit {
+    margin-block: 1.5rem;
+    padding: 1rem;
+    font-size: 3rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    gap: 1rem;
+    border: 0.4rem solid white;
+    border-radius: 0.4rem;
+  }
+  /* .contact-container {
     background-image: linear-gradient(100deg, #f0f2f5 20%, #b1c3e2 100%);
   }
   .feedback-title {
@@ -214,10 +241,85 @@
   }
   .hr {
     width: 22.8rem;
+  } */
+}
+
+@media (max-width: 850px) {
+  .contact-inputs {
+    /* width: 58vw; */
+    height: 6rem;
+    margin-bottom: 3.2rem;
+    padding-inline: 2.4rem;
+    font-size: 2.8rem;
+  }
+  .feedback-details {
+    font-size: 2.9rem;
+    margin-bottom: 1.3rem;
+  }
+  .contact-left textarea {
+    height: 22rem;
+  }
+  .feedback-title {
+    font-size: 4.3rem;
+  }
+  .hr {
+    width: 33rem;
+    margin-bottom: 6rem;
+  }
+  .feedback-submit {
+    margin-block: 2rem;
+    padding: 1.2rem;
+    font-size: 3.3rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    gap: 1.3rem;
+    border: 0.4rem solid white;
+    border-radius: 0.4rem;
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 669px) {
+  .contact-inputs {
+    width: 68vw;
+    height: 6.8rem;
+    margin-bottom: 3.4rem;
+    padding-inline: 2.6rem;
+    font-size: 3rem;
+  }
+  .feedback-details {
+    font-size: 3rem;
+    margin-bottom: 1.3rem;
+  }
+  .contact-left textarea {
+    height: 25rem;
+  }
+  .feedback-title {
+    font-size: 4.5rem;
+  }
+  .hr {
+    width: 34rem;
+    margin-bottom: 6rem;
+  }
+  .feedback-submit {
+    margin-block: 2.2rem;
+    padding: 1.3rem;
+    font-size: 3.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    gap: 1.3rem;
+    border: 0.4rem solid white;
+    border-radius: 0.4rem;
+  }
+}
+@media (max-width: 577px) {
+  .contact-inputs {
+    width: 75vw;
+  }
+}
+@media (max-width: 420px) {
+  .contact-inputs {
+    width: 80vw;
+  }
+}
+/* @media (max-width: 860px) {
   .contact-section {
     flex-direction: column;
   }
@@ -239,9 +341,9 @@
   .popup button {
     margin-top: 4rem;
   }
-}
+} */
 
-@media (max-width: 517px) {
+/* @media (max-width: 517px) {
   .contact-inputs {
     width: 80vw;
   }
@@ -265,8 +367,8 @@
     margin-top: 2.5rem;
     padding: 0.9rem 0;
   }
-}
-@media (max-width: 427px) {
+} */
+/* @media (max-width: 427px) {
   .feedback-details {
     font-size: 1.8rem;
     margin-bottom: 0.2rem;
@@ -305,4 +407,4 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
-}
+} */

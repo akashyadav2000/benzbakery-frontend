@@ -489,10 +489,14 @@ ul li a:hover {
   }
 }
 
-@media (max-width: 420px) {
+@media screen and (min-width: 359px) and (max-width: 420px) {
   .foot-row {
     width: 97%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+  }
+
+  .foot-col:nth-child(3) {
+    padding-left: 7rem;
   }
 }
 
