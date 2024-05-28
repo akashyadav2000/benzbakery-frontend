@@ -691,14 +691,10 @@ header .user-cart a {
 
 .title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.75rem;
   /* padding-top: 20px; */
   padding-top: 2rem;
   color: #ff0080ad;
-  /*margin-bottom: -.3rem;
-    margin-top: .05rem;*/
-  /* margin-bottom: -3rem; */
-  /* margin-top: -0.2rem; */
   font-family: "Great Vibes", cursive;
   letter-spacing: 0.15rem;
 }
@@ -812,35 +808,17 @@ header .user-cart a {
   }
 }
 
-/* @media (max-width: 1600px) {
-  html {
-    font-size: 59.3%;
-  }
-} */
-
 @media screen and (max-width: 1536px) and (max-height: 864px) {
   html {
     font-size: 56.8%;
   }
 }
 
-/* @media (max-width: 1536px) {
-  html {
-    font-size: 56.8%;
-  }
-} */
-
 @media screen and (max-width: 1440px) and (max-height: 900px) {
   html {
     font-size: 55.6%;
   }
 }
-
-/* @media (max-width: 1440px) {
-  html {
-    font-size: 55.6%;
-  }
-} */
 
 @media screen and (max-width: 1366px) and (max-height: 768px) {
   html {
@@ -860,15 +838,15 @@ header .user-cart a {
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1366px) {
-  html {
-    font-size: 50.6%;
-  }
-}
-
 @media screen and (max-width: 1280px) and (max-height: 800px) {
   html {
     font-size: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+  html {
+    font-size: 50.6%;
   }
 }
 
@@ -877,12 +855,6 @@ header .user-cart a {
     font-size: 50%;
   }
 }
-
-/* @media (max-width: 1280px) {
-  html {
-    font-size: 50%;
-  }
-} */
 
 @media (max-width: 1230px) {
   html {
@@ -895,14 +867,30 @@ header .user-cart a {
 
 @media (max-width: 1160px) {
   html {
-    font-size: 44%;
+    font-size: 45%;
   }
   .wed-cake-col img {
     margin-bottom: -0.25rem;
   }
 }
 
-@media (max-width: 1084px) {
+@media (max-width: 1105px) {
+  .wed-cake-col {
+    height: 54rem;
+    margin: 3.7rem 3.7rem;
+  }
+  .wed-cake-col img {
+    height: 47.9rem;
+  }
+  .wed-cake-row {
+    padding-bottom: 4rem;
+  }
+  .cake-row {
+    padding-bottom: 2rem;
+  }
+}
+
+/* @media (max-width: 1084px) {
   html {
     font-size: 41.5%;
   }
@@ -919,15 +907,13 @@ header .user-cart a {
   .cake-row {
     padding-bottom: 2rem;
   }
-  /* .wed-cake-col img {
-    margin-bottom: -0.28rem;
-} */
 }
+
 @media (max-width: 1020px) {
   .wed-cake-col img {
     height: 47.73rem;
   }
-}
+} */
 
 @media screen and (max-width: 962px) and (max-height: 601px) {
   html {
@@ -935,26 +921,17 @@ header .user-cart a {
   }
 }
 
-@media screen and (max-width: 884px) and (max-height: 1104px) {
+/* @media (max-width: 850px) {
   html {
-    font-size: 47%;
-  }
-  .wed-cake-col img {
-    height: 47.72rem;
-  }
-}
-
-/* @media screen and (max-width: 834px) and (max-height: 1194px) {
-  html {
-    font-size: 45%;
+    font-size: 43%;
   }
 } */
 
-@media screen and (min-width: 818px) and (max-width: 883px) {
+/* @media screen and (min-width: 818px) and (max-width: 884px) {
   html {
-    font-size: 44.3%;
+    font-size: 41.3%;
   }
-}
+} */
 
 @media screen and (max-width: 817px) and (max-height: 1080px) {
   html {
@@ -977,7 +954,7 @@ header .user-cart a {
   }
 }
 
-@media screen and (min-width: 720px) and (max-width: 818px) {
+@media screen and (min-width: 740px) and (max-width: 850px) {
   html {
     font-size: 39%;
   }
@@ -997,11 +974,11 @@ header .user-cart a {
     height: 7rem;
   }
   .navigate ul li {
-    font-size: 22px;
+    font-size: 23.5px;
   }
   .navigate ul li a {
     color: #cf661a;
-    padding: 12.5px 16px;
+    padding: 11px 16px;
   }
 
   header .user-cart {
@@ -1028,12 +1005,12 @@ header .user-cart a {
   }
 }
 
-@media (max-width: 719px) {
+@media (max-width: 739px) {
   html {
-    font-size: 35%;
+    font-size: 36%;
   }
   header .logo img {
-    height: 39.5px;
+    height: 37.5px;
     margin-left: 18px;
   }
   header {
@@ -1104,14 +1081,6 @@ header .user-cart a {
     padding-block: 6px;
     margin-top: 5px;
   }
-  /* .price {
-    padding-bottom: 0.4rem;
-    padding-top: 0.3rem;
-  } */
-  /* .price {
-    padding-bottom: 0.55rem;
-    padding-top: 0.45rem;
-  } */
   .rupees {
     font-size: 2.4rem;
   }
@@ -1123,7 +1092,7 @@ header .user-cart a {
   }
 }
 
-@media (max-width: 649px) {
+@media (max-width: 670px) {
   html {
     font-size: 31%;
   }
@@ -1141,19 +1110,12 @@ header .user-cart a {
   .mobile-menu li a {
     font-size: 20px;
   }
-  /* .cake-col img {
-    margin-bottom: 0rem;
-  } */
   .wed-cake-col img {
     height: 48rem;
   }
   .rupees {
     font-size: 2.5rem;
   }
-  /* .price {
-    padding-bottom: 0.3rem;
-    padding-top: 0.25rem;
-  } */
   .cake-col img {
     margin-bottom: -0.18rem;
   }

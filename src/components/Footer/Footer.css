@@ -245,7 +245,7 @@ ul li a:hover {
 @media (max-width: 1230px) {
   footer {
     font-size: 2.4rem;
-    line-height: 2.8rem;
+    line-height: 3rem;
   }
   /* .foot-row {
     width: 95%;
@@ -269,7 +269,7 @@ ul li a:hover {
     font-size: 2.4rem;
   }
   .underline {
-    top: 2.9rem;
+    top: 3rem;
   }
   .social-icons {
     margin-top: -1%;
@@ -283,7 +283,7 @@ ul li a:hover {
 @media (max-width: 1160px) {
   footer {
     font-size: 2.6em;
-    line-height: 2.8rem;
+    line-height: 3.1rem;
   }
   .link1,
   .link2,
@@ -293,15 +293,18 @@ ul li a:hover {
     /* padding: 1.3rem; */
     font-size: 4rem;
   }
+  .underline {
+    top: 3.2rem;
+  }
 }
-@media (max-width: 1084px) {
+/* @media (max-width: 1084px) {
   footer {
     font-size: 2.7em;
     line-height: 2.9rem;
   }
-}
+} */
 
-@media (max-width: 960px) {
+@media (max-width: 1050px) {
   .foot-col-image {
     display: flex;
     align-items: center;
@@ -312,6 +315,7 @@ ul li a:hover {
   }
   .newsletter input {
     font-size: 2.4rem;
+    height: 3.2rem;
     width: 85%;
     /* height: 5rem; */
     /* width: 85%; */
@@ -321,21 +325,66 @@ ul li a:hover {
     /* padding-bottom: 1.2rem; */
   }
 }
-@media (max-width: 719px) {
+
+@media (max-width: 850px) {
   footer {
-    font-size: 3.1rem;
-    line-height: 3rem;
+    font-size: 3em;
+    line-height: 3.8rem;
   }
-  .newsletter input {
-    font-size: 2.6rem;
-    height: 3rem;
-    /* width: 85%; */
+  .social-icons {
+    margin-top: 12%;
   }
   .link1,
   .link2,
   .link3,
   .link4 {
     font-size: 4.5rem;
+  }
+  .newsletter input {
+    font-size: 2.8rem;
+    height: 3.2rem;
+  }
+  .underline {
+    top: 3.65rem;
+  }
+}
+@media (max-width: 739px) {
+  footer {
+    font-size: 2.85rem;
+    line-height: 3rem;
+  }
+  .newsletter input {
+    font-size: 2.6rem;
+    height: 3rem;
+  }
+  .link1,
+  .link2,
+  .link3,
+  .link4 {
+    font-size: 4.5rem;
+  }
+  .underline {
+    top: 3.2rem;
+  }
+}
+
+@media (max-width: 670px) {
+  footer {
+    font-size: 3.4rem;
+    line-height: 3.8rem;
+  }
+  .newsletter input {
+    font-size: 2.6rem;
+    height: 3rem;
+  }
+  .link1,
+  .link2,
+  .link3,
+  .link4 {
+    font-size: 4.5rem;
+  }
+  .underline {
+    top: 3.2rem;
   }
 }
 /* @media (max-width: 577px) {
@@ -359,10 +408,10 @@ ul li a:hover {
   }
 } */
 @media (max-width: 577px) {
-  footer {
+  /* footer {
     font-size: 3.3rem;
     line-height: 3.5rem;
-  }
+  } */
   /* .foot-col-image {
   display: block;
 } */
