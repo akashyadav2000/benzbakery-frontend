@@ -520,7 +520,7 @@ input[type="text"]::-webkit-outer-spin-button {
   .signup-feedback-message.success {
     font-size: 3.5rem;
     padding-block: 1.4rem;
-    color: #ff7300;
+    color: #ff4400;
   }
 }
 
