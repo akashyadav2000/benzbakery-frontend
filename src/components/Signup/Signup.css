@@ -6,8 +6,6 @@
   align-items: center;
   height: 100vh;
   padding-top: 6rem;
-  /* height: 108.333vh; */
-  /* width: 40rem; */
   width: 100%;
   background: linear-gradient(to right, #fdf, #fee2f8);
   /* background: linear-gradient(to right, #fee2f8, #fee2f8); */
@@ -239,6 +237,361 @@ input[type="text"]::-webkit-outer-spin-button {
   padding-block: 0.4rem;
   color: #ff0000;
   text-shadow: 0.15rem 0.1rem 0.1rem rgb(255 255 255);
+}
+
+@media only screen and (max-width: 850px) {
+  .signup-image-container {
+    width: 44rem;
+    height: 69rem;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border: 0.4rem solid #ffffff;
+    border-right: none;
+  }
+  .signup-image-container img {
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+  }
+
+  .signup-form-container {
+    width: 44rem;
+    height: 69rem;
+    padding: 2.5rem 2.49rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    border: 0.4rem solid #ffffff;
+    border-left: none;
+  }
+  .signup-text-box {
+    height: 5rem;
+    width: 39rem;
+    font-size: 2.2rem;
+    border-radius: 0.6rem;
+    padding-left: 4.4rem;
+    padding-right: 1.3rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    border: 0.1rem solid #ff70cd;
+    border-bottom-width: 0.2rem;
+    margin-bottom: 2rem;
+  }
+  .signup-details {
+    font-size: 2.3rem;
+  }
+  .signup-icon {
+    font-size: 2.5rem;
+    margin-left: -37.9rem;
+    margin-top: 1.2rem;
+  }
+  .signup-pass-box {
+    padding-right: 12%;
+  }
+  .signup-password-eye {
+    margin-top: -5.7rem;
+    margin-left: 34.8rem;
+    font-size: 2.4rem;
+  }
+  .signup-btn {
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    height: 5.4rem;
+    border-radius: 0.5rem;
+    text-shadow: 0.2rem 0.2rem 0.1rem #cf661a;
+    font-size: 2.55rem;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s ease;
+    border: 0.2rem solid white;
+  }
+  .login-line {
+    font-size: 2.2rem;
+  }
+  .login-link {
+    font-size: 2.4rem;
+  }
+  .signup-title {
+    margin-bottom: 2rem;
+    font-size: 2.9rem;
+  }
+  .signup-title::before {
+    width: 20.5rem;
+    height: 0.4rem;
+  }
+  .signup-error-messages {
+    font-size: 1.7rem;
+    margin-top: -2.1rem;
+    margin-bottom: 0.8rem;
+  }
+  .signup-feedback-message.error {
+    font-size: 1.9rem;
+    padding-block: 0.4rem;
+  }
+  .signup-feedback-message.success {
+    color: #1e00ff;
+    font-size: 2.5rem;
+    padding-block: 1rem;
+    text-shadow: 0.15rem 0.1rem 0.1rem rgb(255 255 255);
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  .signup-image-container {
+    width: 48rem;
+    height: 75rem;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border: 0.5rem solid #ffffff;
+    border-right: none;
+  }
+  .signup-image-container img {
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+  }
+
+  .signup-form-container {
+    width: 48rem;
+    height: 75rem;
+    padding: 2.5rem 2.49rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    border: 0.5rem solid #ffffff;
+    border-left: none;
+  }
+  .signup-text-box {
+    height: 5.4rem;
+    width: 43rem;
+    font-size: 2.4rem;
+    border-radius: 0.6rem;
+    padding-left: 5.1rem;
+    padding-right: 1.3rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    border: 0.1rem solid #ff70cd;
+    border-bottom-width: 0.2rem;
+    margin-bottom: 2.2rem;
+  }
+  .signup-details {
+    font-size: 2.4rem;
+  }
+  .signup-icon {
+    font-size: 2.6rem;
+    margin-left: -41.5rem;
+    margin-top: 1.45rem;
+  }
+  .signup-pass-box {
+    padding-right: 12%;
+  }
+  .signup-password-eye {
+    margin-top: -6.09rem;
+    margin-left: 38.7rem;
+    font-size: 2.5rem;
+  }
+  .signup-btn {
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    height: 5.8rem;
+    border-radius: 0.5rem;
+    text-shadow: 0.2rem 0.2rem 0.1rem #cf661a;
+    font-size: 2.6rem;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s ease;
+    border: 0.2rem solid white;
+  }
+  .login-line {
+    font-size: 2.4rem;
+  }
+  .login-link {
+    font-size: 2.6rem;
+  }
+  .signup-title {
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+  }
+  .signup-title::before {
+    width: 22.5rem;
+  }
+  .signup-error-messages {
+    font-size: 1.9rem;
+    margin-top: -2.1rem;
+    margin-bottom: 0.8rem;
+  }
+  .signup-feedback-message.error {
+    font-size: 2.1rem;
+    padding-block: 0.5rem;
+  }
+  .signup-feedback-message.success {
+    color: #1e00ff;
+    font-size: 2.7rem;
+    padding-block: 1rem;
+    text-shadow: 0.15rem 0.1rem 0.1rem rgb(255 255 255);
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .signup-image-container {
+    display: none;
+  }
+  .signup-mobile-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    width: 100%;
+    background-image: url(/Images/signup-login-bg.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .signup-container {
+    background: transparent;
+    backdrop-filter: blur(0.8rem);
+  }
+  .signup-form-container {
+    width: 54rem;
+    height: 86rem;
+    border: 0.45rem solid #ffffff;
+    border-radius: 0.5rem;
+    background: rgb(255 255 255 / 50%);
+  }
+  .signup-details {
+    font-size: 2.85rem;
+  }
+
+  .signup-text-box {
+    height: 6.7rem;
+    width: 48rem;
+    font-size: 2.75rem;
+    border-radius: 0.5rem;
+    padding-left: 5.2rem;
+    padding-right: 1.3rem;
+    border: 0.3rem solid #ff70cd;
+    border-bottom-width: 0.3rem;
+    margin-bottom: 2.7rem;
+  }
+  .signup-icon {
+    font-size: 2.9rem;
+    margin-left: -46.6rem;
+    margin-top: 1.9rem;
+  }
+  .signup-password-eye {
+    margin-top: -7.3rem;
+    margin-left: 43.5rem;
+    font-size: 2.7rem;
+  }
+  .signup-btn {
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    height: 6.5rem;
+    border-radius: 0.5rem;
+    text-shadow: 0.25rem 0.25rem 0.1rem #cf661a;
+    font-size: 3.15rem;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s ease;
+    border: 0.2rem solid white;
+  }
+  .login-line {
+    font-size: 2.9rem;
+  }
+  .login-link {
+    font-size: 3.1rem;
+  }
+  .signup-title {
+    margin-bottom: 2.5rem;
+    font-size: 3.7rem;
+  }
+  .signup-title::before {
+    width: 11rem;
+  }
+  .signup-pass-box {
+    padding-right: 12.5%;
+  }
+  .signup-feedback-message.error {
+    font-size: 2.4rem;
+    padding-block: 0.7rem;
+  }
+  .signup-error-messages {
+    font-size: 2.1rem;
+    margin-top: -2.4rem;
+  }
+
+  .signup-feedback-message.success {
+    font-size: 3.1rem;
+    padding-block: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .signup-form-container {
+    width: 58rem;
+    height: 91rem;
+    border: 0.45rem solid #ffffff;
+    border-radius: 0.5rem;
+    background: rgb(255 255 255 / 50%);
+  }
+  .signup-details {
+    font-size: 3.1rem;
+  }
+
+  .signup-text-box {
+    height: 7.2rem;
+    width: 52rem;
+    font-size: 3rem;
+    border-radius: 0.5rem;
+    padding-left: 6rem;
+    padding-right: 1.3rem;
+    border: 0.3rem solid #ff70cd;
+    border-bottom-width: 0.3rem;
+    margin-bottom: 2.9rem;
+  }
+  .signup-icon {
+    font-size: 3.3rem;
+    margin-left: -50.3rem;
+    margin-top: 2.1rem;
+  }
+  .signup-password-eye {
+    margin-top: -7.85rem;
+    margin-left: 46.8rem;
+    font-size: 2.95rem;
+  }
+
+  .signup-btn {
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    height: 6.8rem;
+    border-radius: 0.5rem;
+    text-shadow: 0.25rem 0.25rem 0.1rem #cf661a;
+    font-size: 3.4rem;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s ease;
+    border: 0.2rem solid white;
+  }
+  .login-line {
+    font-size: 3.1rem;
+  }
+  .login-link {
+    font-size: 3.3rem;
+  }
+  .signup-title {
+    margin-bottom: 2.3rem;
+    font-size: 4rem;
+  }
+  .signup-title::before {
+    width: 11.4rem;
+  }
+  .signup-pass-box {
+    padding-right: 12.5%;
+  }
+  .signup-feedback-message.error {
+    font-size: 2.6rem;
+    padding-block: 0.5rem;
+  }
+  .signup-error-messages {
+    font-size: 2.4rem;
+  }
+
+  .signup-feedback-message.success {
+    font-size: 3.3rem;
+  }
 }
 
 @media only screen and (max-width: 54px) {

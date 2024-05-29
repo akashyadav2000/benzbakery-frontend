@@ -443,57 +443,57 @@
     backdrop-filter: blur(0.8rem);
   }
   .login-form-container {
-    width: 54rem;
-    height: 86rem;
+    width: 60rem;
+    height: 90rem;
     border: 0.45rem solid #ffffff;
     border-radius: 0.5rem;
     background: rgb(255 255 255 / 50%);
   }
   .login-details {
-    font-size: 2.85rem;
+    font-size: 3.1rem;
   }
 
   .login-text-box {
-    height: 6.7rem;
-    width: 48rem;
-    font-size: 2.75rem;
+    height: 7.3rem;
+    width: 54rem;
+    font-size: 3.1rem;
     border-radius: 0.5rem;
-    padding-left: 5.2rem;
+    padding-left: 7rem;
     padding-right: 1.3rem;
     border: 0.3rem solid #ff70cd;
     border-bottom-width: 0.3rem;
     margin-bottom: 2.7rem;
   }
   .login-icon {
-    font-size: 2.9rem;
-    margin-left: -46.6rem;
-    margin-top: 1.9rem;
+    font-size: 4rem;
+    margin-left: -52rem;
+    margin-top: 1.8rem;
   }
   .login-password-eye {
-    margin-top: -7.3rem;
-    margin-left: 43.5rem;
-    font-size: 2.7rem;
+    margin-top: -8.05rem;
+    margin-left: 48rem;
+    font-size: 3.6rem;
   }
   .login-btn {
     margin-top: 0.7rem;
     margin-bottom: 1rem;
-    height: 6.5rem;
+    height: 7rem;
     border-radius: 0.5rem;
     text-shadow: 0.25rem 0.25rem 0.1rem #cf661a;
-    font-size: 3.15rem;
+    font-size: 3.45rem;
     letter-spacing: 0.1rem;
     transition: all 0.3s ease;
     border: 0.2rem solid white;
   }
   .signup-line {
-    font-size: 2.9rem;
+    font-size: 3rem;
   }
   .signup-link {
     font-size: 3.1rem;
   }
   .login-title {
-    margin-bottom: 2.5rem;
-    font-size: 3.7rem;
+    margin-bottom: 3.5rem;
+    font-size: 4rem;
   }
   .login-title::before {
     width: 11rem;
@@ -502,24 +502,24 @@
     padding-right: 12.5%;
   }
   .login-feedback-message.error {
-    font-size: 2.4rem;
+    font-size: 2.7rem;
     padding-block: 0.7rem;
   }
   .login-error-messages {
-    font-size: 2.1rem;
-    margin-top: -2.4rem;
+    font-size: 2.25rem;
+    margin-top: -2.2rem;
   }
 
   .login-feedback-message.success {
-    font-size: 3.1rem;
+    font-size: 3.5rem;
     padding-block: 1.4rem;
   }
 }
 
 @media only screen and (max-width: 577px) {
   .login-form-container {
-    width: 58rem;
-    height: 91rem;
+    width: 64rem;
+    height: 94rem;
     border: 0.45rem solid #ffffff;
     border-radius: 0.5rem;
     background: rgb(255 255 255 / 50%);
@@ -529,186 +529,63 @@
   }
 
   .login-text-box {
-    height: 7.2rem;
-    width: 52rem;
-    font-size: 3rem;
+    height: 7.6rem;
+    width: 58rem;
+    font-size: 3.4rem;
     border-radius: 0.5rem;
-    padding-left: 6rem;
+    padding-left: 7rem;
     padding-right: 1.3rem;
     border: 0.3rem solid #ff70cd;
     border-bottom-width: 0.3rem;
     margin-bottom: 2.9rem;
   }
   .login-icon {
-    font-size: 3.3rem;
-    margin-left: -50.3rem;
+    font-size: 3.6rem;
+    margin-left: -56rem;
     margin-top: 2.1rem;
   }
   .login-password-eye {
-    margin-top: -7.85rem;
-    margin-left: 46.8rem;
-    font-size: 2.95rem;
+    margin-top: -8.2rem;
+    margin-left: 52.4rem;
+    font-size: 3.2rem;
   }
-
   .login-btn {
     margin-top: 0.7rem;
     margin-bottom: 1rem;
-    height: 6.8rem;
+    height: 7.2rem;
     border-radius: 0.5rem;
     text-shadow: 0.25rem 0.25rem 0.1rem #cf661a;
-    font-size: 3.4rem;
+    font-size: 3.7rem;
     letter-spacing: 0.1rem;
     transition: all 0.3s ease;
     border: 0.2rem solid white;
   }
   .signup-line {
-    font-size: 3.1rem;
+    font-size: 3.2em;
   }
   .signup-link {
-    font-size: 3.3rem;
+    font-size: 3.5rem;
   }
   .login-title {
-    margin-bottom: 2.3rem;
-    font-size: 4rem;
+    margin-bottom: 2.2em;
+    font-size: 4.5rem;
   }
   .login-title::before {
-    width: 11.4rem;
+    width: 13.4rem;
   }
   .login-pass-box {
     padding-right: 12.5%;
   }
   .login-feedback-message.error {
-    font-size: 2.6rem;
+    font-size: 2.7rem;
     padding-block: 0.5rem;
   }
   .login-error-messages {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+    margin-top: -2.4rem;
   }
 
   .login-feedback-message.success {
-    font-size: 3.3rem;
-  }
-}
-
-@media only screen and (max-width: 84px) {
-  .login-mobile-bg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-image: url(/Images/signup-login-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .login-container {
-    background: transparent;
-    backdrop-filter: blur(0.8rem);
-  }
-  .login-form-container {
-    width: 36rem;
-    border: 0.3rem solid #ffffff;
-    border-radius: 0.5rem;
-    background: rgb(255 255 255 / 50%);
-  }
-  .login-image-container {
-    display: none;
-  }
-
-  .login-icon {
-    margin-left: -31rem;
-  }
-
-  .login-text-box {
-    width: 32rem;
-    background-color: rgba(255, 255, 255, 0.38);
-  }
-  .login-pass-box {
-    padding-right: 12.6%;
-  }
-
-  .login-password-eye {
-    margin-left: 28.6rem;
-  }
-  .login-feedback-message.error {
-    font-size: 1.65rem;
-  }
-}
-
-@media only screen and (max-width: 49px) {
-  .login-container {
-    padding-top: 35rem;
-    backdrop-filter: blur(30rem);
-  }
-  .login-form-container {
-    width: 315rem;
-    height: 525rem;
-    padding: 5rem 20rem;
-    background: rgb(255 255 255 / 40%);
-  }
-
-  .login-title {
-    font-size: 21rem;
-  }
-
-  .login-title:before {
-    width: 69.3rem;
-  }
-
-  .login-text-box {
-    height: 40rem;
-    width: 284rem;
-    font-size: 16rem;
-    font-weight: 500;
-    padding-left: 35rem;
-    padding-right: 7rem;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  .login-text-box:focus-visible {
-    transform: scale(103%);
-  }
-  .login-btn {
-    /* background: linear-gradient(115deg, cyan, #ffdaf2); */
-    height: 42rem;
-  }
-
-  .login-btn:hover {
-    transform: scale(103%);
-  }
-
-  .login-details {
-    font-size: 17.5rem;
-  }
-  .login-error-messages {
-    font-size: 13rem;
-  }
-  .signup-line {
-    font-size: 16rem;
-  }
-  .signup-link {
-    font-size: 17rem;
-  }
-  .login-pass-box {
-    padding-right: 13.7%;
-  }
-  .login-icon {
-    font-size: 18rem;
-    margin-left: -277rem;
-  }
-
-  .login-password-eye {
-    margin-left: 252rem;
-    margin-top: -50rem;
-    font-size: 18rem;
-  }
-
-  .login-feedback-message.error {
-    text-shadow: 1rem 1rem 1rem rgb(255 255 255);
-    font-size: 14rem;
-  }
-  .login-feedback-message.success {
-    text-shadow: 1rem 1rem 1rem rgb(255 255 255);
-    font-size: 19.5rem;
+    font-size: 3.7rem;
   }
 }
