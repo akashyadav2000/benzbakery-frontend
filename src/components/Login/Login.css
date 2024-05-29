@@ -460,7 +460,7 @@
     font-size: 3.2rem;
     border-radius: 0.5rem;
     padding-left: 7rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     padding-right: 1.3rem;
     border: 0.3rem solid #ff70cd;
     border-bottom-width: 0.3rem;
@@ -509,7 +509,7 @@
     padding-block: 0.7rem;
   }
   .login-error-messages {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     margin-top: -3.5rem;
   }
 
@@ -580,11 +580,11 @@
     padding-right: 12.5%;
   }
   .login-feedback-message.error {
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     padding-block: 0.5rem;
   }
   .login-error-messages {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     margin-top: -3.2rem;
   }
 
