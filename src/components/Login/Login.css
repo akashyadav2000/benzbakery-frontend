@@ -460,7 +460,7 @@
     font-size: 3.2rem;
     border-radius: 0.5rem;
     padding-left: 7rem;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.5);
     padding-right: 1.3rem;
     border: 0.3rem solid #ff70cd;
     border-bottom-width: 0.3rem;
@@ -516,6 +516,7 @@
   .login-feedback-message.success {
     font-size: 3.5rem;
     padding-block: 1.4rem;
+    color: #ff6700;
   }
 }
 
@@ -525,7 +526,6 @@
     height: 78rem;
     border: 0.45rem solid #ffffff;
     border-radius: 0.5rem;
-    background: rgb(255 255 255 / 50%);
   }
   .login-details {
     font-size: 3.3rem;
