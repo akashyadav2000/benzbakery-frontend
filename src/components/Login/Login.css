@@ -440,7 +440,7 @@
   }
   .login-container {
     background: transparent;
-    backdrop-filter: blur(0.8rem);
+    backdrop-filter: blur(0.6rem);
   }
   .login-form-container {
     width: 64rem;
@@ -460,6 +460,7 @@
     font-size: 3.2rem;
     border-radius: 0.5rem;
     padding-left: 7rem;
+    background-color: rgba(255, 255, 255, 0.5);
     padding-right: 1.3rem;
     border: 0.3rem solid #ff70cd;
     border-bottom-width: 0.3rem;
