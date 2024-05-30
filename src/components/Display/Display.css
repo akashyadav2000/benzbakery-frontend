@@ -1,6 +1,6 @@
 .home {
   height: 100vh;
-  padding-top: 6.5rem;
+  /* padding-top: 6.5rem; */
   background-image: url("/Images/Home-Background.jpg");
   background-position: center;
   background-size: cover;
@@ -9,9 +9,12 @@
 
   text-align: center;
 }
+.home-discription {
+  position: relative;
+  top: 42%;
+}
 
 .home h1 {
-  padding-top: 35vh;
   padding-inline: 3%;
   font-size: 6rem;
   text-shadow: 0.2rem 0.2rem #cf661a;
@@ -20,7 +23,7 @@
 
 .home p {
   font-family: "Roboto Serif", serif;
-  padding-inline: 3%;
+  padding-inline: 30%;
   padding-top: 1.2rem;
   font-size: 2.7rem;
   font-weight: 500;
@@ -80,7 +83,7 @@
 
 @media (max-width: 1230px) {
   .home h1 {
-    padding-top: 35.3vh;
+    /* padding-top: 35.3vh; */
     font-size: 6.35rem;
   }
 
@@ -106,12 +109,13 @@
 
 @media (max-width: 1160px) {
   .home h1 {
-    padding-top: 35.3vh;
+    /* padding-top: 35.3vh; */
     font-size: 6.65rem;
     text-shadow: 0.25rem 0.25rem #cf661a;
   }
 
   .home p {
+    padding-inline: 24%;
     padding-top: 1.6rem;
     font-size: 3.05rem;
     line-height: 4rem;
@@ -133,12 +137,12 @@
 }
 @media (max-width: 850px) {
   .home h1 {
-    padding-top: 36.3vh;
     font-size: 7.5rem;
     text-shadow: 0.25rem 0.25rem #cf661a;
   }
 
   .home p {
+    padding-inline: 17%;
     padding-top: 1.6rem;
     font-size: 3.35rem;
     line-height: 4.5rem;
@@ -158,6 +162,37 @@
     font-size: 2.3rem;
   }
 }
+@media (max-width: 670px) {
+  .home h1 {
+    font-size: 8rem;
+    text-shadow: 0.25rem 0.25rem #cf661a;
+  }
+
+  .home p {
+    padding-top: 1.9rem;
+    font-size: 3.65rem;
+    line-height: 4.8rem;
+    text-shadow: 0.25rem 0.25rem #cf661a;
+  }
+
+  .home-btn {
+    margin-top: 6.5rem;
+  }
+
+  .home-btn .slogan {
+    padding: 1.9rem 4.2rem;
+    font-size: 3.2rem;
+  }
+
+  .slogan .angle-right {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 577px) {
+  .home p {
+    padding-inline: 13%;
+  }
+}
 
 @media (max-width: 430px) {
   .home {
@@ -165,5 +200,8 @@
     transition: height 0.4s ease-in-out;
     background-image: url("/Images/mobile-background.jpg");
     background-position: left;
+  }
+  .home p {
+    padding-inline: 3%;
   }
 }

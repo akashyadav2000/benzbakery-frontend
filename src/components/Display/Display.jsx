@@ -8,17 +8,17 @@ function Display() {
   return (
     <>
       <div id="home" className="home">
-        <h1>Every Flavor Has A Story</h1>
-        <p>
-          Love is like a cake, you have to cook it well
-          <br />
-          to be able to savor it.
-        </p>
-        <div className="home-btn">
-          <Link to={"/Product"} className="slogan">
-            Book Now
-            <FontAwesomeIcon className="angle-right" icon={faAngleRight} />
-          </Link>
+        <div className="home-discription">
+          <h1>Every Flavor Has A Story</h1>
+          <p>
+            Blending Tradition with Innovation, My Passion for the Art of Baking
+          </p>
+          <div className="home-btn">
+            <Link to={"/Product"} className="slogan">
+              Book Now
+              <FontAwesomeIcon className="angle-right" icon={faAngleRight} />
+            </Link>
+          </div>
         </div>
       </div>
     </>
