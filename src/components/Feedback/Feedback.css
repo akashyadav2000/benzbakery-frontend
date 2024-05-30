@@ -428,8 +428,6 @@
   }
   .contact-container {
     height: 100dvh;
-    transition: height
-      0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001s
-      ease;
+    transition: height 0.2s ease-in-out;
   }
 }
