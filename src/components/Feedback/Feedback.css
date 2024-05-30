@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  transition: height 0.5s ease;
 }
 .contact-left {
   display: flex;
@@ -248,6 +249,7 @@
 @media (max-width: 850px) {
   .contact-container {
     padding-top: 8rem;
+    transition: height 0.5s ease;
   }
   .contact-inputs {
     /* width: 58vw; */
@@ -320,12 +322,14 @@
 @media (max-width: 740px) {
   .contact-container {
     padding-top: 8.7rem;
+    transition: height 0.5s ease;
   }
 }
 
 @media (max-width: 670px) {
   .contact-container {
     padding-top: 10.1rem;
+    transition: height 0.5s ease;
   }
 
   .contact-inputs {
@@ -424,5 +428,6 @@
   }
   .contact-container {
     height: 100dvh;
+    transition: height 0.3s ease;
   }
 }
