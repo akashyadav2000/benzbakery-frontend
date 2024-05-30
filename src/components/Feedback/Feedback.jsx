@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./Feedback.css";
 
@@ -14,19 +14,6 @@ function Feedback() {
     productName: "",
     message: "",
   });
-
-  useEffect(() => {
-    const setDynamicHeight = () => {
-      document.documentElement.style.setProperty('--dvh', `${window.innerHeight * 0.01}px`);
-    };
-
-    setDynamicHeight();
-    window.addEventListener('resize', setDynamicHeight);
-
-    return () => {
-      window.removeEventListener('resize', setDynamicHeight);
-    };
-  }, []);
 
   const validateInputs = () => {
     const updatedErrorMessages = {
@@ -71,7 +58,7 @@ function Feedback() {
           setMessage("");
           setTimeout(() => {
             setFeedbackMessage("");
-          }, 2000000);
+          }, 2000);
         } else {
           setFeedbackMessage("An error occurred. Please try again.");
         }
@@ -88,7 +75,7 @@ function Feedback() {
   };
 
   return (
-    <div className="contact-container" style={{ height: 'calc(100 * var(--dvh))' }}>
+    <div className="contact-container">
       <form onSubmit={onSubmit} className="contact-left">
         <div className="contact-left-title">
           <span className="feedback-title">Feedback Form</span>
@@ -98,6 +85,7 @@ function Feedback() {
         <input
           type="text"
           name="name"
+          // placeholder="Your Name"
           required
           className="contact-inputs"
           value={name}
@@ -111,6 +99,7 @@ function Feedback() {
           type="email"
           name="email"
           required
+          // placeholder="Your Email"
           className="contact-inputs"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -123,6 +112,7 @@ function Feedback() {
           type="text"
           name="productName"
           required
+          // placeholder="Product Name"
           className="contact-inputs"
           value={productName}
           onChange={(e) => setProductName(e.target.value)}
@@ -134,6 +124,7 @@ function Feedback() {
         <textarea
           name="message"
           required
+          // placeholder="Your Message"
           className="contact-inputs"
           value={message}
           onChange={(e) => setMessage(e.target.value)}

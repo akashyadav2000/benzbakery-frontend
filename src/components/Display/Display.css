@@ -90,7 +90,8 @@
 @media (max-width: 430px) {
   .home {
     /* min-height: 95vh; */
-    height: 100svh;
+    height: 100dvh;
+    transition: height 0.3s ease-in-out;
     background-image: url("/Images/mobile-background.jpg");
     background-position: left;
   }
