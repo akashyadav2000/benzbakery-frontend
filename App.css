@@ -262,8 +262,8 @@ header .user-cart a {
   width: 100%;
   height: 100%;
   z-index: 2;
-  backdrop-filter: blur(0.2rem);
-  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(0.4rem);
+  background-color: rgba(42, 42, 42, 0.3);
 }
 
 .user-info {
@@ -276,7 +276,7 @@ header .user-cart a {
   padding: 1.5rem 3rem 3rem;
   margin-top: 6.5rem;
   backdrop-filter: blur(2rem);
-  background-color: white;
+  background-color: rgb(255, 238, 241);
   /* background-color: rgb(255 255 255 / 85%); */
   position: absolute;
   right: 0;
@@ -754,7 +754,7 @@ header .user-cart a {
     border: 0.2rem solid whitesmoke;
     font-size: 2.6rem;
     padding-block: 0.95rem;
-    margin-top: 0.7rem;
+    margin-top: 1.1rem;
   }
 }
 
@@ -839,8 +839,8 @@ header .user-cart a {
   .logout-btn {
     border: 0.2rem solid whitesmoke;
     font-size: 2.78rem;
-    padding-block: 1.07rem;
-    margin-top: 0.7rem;
+    padding-block: 1.2rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -878,36 +878,35 @@ header .user-cart a {
     box-shadow: 0 2rem 2.5rem rgb(236, 35, 119);
   }
   .user-info {
-    max-width: 65rem;
-    padding: 1.8rem 3.3rem 3.3rem;
+    max-width: 75rem;
+    padding: 2.2rem 3.7rem 3.7rem;
     margin-top: 10.1rem;
-    backdrop-filter: blur(2rem);
   }
 
   .user-profile-title {
-    font-size: 3rem;
+    font-size: 3.35rem;
     padding-bottom: 2.7rem;
   }
   .hello-user {
-    font-size: 2.6rem;
+    font-size: 3rem;
     text-shadow: 0.1rem 0.1rem white;
     margin-top: -5.8rem;
   }
 
   .user-info p {
-    font-size: 2.55rem;
+    font-size: 2.9rem;
     padding-block: 1rem;
   }
 
   .user-profile img {
-    height: 12rem;
+    height: 13.5rem;
     margin-right: 2.7rem;
   }
   .logout-btn {
     border: 0.2rem solid whitesmoke;
-    font-size: 2.78rem;
-    padding-block: 1.07rem;
-    margin-top: 0.7rem;
+    font-size: 3.3rem;
+    padding-block: 1.5rem;
+    margin-top: 1.8rem;
   }
 }
 @media (max-width: 577px) {
@@ -937,6 +936,36 @@ header .user-cart a {
   .cake-col img {
     margin-bottom: -0.33rem;
   }
+  .user-info {
+    max-width: 75rem;
+    padding: 2.4rem 3.9rem 3.9rem;
+    margin-top: 10.8rem;
+  }
+  .user-profile-title {
+    font-size: 3.55rem;
+    padding-bottom: 2.7rem;
+  }
+  .hello-user {
+    font-size: 3.2rem;
+    text-shadow: 0.1rem 0.1rem white;
+    margin-top: -5.8rem;
+  }
+
+  .user-info p {
+    font-size: 3.1rem;
+    padding-block: 1rem;
+  }
+
+  .user-profile img {
+    height: 14.2rem;
+    margin-right: 2.9rem;
+  }
+  .logout-btn {
+    border: 0.2rem solid whitesmoke;
+    font-size: 3.5rem;
+    padding-block: 1.5rem;
+    margin-top: 2.2rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -954,6 +983,14 @@ header .user-cart a {
 @media (max-width: 430px) {
   html {
     font-size: 29%;
+  }
+  .user-info {
+    width: 100%;
+    max-width: 100%;
+    padding: 5rem 6rem 3.5rem;
+  }
+  .blur-bg {
+    height: 100lvh;
   }
   #hamburger-icon {
     margin-right: 12px;
