@@ -763,7 +763,7 @@ header .user-cart a {
     font-size: 36%;
   }
   header .logo img {
-    height: 39px;
+    height: 41px;
     margin-left: 15px;
   }
   header {
@@ -991,6 +991,10 @@ header .user-cart a {
   }
   .blur-bg {
     height: 100lvh;
+  }
+  header .logo img {
+    height: 41px;
+    margin-left: 12px;
   }
   #hamburger-icon {
     margin-right: 12px;
