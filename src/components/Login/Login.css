@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding-top: 7.2rem;
+  padding-top: 6.5rem;
   width: 100%;
   background: linear-gradient(to right, #fdf, #fee2f8);
 }
@@ -235,6 +235,10 @@
 }
 
 @media only screen and (max-width: 850px) {
+  .login-container {
+    padding-top: 8rem;
+  }
+
   .login-image-container {
     width: 44rem;
     height: 68rem;
@@ -328,7 +332,10 @@
   }
 }
 
-@media only screen and (max-width: 739px) {
+@media only screen and (max-width: 740px) {
+  .login-container {
+    padding-top: 8.7rem;
+  }
   .login-image-container {
     width: 48rem;
     height: 74rem;
@@ -423,6 +430,9 @@
 }
 
 @media only screen and (max-width: 670px) {
+  .login-container {
+    padding-top: 10.1rem;
+  }
   .login-image-container {
     display: none;
   }
@@ -430,7 +440,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100svh;
+    height: 100vh;
     width: 100%;
     background-image: url(/Images/signup-login-bg.jpg);
     background-size: cover;
@@ -521,6 +531,9 @@
 }
 
 @media only screen and (max-width: 577px) {
+  .login-container {
+    padding-top: 10.8rem;
+  }
   .login-form-container {
     width: 68rem;
     height: 78rem;
@@ -590,5 +603,10 @@
 
   .login-feedback-message.success {
     font-size: 3.8rem;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .login-mobile-bg {
+    height: 100svh;
   }
 }

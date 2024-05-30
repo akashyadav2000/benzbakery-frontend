@@ -3,7 +3,7 @@
   /* background-image: linear-gradient(100deg, #eaf7ff 20%, #482e17 100%); */
   /* background-image: linear-gradient(100deg, #000000 20%, #3e98ca 100%); */
 
-  padding-top: 6.6rem;
+  padding-top: 6.5rem;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -317,7 +317,17 @@
   }
 }
 
+@media (max-width: 740px) {
+  .contact-container {
+    padding-top: 8.7rem;
+  }
+}
+
 @media (max-width: 670px) {
+  .contact-container {
+    padding-top: 10.1rem;
+  }
+
   .contact-inputs {
     width: 65vw;
     height: 7.5rem;
@@ -362,6 +372,9 @@
   }
 }
 @media (max-width: 577px) {
+  .contact-container {
+    padding-top: 10.7rem;
+  }
   .contact-inputs {
     width: 70vw;
     height: 7.8rem;
@@ -410,6 +423,6 @@
     width: 85vw;
   }
   .contact-container {
-    height: 100svh;
+    height: 100dvh;
   }
 }
