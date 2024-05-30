@@ -1,45 +1,46 @@
 .home {
   height: 100vh;
+  padding-top: 6.5rem;
   background-image: url("/Images/Home-Background.jpg");
   background-position: center;
   background-size: cover;
   object-fit: cover;
-  color: #fff;
+  color: white;
   text-align: center;
 }
 
 .home h1 {
-  padding-top: 40vh;
+  padding-top: 35vh;
   padding-inline: 3%;
-  /* padding-top: 22%; */
   font-size: 6rem;
-  text-shadow: 0.2rem 0.2rem #cf661a;
+  text-shadow: 0.25rem 0.2rem #cf661a;
   letter-spacing: 0.1rem;
 }
 
 .home p {
   padding-inline: 3%;
   padding-top: 1.2rem;
-  font-size: 2.55rem;
+  font-size: 2.85rem;
   font-weight: 400;
   line-height: 3rem;
-  text-shadow: 0.2rem 0.2rem #cf661a;
+  text-shadow: 0.25rem 0.1rem #cf661a;
 }
 
 .home-btn {
-  padding: 1.2rem;
-  margin-top: 3rem;
+  /* padding: 1.2rem; */
+  margin-top: 5rem;
 }
 
 .home-btn .slogan {
-  padding: 1.275rem 3.45rem;
-  border: 0.2rem solid rgb(255, 154, 169);
-  border-radius: 0.6rem;
-  font-size: 1.8rem;
+  font-family: "Roboto Serif", serif;
+  padding: 1.05rem 3rem;
+  /* border: 0.2rem solid rgb(255, 154, 169); */
+  border-radius: 0.3rem;
+  font-size: 2.1rem;
   text-shadow: 0.2rem 0.2rem 0.2rem #000000;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
   color: white;
   background: radial-gradient(
     circle at 49.8% 44.4%,
@@ -56,8 +57,9 @@
 }
 
 .slogan:hover {
-  background: radial-gradient(circle at 49.8% 44.4%, #d5dee7, #b8e2a3 90%);
+  background: radial-gradient(circle at 47.4%, #d5dee7, #9cff6b 90%);
   text-shadow: 0.2rem 0.2rem 0.4rem white;
+  /* border-color: rgb(0, 203, 0); */
 }
 
 .home-btn .slogan:hover {
@@ -74,44 +76,11 @@
   }
 }
 
-@media (max-width: 800px) {
-  .home h1 {
-    /* text-align: center; */
-    font-size: 5.25rem;
-    /* padding-top: 35vh; */
-  }
-
-  .home p {
-    font-size: 2.25rem;
-    /* text-align: center; */
-  }
-}
-
 @media (max-width: 430px) {
   .home {
-    /* min-height: 95vh; */
     height: 100dvh;
     transition: height 0.4s ease-in-out;
     background-image: url("/Images/mobile-background.jpg");
     background-position: left;
-  }
-
-  .home-btn .slogan {
-    padding: 1.05rem 1.8rem;
-    border: 0.1rem solid rgb(255, 154, 169);
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .home h1 {
-    padding-top: 75%;
-    font-size: 3.3rem;
-    padding-inline: 3%;
-  }
-  .home p {
-    font-size: 1.8rem;
-    padding-inline: 3%;
-    font-weight: 500;
-    text-shadow: 0.1rem 0.1rem #cf661a;
   }
 }
