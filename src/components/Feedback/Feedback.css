@@ -3,7 +3,7 @@
   /* background-image: linear-gradient(100deg, #eaf7ff 20%, #482e17 100%); */
   /* background-image: linear-gradient(100deg, #000000 20%, #3e98ca 100%); */
 
-  padding-top: 7.5rem;
+  padding-top: 6.6rem;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -246,6 +246,9 @@
 }
 
 @media (max-width: 850px) {
+  .contact-container {
+    padding-top: 8rem;
+  }
   .contact-inputs {
     /* width: 58vw; */
     height: 6.4rem;
@@ -290,7 +293,7 @@
   .popup {
     width: 44rem;
     border-radius: 0.6rem;
-    padding: 0 3rem 3rem;
+    padding: 0 2.5rem 3rem;
     color: #333;
     box-shadow: 0.01rem 0.01rem 2rem 0rem;
   }
@@ -305,7 +308,7 @@
     margin: 2.5rem 0 1.3rem;
   }
   .popup p {
-    font-size: 2.35rem;
+    font-size: 2.5rem;
     /* margin: 3rem 0 1rem; */
   }
   .popup button {
