@@ -5,7 +5,8 @@
   background-position: center;
   background-size: cover;
   object-fit: cover;
-  color: white;
+  color: #ffffff;
+
   text-align: center;
 }
 
@@ -13,17 +14,18 @@
   padding-top: 35vh;
   padding-inline: 3%;
   font-size: 6rem;
-  text-shadow: 0.25rem 0.2rem #cf661a;
+  text-shadow: 0.2rem 0.2rem #cf661a;
   letter-spacing: 0.1rem;
 }
 
 .home p {
+  font-family: "Roboto Serif", serif;
   padding-inline: 3%;
   padding-top: 1.2rem;
-  font-size: 2.85rem;
-  font-weight: 400;
-  line-height: 3rem;
-  text-shadow: 0.25rem 0.1rem #cf661a;
+  font-size: 2.7rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+  text-shadow: 0.2rem 0.2rem #cf661a;
 }
 
 .home-btn {
@@ -33,11 +35,11 @@
 
 .home-btn .slogan {
   font-family: "Roboto Serif", serif;
-  padding: 1.05rem 3rem;
+  padding: 1.2rem 3.5rem;
   /* border: 0.2rem solid rgb(255, 154, 169); */
   border-radius: 0.3rem;
   font-size: 2.1rem;
-  text-shadow: 0.2rem 0.2rem 0.2rem #000000;
+  text-shadow: 0.2rem 0.1rem 0.1rem #4d2000;
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.05rem;
@@ -73,6 +75,87 @@
 
   100% {
     transform: translateX(0.5rem);
+  }
+}
+
+@media (max-width: 1230px) {
+  .home h1 {
+    padding-top: 35.3vh;
+    font-size: 6.35rem;
+  }
+
+  .home p {
+    padding-top: 1.4rem;
+    font-size: 2.9rem;
+    line-height: 3.8rem;
+  }
+
+  .home-btn {
+    margin-top: 5rem;
+  }
+
+  .home-btn .slogan {
+    padding: 1.3rem 3.7rem;
+    font-size: 2.3rem;
+  }
+
+  .slogan .angle-right {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1160px) {
+  .home h1 {
+    padding-top: 35.3vh;
+    font-size: 6.65rem;
+    text-shadow: 0.25rem 0.25rem #cf661a;
+  }
+
+  .home p {
+    padding-top: 1.6rem;
+    font-size: 3.05rem;
+    line-height: 4rem;
+    text-shadow: 0.25rem 0.25rem #cf661a;
+  }
+
+  .home-btn {
+    margin-top: 5rem;
+  }
+
+  .home-btn .slogan {
+    padding: 1.4rem 3.9rem;
+    font-size: 2.5rem;
+  }
+
+  .slogan .angle-right {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 850px) {
+  .home h1 {
+    padding-top: 36.3vh;
+    font-size: 7.5rem;
+    text-shadow: 0.25rem 0.25rem #cf661a;
+  }
+
+  .home p {
+    padding-top: 1.6rem;
+    font-size: 3.35rem;
+    line-height: 4.5rem;
+    text-shadow: 0.25rem 0.25rem #cf661a;
+  }
+
+  .home-btn {
+    margin-top: 6rem;
+  }
+
+  .home-btn .slogan {
+    padding: 1.6rem 3.9rem;
+    font-size: 2.9rem;
+  }
+
+  .slogan .angle-right {
+    font-size: 2.3rem;
   }
 }
 
