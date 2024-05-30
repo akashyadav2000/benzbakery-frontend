@@ -612,6 +612,6 @@ input[type="text"]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 430px) {
   .signup-mobile-bg {
-    height: 100dvh;
+    height: 100lvh;
   }
 }
