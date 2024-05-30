@@ -608,6 +608,6 @@
 @media only screen and (max-width: 430px) {
   .login-mobile-bg {
     height: 100dvh;
-    transition: height 0.3s ease;
+    transition: height 0.1s ease-in-out;
   }
 }
