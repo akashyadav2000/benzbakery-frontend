@@ -24,6 +24,7 @@ function Header() {
 
   function toggleMobileMenu(menu) {
     setMenuOpen(!menuOpen);
+    setShowUserInfo(false); //"user-info" div closes when the "hamburger-icon" is clicked, 
     menu.classList.toggle("open");
   }
 

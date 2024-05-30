@@ -36,7 +36,7 @@ function Signup() {
 
   const validateInputs = () => {
     const updatedErrorMessages = {
-      username: /^[A-Za-z][A-Za-z\s]*$/.test(name) && name.length <= 25
+      username: /^[A-Za-z][A-Za-z\s]*$/.test(name) && name.length <= 23
         ? ""
         : "Name should only contain alphabets",
       email: /^[^\s@]+@[^\s@]+\.(?:com)$/.test(email) && email.length <= 50
@@ -101,7 +101,7 @@ function Signup() {
                 autoComplete="username"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                maxLength="25"
+                maxLength="23"
               />
               <FontAwesomeIcon className="signup-icon" icon={faUserAlt} />
               <p className="signup-error-messages">{errorMessages.username}</p>
