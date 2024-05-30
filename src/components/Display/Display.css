@@ -91,7 +91,7 @@
   .home {
     /* min-height: 95vh; */
     height: 100dvh;
-    transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease;
     background-image: url("/Images/mobile-background.jpg");
     background-position: left;
   }
