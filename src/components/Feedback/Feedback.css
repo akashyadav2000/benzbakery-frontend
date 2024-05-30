@@ -30,7 +30,7 @@
 
 .feedback-details {
   font-family: "Roboto Serif", serif;
-  font-size: 1.9rem;
+  font-size: 2.1rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
@@ -40,7 +40,7 @@
   width: 40rem;
   height: 4.5rem;
   outline: none;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.9rem;
   padding-inline: 1rem;
   font-size: 1.8rem;
   font-weight: 400;
@@ -207,12 +207,12 @@
     width: 58vw;
     height: 5.5rem;
     margin-bottom: 2.8rem;
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
     font-size: 2.4rem;
   }
   .feedback-details {
     font-size: 2.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
   }
   .contact-left textarea {
     height: 19rem;
@@ -233,28 +233,29 @@
     border: 0.4rem solid white;
     border-radius: 0.4rem;
   }
-  /* .contact-container {
-    background-image: linear-gradient(100deg, #f0f2f5 20%, #b1c3e2 100%);
+  .feedback-error-messages {
+    font-size: 1.7rem;
+    margin-top: -2.3rem;
+    margin-bottom: 1.6rem;
+    margin-left: 0.7rem;
   }
-  .feedback-title {
-    font-size: 3rem;
+  .feedback-message.error {
+    font-size: 1.93rem;
+    padding-block: 0.2rem;
   }
-  .hr {
-    width: 22.8rem;
-  } */
 }
 
 @media (max-width: 850px) {
   .contact-inputs {
     /* width: 58vw; */
-    height: 6rem;
+    height: 6.4rem;
     margin-bottom: 3.2rem;
-    padding-inline: 2.4rem;
+    padding-inline: 1.8rem;
     font-size: 2.8rem;
   }
   .feedback-details {
     font-size: 2.9rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: 0.9rem;
   }
   .contact-left textarea {
     height: 22rem;
@@ -275,136 +276,137 @@
     border: 0.4rem solid white;
     border-radius: 0.4rem;
   }
+  .feedback-error-messages {
+    font-size: 2rem;
+    margin-top: -2.5rem;
+    margin-bottom: 1.8rem;
+    margin-left: 0.8rem;
+  }
+
+  .feedback-message.error {
+    font-size: 2.25rem;
+    padding-block: 0rem;
+  }
+  .popup {
+    width: 44rem;
+    border-radius: 0.6rem;
+    padding: 0 3rem 3rem;
+    color: #333;
+    box-shadow: 0.01rem 0.01rem 2rem 0rem;
+  }
+  .popup img {
+    width: 10.5rem;
+    margin-top: -5.35rem;
+    border-radius: 50%;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  }
+  .popup h2 {
+    font-size: 4.2rem;
+    margin: 2.5rem 0 1.3rem;
+  }
+  .popup p {
+    font-size: 2.35rem;
+    /* margin: 3rem 0 1rem; */
+  }
+  .popup button {
+    padding: 1.45rem 0;
+    font-size: 2.4rem;
+  }
 }
 
-@media (max-width: 669px) {
+@media (max-width: 670px) {
   .contact-inputs {
-    width: 68vw;
-    height: 6.8rem;
+    width: 65vw;
+    height: 7.5rem;
     margin-bottom: 3.4rem;
-    padding-inline: 2.6rem;
-    font-size: 3rem;
+    padding-inline: 2rem;
+    font-size: 3.2rem;
   }
+
   .feedback-details {
-    font-size: 3rem;
-    margin-bottom: 1.3rem;
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
   }
   .contact-left textarea {
     height: 25rem;
   }
   .feedback-title {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
   .hr {
-    width: 34rem;
+    width: 37.8rem;
     margin-bottom: 6rem;
   }
   .feedback-submit {
     margin-block: 2.2rem;
-    padding: 1.3rem;
-    font-size: 3.5rem;
+    padding: 1.5rem;
+    font-size: 3.8rem;
     text-shadow: 0.2rem 0.2rem 0.2rem black;
     gap: 1.3rem;
     border: 0.4rem solid white;
     border-radius: 0.4rem;
   }
+  .feedback-error-messages {
+    font-size: 2.4rem;
+    margin-top: -2.55rem;
+    margin-bottom: 2.2rem;
+    margin-left: 0.85rem;
+  }
+
+  .feedback-message.error {
+    font-size: 2.65rem;
+    padding-block: 0.1rem;
+  }
 }
 @media (max-width: 577px) {
   .contact-inputs {
-    width: 75vw;
-  }
-}
-@media (max-width: 420px) {
-  .contact-inputs {
-    width: 80vw;
-  }
-}
-/* @media (max-width: 860px) {
-  .contact-section {
-    flex-direction: column;
-  }
-  .popup {
-    width: 34rem;
-    padding: 0 2rem 2.5rem;
-  }
-  .popup h2 {
+    width: 70vw;
+    height: 7.8rem;
+    margin-bottom: 3.4rem;
+    padding-inline: 2.2rem;
     font-size: 3.3rem;
-    margin: 1.5rem 0 1rem;
   }
-  .popup p {
-    font-size: 1.9rem;
-  }
-  .popup img {
-    width: 8.5rem;
-    margin-top: -5rem;
-  }
-  .popup button {
-    margin-top: 4rem;
-  }
-} */
 
-/* @media (max-width: 517px) {
-  .contact-inputs {
-    width: 80vw;
-  }
-  .popup {
-    width: 28rem;
-    padding: 0 1.5rem 2rem;
-  }
-  .popup h2 {
-    color: limegreen;
-    font-size: 2.8rem;
-    margin: 1.3rem 0 1rem;
-  }
-  .popup p {
-    font-size: 1.7rem;
-  }
-  .popup img {
-    width: 7rem;
-    margin-top: -3.6rem;
-  }
-  .popup button {
-    margin-top: 2.5rem;
-    padding: 0.9rem 0;
-  }
-} */
-/* @media (max-width: 427px) {
   .feedback-details {
-    font-size: 1.8rem;
-    margin-bottom: 0.2rem;
-  }
-  .contact-inputs {
-    width: 85vw;
-    height: 4rem;
-    margin-bottom: 1.6rem;
-    padding-inline: 1rem;
-    font-size: 1.6rem;
-  }
-  .feedback-error-messages {
-    font-size: 1.4rem;
-    margin-bottom: 0.7rem;
-    font-weight: 500;
-    color: red;
-  }
-  .feedback-message.error {
-    font-size: 1.5rem;
-    padding-block: 0.3rem;
-  }
-  .feedback-submit {
-    margin-block: 0.4rem;
-    padding: 0.7rem;
-    font-size: 2rem;
-  }
-  .hr {
-    width: 20.6rem;
-    margin-bottom: 2.5rem;
-  }
-  .feedback-title {
-    font-size: 2.7rem;
+    font-size: 3.4rem;
+    margin-bottom: 1.2rem;
   }
   .contact-left textarea {
-    height: 13.2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    height: 25rem;
   }
-} */
+  .feedback-title {
+    font-size: 5.3rem;
+  }
+  .hr {
+    width: 40.2rem;
+    margin-bottom: 6rem;
+  }
+  .feedback-submit {
+    margin-block: 2.2rem;
+    padding: 1.6rem;
+    font-size: 3.9rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    gap: 1.3rem;
+    border: 0.4rem solid white;
+    border-radius: 0.4rem;
+  }
+  .feedback-error-messages {
+    font-size: 2.5rem;
+    margin-top: -2.6rem;
+    margin-bottom: 2.2rem;
+    margin-left: 0.9rem;
+  }
+
+  .feedback-message.error {
+    font-size: 2.8rem;
+    padding-block: 0.1rem;
+  }
+}
+@media (max-width: 430px) {
+  .contact-inputs {
+    width: 85vw;
+  }
+  .contact-container {
+    height: 100svh;
+  }
+}

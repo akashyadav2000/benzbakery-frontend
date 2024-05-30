@@ -58,7 +58,7 @@ function Feedback() {
           setMessage("");
           setTimeout(() => {
             setFeedbackMessage("");
-          }, 2000);
+          }, 2000000);
         } else {
           setFeedbackMessage("An error occurred. Please try again.");
         }

@@ -1005,7 +1005,7 @@ header .user-cart a {
   }
 }
 
-@media (max-width: 739px) {
+@media (max-width: 740px) {
   html {
     font-size: 36%;
   }
@@ -1167,7 +1167,7 @@ header .user-cart a {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   html {
     font-size: 29%;
   }
