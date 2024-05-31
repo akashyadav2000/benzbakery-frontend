@@ -55,7 +55,7 @@
 
 .cake-ingredients span {
   font-family: "Roboto Serif", serif;
-  font-size: 3rem;
+  font-size: 3.1rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
   color: #cf661a;
@@ -192,7 +192,7 @@
     letter-spacing: 0.1rem;
   }
   .cake-ingredients span {
-    font-size: 3.4rem;
+    font-size: 3.5rem;
     letter-spacing: 0.1rem;
   }
   .product-details {
@@ -230,7 +230,7 @@
     font-size: 4.5rem;
   }
   .cake-ingredients span {
-    font-size: 3.4rem;
+    font-size: 3.8rem;
   }
   .product-details {
     font-size: 3.2rem;
