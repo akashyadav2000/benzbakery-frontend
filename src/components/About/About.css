@@ -331,12 +331,12 @@
   .about_details {
     top: 0%;
     left: 50%;
-    margin-top: 80vh;
+    margin-top: 77vh;
     height: auto;
     width: 95%;
     padding: 0.5rem 3%;
   }
-  .about {
-    height: 100dvh;
-  }
+  /* .about {
+    height: 100vh;
+  } */
 }
