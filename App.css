@@ -506,23 +506,6 @@ header .user-cart a {
   padding-top: 14px;
 } */
 
-/* @media (max-width: 1600px) {
-  .cake-col {
-    width: 28rem;
-    height: 34.43rem;
-    margin: 4.8rem 3.43rem 1.5rem;
-  }
-
-  .wed-cake-col {
-    width: 28rem;
-    margin: 9.75rem 3.45rem;
-    height: 51rem;
-  }
-  .wed-cake-col img {
-    height: 45rem;
-  }
-} */
-
 @media screen and (max-width: 1600px) and (max-height: 900px) {
   html {
     font-size: 59.3%;

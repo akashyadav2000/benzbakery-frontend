@@ -51,14 +51,14 @@ function Cocktail({ item }) {
             </div>
 
             <div className="add-to-cart">
-              <Link
+              <button
                 id="link-button"
                 onClick={handleAddToCart}
                 className="cart-btn"
               >
                 Add to cart
                 <FontAwesomeIcon className="angle-right" icon={faAngleRight} />
-              </Link>
+              </button>
 
               <span className="rs">
                 <FontAwesomeIcon icon={faIndianRupeeSign} /> {item.price}

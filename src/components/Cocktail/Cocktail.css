@@ -1,13 +1,11 @@
 .cocktail-bg {
-  padding: 4.6% 10% 0;
+  padding: 6.5rem 10% 0;
   background: linear-gradient(to top, #fdcbf1, #d4f3ff);
-  /* height: auto; */
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* flex: 1 1 300px; */
 }
 
 .content-wrapper {
@@ -20,60 +18,63 @@
 
 .pro-col {
   display: flex;
+  /* height: 100vh; */
   align-items: center;
   justify-content: center;
-  margin-top: 2%;
+  /* margin-top: 2%; */
 }
 
 .pro-col img {
-  height: 500px;
+  height: 46rem;
   width: auto;
-  max-width: 410px;
+  max-width: 37rem;
   object-fit: cover;
-  /* box-shadow: 0 6.75px 15px #ec2377; */
-  box-shadow: 0px 0px 10px 7px white;
+  background-size: cover;
+  /* box-shadow: 0 .675rem .15rem #ec2377; */
+  box-shadow: 0rem 0rem 1rem 0.7rem white;
 }
 
 .product-details {
   font-family: "Roboto Serif", serif;
   padding-left: 10%;
   padding-right: 10%;
-  /* padding: 15px 10%; */
-  font-size: 25.5px;
+  /* padding: 1.5rem 10%; */
+  font-size: 2.55rem;
   font-weight: 500;
+  line-height: 3.7rem;
   text-align: justify;
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: 3rem;
 }
 
 .cake-name span {
   font-family: "Roboto Serif", serif;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 600;
   color: #cf661a;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
 }
 
 .cake-ingredients span {
   font-family: "Roboto Serif", serif;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   color: #cf661a;
 }
 
 .fa-sharp {
   border: transparent;
   text-align: center;
-  font-size: 28px;
-  margin-right: 12px;
+  font-size: 2.8rem;
+  margin-right: 1.2rem;
   cursor: pointer;
 }
 
 .rs {
   font-family: "Roboto Serif", serif;
-  font-size: 28.5px;
+  font-size: 2.85rem;
   font-weight: 600;
   position: absolute;
   right: 19%;
@@ -82,39 +83,41 @@
 
 .cake-txtbox {
   font-family: "Roboto Serif", serif;
-  margin-left: 220px;
-  font-size: 22px;
+  margin-left: 22rem;
+  font-size: 2.2rem;
   color: deeppink;
-  border: 2px solid black;
-  /*box-shadow: 0 1.5px 7.5px deeppink;*/
+  border: 0.2rem solid black;
+  /*box-shadow: 0 .15rem .75rem deeppink;*/
 }
 
 .cake-msg-btn {
   font-family: "Roboto Serif", serif;
-  margin-left: -3px;
-  padding: 4px 3px 5px;
-  font-size: 25px;
+  margin-left: -0.3rem;
+  padding: 0.4rem 0.3rem 0.5rem;
+  font-size: 25rem;
   color: white;
-  border: 1px solid black;
+  border: 0.1rem solid black;
   background-color: black;
 }
 
 .add-to-cart {
-  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .add-to-cart .cart-btn {
-  padding: 13px 25px;
+  padding: 1.1rem 2.5rem;
   border: none;
-  /* border: 2px solid #000000; */
-  border-radius: 6px;
-  font-size: 20px;
+  border: 0.2rem solid #ffffff;
+  border-radius: 0.4rem;
+  font-size: 2.3rem;
   font-weight: 600;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   background: linear-gradient(to left, #ffa7ea, #a5e5ff);
-  box-shadow: 0px 0px 7px 6px white;
-  /* box-shadow: 0 0 8px #36c6ff; */
+  box-shadow: 0rem 0rem 0.7rem 0.6rem white;
+  /* box-shadow: 0 0 .8rem #36c6ff; */
   color: #000000;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -122,8 +125,8 @@
 
 .cart-btn .angle-right {
   color: #000000;
-  margin-left: 7.5px;
-  font-size: 15px;
+  margin-left: 0.75rem;
+  font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -134,31 +137,30 @@
   /* transform: scale(1.1); */
   color: rgb(0, 0, 0);
   text-shadow: none;
-  border: 2px solid #36c6ff;
-  box-shadow: 0 0 8px #36c6ff;
+  border: 0.2rem solid #36c6ff;
+  box-shadow: 0 0 0.8rem #36c6ff;
   background: linear-gradient(to right, #ffffff, #ffffff);
 }
 .cocktail-white {
   width: 100%;
-  height: 45px;
+  height: 4.5rem;
   background-color: white;
   display: none;
 }
 
 @keyframes animate {
   0% {
-    transform: translateX(-5px);
+    transform: translateX(-0.5rem);
   }
 
   100% {
-    transform: translateX(5px);
+    transform: translateX(0.5rem);
   }
 }
 
-@media (max-width: 1640px) {
+@media (max-width: 1845px) {
   .product-details {
     padding-right: 0%;
-    gap: 35px;
   }
   .cocktail-bg {
     padding: 4.6% 8% 0;
@@ -166,32 +168,42 @@
   .rs {
     right: 9%;
   }
+  /* .pro-col img {
+    height: 47rem;
+    width: auto;
+    max-width: 39rem;
+  } */
 }
 
-@media (max-width: 1436px) {
+@media (max-width: 1521px) {
   .cocktail-bg {
-    padding: 4.6% 6% 0;
+    padding: 5% 7% 0;
   }
   .product-details {
-    padding-left: 6%;
-    gap: 20px;
-  }
-  .rs {
-    right: 7%;
+    padding-right: 0%;
+    padding-left: 8%;
   }
 }
-
-@media (max-width: 1250px) {
+@media (max-width: 900px) {
   .content-wrapper {
     flex-direction: column;
-    gap: 30px;
-    margin-block: 15px;
+    gap: 7rem;
+    /*margin-block: 1.5rem; */
   }
-  /* .cocktail-bg {
-    padding: 4.6% 5% 0;
-  } */
+
   .product-details {
-    /* padding-left: 5%; */
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
+
+/* @media (max-width: 1250px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 3rem;
+    margin-block: 1.5rem;
+  }
+  .product-details {
     padding-inline: 5%;
   }
   .rs {
@@ -199,148 +211,145 @@
   }
 
   .pro-col img {
-    /* height: 400px;
-    max-width: 328px; */
-    height: 330px;
-    max-width: 320px;
+    height: 33rem;
+    max-width: 32rem;
     width: auto;
   }
 
   .product-details {
-    font-size: 22.5px;
+    font-size: 2.25rem;
   }
 
   .cake-name span {
-    font-size: 34px;
+    font-size: 3.4rem;
   }
 
   .cake-ingredients span {
-    font-size: 25.5px;
+    font-size: 2.55rem;
   }
   .add-to-cart .cart-btn {
-    padding: 13px 20px;
-    font-size: 19px;
+    padding: 1.3rem 2rem;
+    font-size: 19rem;
   }
   .rs {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
-}
+} */
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .content-wrapper {
-    gap: 30px;
-    margin-block: 15px;
+    gap: 3rem;
+    margin-block: 1.5rem;
   }
 
   .cocktail-bg {
-    padding: 65px 6% 0px;
+    padding: 6.5rem 6% 0rem;
   }
   .rs {
     right: 11%;
-    font-size: 22.5px;
+    font-size: 2.25rem;
   }
 
   .pro-col img {
-    height: 300px;
+    height: 30rem;
     width: auto;
-    max-width: 300px;
+    max-width: 30rem;
   }
 
   .product-details {
-    font-size: 20.25px;
+    font-size: 20.25rem;
   }
 
   .cake-name span {
-    font-size: 30px;
+    font-size: 30rem;
   }
 
   .cake-ingredients span {
-    font-size: 24px;
+    font-size: 24rem;
   }
   .add-to-cart .cart-btn {
-    padding: 13px 16px;
+    padding: 13rem 16rem;
   }
-}
+} */
 
-@media (max-width: 630px) {
+/* @media (max-width: 630rem) {
   .content-wrapper {
-    gap: 30px;
-    margin-block: 15px;
+    gap: 30rem;
+    margin-block: 15rem;
   }
 
   .cocktail-bg {
-    padding: 40px 6% 0%;
+    padding: 40rem 6% 0%;
   }
   .rs {
     right: 11%;
-    font-size: 21.75px;
+    font-size: 21.75rem;
   }
 
   .pro-col img {
-    height: 280px;
+    height: 280rem;
     width: auto;
-    max-width: 300px;
+    max-width: 300rem;
   }
 
   .product-details {
-    font-size: 18.75px;
-    gap: 15px;
+    font-size: 18.75rem;
+    gap: 15rem;
   }
 
   .cake-name span {
-    font-size: 28px;
+    font-size: 28rem;
   }
 
   .cake-ingredients span {
-    font-size: 24px;
+    font-size: 24rem;
   }
   .add-to-cart {
     margin-top: 6%;
   }
   .add-to-cart .cart-btn {
-    padding: 12px 12px;
-    font-size: 17px;
+    padding: 12rem 12rem;
+    font-size: 17rem;
   }
-}
+} */
 
-@media (max-width: 400px) {
+/* @media (max-width: 400rem) {
   .pro-col img {
-    height: 230px;
+    height: 230rem;
     width: auto;
-    max-width: 210px;
+    max-width: 210rem;
   }
   .cocktail-bg {
-    padding: 75px 4% 2%;
+    padding: 75rem 4% 2%;
     height: auto;
   }
   .product-details {
-    font-size: 18px;
-    gap: 13px;
-    margin-bottom: 15px;
+    font-size: 18rem;
+    gap: 13rem;
+    margin-bottom: 15rem;
     padding-inline: 4%;
   }
   .cake-ingredients span {
     font-weight: 500;
-    font-size: 22.5px;
+    font-size: 22.5rem;
   }
   .cake-name span {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 25rem;
   }
   .rs {
     right: 10%;
-    font-size: 21px;
+    font-size: 21rem;
   }
   .content-wrapper {
-    gap: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    gap: 20rem;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
   }
   .add-to-cart .cart-btn {
-    padding: 10px 12px;
-    /* font-size: 17px; */
+    padding: 10rem 12rem;
   }
   .cocktail-white {
     display: block;
   }
-}
+} */

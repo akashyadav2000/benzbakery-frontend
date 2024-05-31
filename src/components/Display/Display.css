@@ -39,8 +39,8 @@
 .home-btn .slogan {
   font-family: "Roboto Serif", serif;
   padding: 1.2rem 3.5rem;
-  /* border: 0.2rem solid rgb(255, 154, 169); */
-  border-radius: 0.3rem;
+  border: 0.1rem solid rgb(255, 255, 255);
+  border-radius: 0.6rem;
   font-size: 2.1rem;
   text-shadow: 0.2rem 0.1rem 0.1rem #4d2000;
   font-weight: 500;
@@ -123,7 +123,7 @@
   }
 
   .home-btn {
-    margin-top: 5rem;
+    margin-top: 5.5rem;
   }
 
   .home-btn .slogan {
@@ -150,7 +150,7 @@
   }
 
   .home-btn {
-    margin-top: 6rem;
+    margin-top: 6.2rem;
   }
 
   .home-btn .slogan {
@@ -176,7 +176,7 @@
   }
 
   .home-btn {
-    margin-top: 6.5rem;
+    margin-top: 6.7rem;
   }
 
   .home-btn .slogan {
