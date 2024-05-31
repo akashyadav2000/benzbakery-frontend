@@ -41,8 +41,6 @@ function Footer() {
     if (validateInputs()) {
       try {
         const result = await axios.post("https://benzbakery-backend.onrender.com/newsLetter", { email });
-        // const user = { email };
-        // dispatch(login(user));
         setFeedbackMessage("Thank you for subscribing!...");
         setEmail(""); // Clear the input field
         setTimeout(() => setFeedbackMessage(""), 2000000);

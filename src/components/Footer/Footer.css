@@ -196,16 +196,6 @@ ul li a:hover {
   animation-name: run;
 }
 
-.newsletter-error-messages {
-  font-family: "Roboto Serif", serif;
-  text-align: center;
-  font-size: 1.73rem;
-  margin-top: -4.2rem;
-  margin-bottom: 3.7rem;
-  color: #ff0000;
-  font-weight: 400;
-}
-
 .newsletter-message {
   font-family: "Roboto Serif", serif;
   font-weight: 500;
@@ -217,11 +207,20 @@ ul li a:hover {
   margin-top: -3.8rem;
   margin-bottom: 3.8rem;
 }
+.newsletter-error-messages {
+  font-family: "Roboto Serif", serif;
+  text-align: center;
+  font-size: 1.73rem;
+  margin-top: -4.2rem;
+  margin-bottom: 3.7rem;
+  color: #ff0000;
+  font-weight: 400;
+}
 
 .newsletter-message.error {
   font-size: 1.73rem;
-  margin-top: -4.9rem;
-  margin-bottom: 4.1rem;
+  margin-top: -4.2rem;
+  margin-bottom: 3.7rem;
   font-weight: 400;
   color: #ff0000;
 }
@@ -243,6 +242,11 @@ ul li a:hover {
 }
 
 @media (max-width: 1365px) {
+  .newsletter-message.error {
+    font-size: 1.93rem;
+    margin-top: -4.1rem;
+  }
+
   .newsletter-error-messages {
     font-size: 1.93rem;
     margin-top: -4.1rem;
@@ -280,6 +284,11 @@ ul li a:hover {
   }
   .social-icons {
     margin-top: -1%;
+  }
+  .newsletter-message.error {
+    font-size: 2.1rem;
+    margin-top: -4.1rem;
+    margin-bottom: 2.7rem;
   }
   .newsletter-error-messages {
     font-size: 2.1rem;
@@ -358,6 +367,12 @@ ul li a:hover {
   .underline {
     top: 3.65rem;
   }
+  .newsletter-message.error {
+    font-size: 2.5rem;
+    margin-top: -4.1rem;
+    margin-bottom: -3rem;
+  }
+
   .newsletter-error-messages {
     font-size: 2.5rem;
     margin-top: -4.1rem;
@@ -427,6 +442,12 @@ ul li a:hover {
     width: 10rem;
     height: 10rem;
   }
+  .newsletter-message.error {
+    font-size: 3rem;
+    margin-top: -4.1rem;
+    margin-bottom: -3rem;
+  }
+
   .newsletter-error-messages {
     font-size: 3rem;
     margin-top: -4.1rem;
@@ -489,6 +510,12 @@ ul li a:hover {
     font-size: 3.5rem;
     padding-block: 3px;
   }
+  .newsletter-message.error {
+    font-size: 3rem;
+    margin-top: -4.1rem;
+    margin-bottom: 4.7rem;
+  }
+
   .newsletter-error-messages {
     font-size: 3rem;
     margin-top: -4.1rem;
