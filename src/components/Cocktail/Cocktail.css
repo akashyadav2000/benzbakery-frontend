@@ -182,9 +182,9 @@
     /*margin-block: 1.5rem; */
   }
   .pro-col img {
-    height: 49rem;
+    height: 42rem;
     width: auto;
-    max-width: 40rem;
+    max-width: 44rem;
     /* box-shadow: 0rem 0rem 1rem 0.7rem white; */
   }
   .cake-name span {
@@ -222,9 +222,9 @@
     gap: 7.5rem;
   }
   .pro-col img {
-    height: 52rem;
+    height: 45rem;
     width: auto;
-    max-width: 42rem;
+    max-width: 48rem;
   }
   .cake-name span {
     font-size: 4.5rem;
@@ -259,6 +259,11 @@
   .cocktail-bg {
     padding: 10.1rem 7% 0;
   }
+  .pro-col img {
+    height: 50rem;
+    width: auto;
+    max-width: 51rem;
+  }
   .content-wrapper {
     gap: 7rem;
   }
@@ -288,4 +293,9 @@
   .cocktail-bg {
     height: 100dvh;
   }
+  /* .pro-col img {
+    height: 52rem;
+    width: auto;
+    max-width: 55rem;
+  } */
 }
