@@ -1028,11 +1028,12 @@ header .user-cart a {
     color: #ff5aad;
   }
   .cart {
-    height: 30.7px;
+    height: 29.7px;
     margin-right: 8px;
   }
   .login {
     height: 30.7px;
+    padding-left: 4px;
   }
   .cart-count {
     right: 25.45px;

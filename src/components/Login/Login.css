@@ -526,7 +526,7 @@
   .login-feedback-message.success {
     font-size: 3.5rem;
     padding-block: 1.4rem;
-    color: #ff4400;
+    /* color: #ff4400; */
   }
 }
 
