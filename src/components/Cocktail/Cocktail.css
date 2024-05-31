@@ -13,15 +13,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* padding-block: 10%; */
 }
 
 .pro-col {
   display: flex;
-  /* height: 100vh; */
   align-items: center;
   justify-content: center;
-  /* margin-top: 2%; */
 }
 
 .pro-col img {
@@ -107,11 +104,10 @@
 }
 
 .add-to-cart .cart-btn {
-  padding: 1.1rem 2.5rem;
-  border: none;
+  padding: 1.1rem 2.2rem;
   border: 0.2rem solid #ffffff;
-  border-radius: 0.4rem;
-  font-size: 2.3rem;
+  border-radius: 0.7rem;
+  font-size: 2.1rem;
   font-weight: 600;
   text-align: center;
   letter-spacing: 0.1rem;
@@ -168,11 +164,6 @@
   .rs {
     right: 9%;
   }
-  /* .pro-col img {
-    height: 47rem;
-    width: auto;
-    max-width: 39rem;
-  } */
 }
 
 @media (max-width: 1521px) {
@@ -212,12 +203,8 @@
     /* gap: 3.5rem; */
   }
   .add-to-cart .cart-btn {
-    padding: 1.27rem 3rem;
-    border: 0.2rem solid #ffffff;
-    border-radius: 0.4rem;
-    font-size: 2.7rem;
-    letter-spacing: 0.1rem;
-    /* box-shadow: 0rem 0rem 0.7rem 0.6rem white; */
+    padding: 1.3rem 2.6rem;
+    font-size: 2.5rem;
   }
   .rs {
     font-size: 3.3rem;
@@ -238,15 +225,12 @@
     height: 52rem;
     width: auto;
     max-width: 42rem;
-    /* box-shadow: 0rem 0rem 1rem 0.7rem white; */
   }
   .cake-name span {
     font-size: 4.5rem;
-    letter-spacing: 0.1rem;
   }
   .cake-ingredients span {
     font-size: 3.4rem;
-    letter-spacing: 0.1rem;
   }
   .product-details {
     font-size: 3.2rem;
@@ -254,12 +238,8 @@
     gap: 3.5rem;
   }
   .add-to-cart .cart-btn {
-    padding: 1.5rem 3.2rem;
-    border: 0.2rem solid #ffffff;
-    border-radius: 0.4rem;
-    font-size: 3.2rem;
-    letter-spacing: 0.1rem;
-    /* box-shadow: 0rem 0rem 0.7rem 0.6rem white; */
+    padding: 1.5rem 2.9rem;
+    font-size: 2.8rem;
   }
   .rs {
     font-size: 3.6rem;
