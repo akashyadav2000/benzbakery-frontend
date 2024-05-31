@@ -56,6 +56,10 @@ function Footer() {
     //   setFeedbackMessage("Please correct the highlighted errors.");
     // }
   };
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    // closeMobileMenu();
+  };
 
   return (
     <>
@@ -92,7 +96,7 @@ function Footer() {
 
             <ul className="footer-link">
               <li>
-                <Link to={"/"}>Home</Link>
+                <Link to={"/"} onClick={handleScrollToTop}>Home</Link>
               </li>
               <li>
                 <Link to={"/Product"}>Products</Link>

@@ -84,7 +84,7 @@ function Header() {
         <nav className="navigate">
           <ul>
             <li>
-              <NavLink to={"/"}>Home</NavLink>
+              <NavLink to={"/"} onClick={handleScrollToTop}>Home</NavLink>
             </li>
             <li>{ProductNavigation}</li>
             <li>
