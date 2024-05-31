@@ -22,7 +22,7 @@
 
 .home p {
   font-family: "Roboto Serif", serif;
-  padding-inline: 30%;
+  padding-inline: 33%;
   padding-top: 1.2rem;
   font-size: 2.7rem;
   font-weight: 500;
@@ -80,6 +80,12 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .home-btn .slogan {
+    border: 0.3rem solid rgb(255, 255, 255);
+  }
+}
+
 @media (max-width: 1230px) {
   .home h1 {
     /* padding-top: 35.3vh; */
@@ -126,7 +132,6 @@
   }
 
   .home-btn .slogan {
-    text-shadow: 0.25rem 0.15rem 0.15rem #4d2000;
     padding: 1.19rem 3.4rem;
     font-size: 2.5rem;
   }
@@ -162,6 +167,11 @@
     font-size: 2.3rem;
   }
 }
+@media (max-width: 850px) {
+  .home-btn .slogan {
+    border: 0.4rem solid rgb(255, 255, 255);
+  }
+}
 @media (max-width: 670px) {
   .home h1 {
     font-size: 8rem;
@@ -182,6 +192,7 @@
   .home-btn .slogan {
     padding: 1.9rem 4.2rem;
     font-size: 3.2rem;
+    border: 0.5rem solid rgb(255, 255, 255);
   }
 
   .slogan .angle-right {
