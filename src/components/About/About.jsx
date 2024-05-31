@@ -7,10 +7,6 @@ function About() {
       <div className="about">
         {/* <h1 className="about-title">About Us</h1> */}
 
-        <img src="./Images/about-background.jpg" alt="about-background" className="about-photo" />
-
-        <img src="" className="mobile-bg" alt="about-mobile-photo" />
-
         <div className="about_details">
           <p>
             Our story begins with a love of cooking and a desire to share that love with our community. Today benz Bakery is a symbol of integrity.

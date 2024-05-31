@@ -1,37 +1,24 @@
 .about {
   height: 100vh;
   width: 100%;
-  position: relative;
-  display: inline-block;
-  /* background-color: rgba(255, 214, 172, 0.3); */
-}
-.about-photo {
-  height: 100vh;
-  display: block; /* Removes the bottom whitespace of the image */
-  width: 100%;
-  /* background: rgba(27, 27, 27, 0.2); */
-  /* background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6px); */
-  /* padding: 6% 4.5% 2.5%; */
-  /* padding: 12.5rem 7rem 5.75rem; */
-  object-fit: cover;
-  background-repeat: no-repeat;
+  /* position: relative;
+  display: inline-block; */
+  background-image: url(./Images/about-background.jpg);
+  /* object-fit: cover; */
+  /* background-repeat: no-repeat; */
   background-size: cover;
-}
-.mobile-bg {
-  display: none;
+  /* padding-top: 6.5rem; */
 }
 
 .about_details {
   position: absolute;
-  top: 76%;
+  top: 80%;
   left: 50%;
-  /* height: 30%; */
   height: auto;
   width: 75%;
   transform: translate(-50%, -50%);
   background: rgb(255 255 255 / 75%);
-  /* backdrop-filter: blur(.4rem); */
+  /* backdrop-filter: blur(0.4rem); */
   padding: 0.5rem 3%;
   border-radius: 0.4rem;
 }
@@ -39,7 +26,7 @@
 .about_details p {
   font-family: "Poppins", cursive;
   font-size: 2.2rem;
-  font-weight: 400;
+  font-weight: 500;
   text-align: justify;
   margin-block: 1.5rem;
   color: #d35800;
@@ -77,7 +64,7 @@
 }
 
 .value {
-  margin-top: 5.25rem;
+  margin-top: 6rem;
   /* margin-bottom: 5.25rem; */
   background: linear-gradient(to top, #e9defa, #fdcbf1);
 }
@@ -176,6 +163,10 @@
 }
 
 @media (max-width: 1160px) {
+  .about_details p {
+    font-size: 2.3rem;
+    margin-block: 1.6rem;
+  }
   .v-cell img {
     height: 7.5rem;
   }
@@ -195,6 +186,10 @@
 }
 
 @media (max-width: 940px) {
+  .about_details p {
+    font-size: 2.5rem;
+    margin-block: 1.9rem;
+  }
   .v-cell {
     width: 42rem;
   }
@@ -205,7 +200,8 @@
 
 @media (max-width: 850px) {
   .about_details p {
-    font-size: 2.6rem;
+    font-size: 2.9rem;
+    margin-block: 2.3rem;
   }
   .value-title {
     font-size: 4.8rem;
@@ -329,4 +325,17 @@
     width: 80vw;
     line-height: 4rem;
   }
+}
+
+@media (max-width: 430px) {
+  .about_details {
+    top: 77%;
+    left: 50%;
+    height: auto;
+    width: 95%;
+    padding: 0.5rem 3%;
+  }
+  /* .about {
+    height: 100lvh;
+  } */
 }
