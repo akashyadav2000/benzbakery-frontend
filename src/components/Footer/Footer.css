@@ -274,6 +274,11 @@ ul li a:hover {
   .social-icons {
     margin-top: -1%;
   }
+  .newsletter-message.success {
+    font-size: 2.5rem;
+    margin-top: -3.6rem;
+    margin-bottom: 2.6rem;
+  }
   /*
   .copyright {
     font-size: 3.5rem;
@@ -336,10 +341,15 @@ ul li a:hover {
   }
   .newsletter input {
     font-size: 2.8rem;
-    height: 3.2rem;
+    height: 3.3rem;
   }
   .underline {
     top: 3.65rem;
+  }
+  .newsletter-message.success {
+    font-size: 2.8rem;
+    margin-top: -3.4rem;
+    margin-bottom: -3rem;
   }
 }
 @media (max-width: 739px) {
@@ -363,6 +373,11 @@ ul li a:hover {
   }
   .underline {
     top: 4rem;
+  }
+  .newsletter-message.success {
+    /* font-size: 2.7rem; */
+    margin-top: -4rem;
+    margin-bottom: -4.5rem;
   }
 }
 
@@ -394,6 +409,11 @@ ul li a:hover {
   .foot-col .f-logo {
     width: 10rem;
     height: 10rem;
+  }
+  .newsletter-message.success {
+    font-size: 3.1rem;
+    /* margin-top: -3rem;
+    margin-bottom: 5rem; */
   }
 }
 
@@ -446,6 +466,11 @@ ul li a:hover {
   .copyright {
     font-size: 3.5rem;
     padding-block: 3px;
+  }
+  .newsletter-message.success {
+    font-size: 3.3rem;
+    margin-top: -3rem;
+    margin-bottom: 5rem;
   }
 }
 

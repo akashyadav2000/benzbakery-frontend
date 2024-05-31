@@ -16,7 +16,7 @@ function Cart() {
   return (
     <main className="cart-container">
       <div className="all-cart-items-container">
-        <div className="shopping-title"><span>shopping Cart</span></div>
+        <div className="shopping-title"><span>Shopping Cart</span></div>
         {finalItems.map((item) => (
           <CartItem key={item.id} item={item}
           />

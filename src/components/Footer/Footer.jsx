@@ -45,7 +45,7 @@ function Footer() {
         // dispatch(login(user));
         setFeedbackMessage("Thank you for subscribing!...");
         setEmail(""); // Clear the input field
-        setTimeout(() => setFeedbackMessage(""), 2000);
+        setTimeout(() => setFeedbackMessage(""), 2000000);
       } catch (err) {
         if (err.response && err.response.data) {
           setFeedbackMessage(err.response.data.message || "An error occurred. Please try again.");
