@@ -864,10 +864,10 @@ header .user-cart a {
     margin-bottom: -0.2rem;
   }
   .cake-col {
-    box-shadow: 0 2.1rem 2rem rgb(236, 35, 119);
+    box-shadow: 0 1.8rem 2rem rgb(236, 35, 119);
   }
   .wed-cake-col {
-    box-shadow: 0 0.8rem 2rem rgb(236, 35, 119);
+    box-shadow: 0 0.6rem 2rem rgb(236, 35, 119);
   }
   .user-info {
     max-width: 75rem;
