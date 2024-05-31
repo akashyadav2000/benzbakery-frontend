@@ -192,7 +192,7 @@
   .home-btn .slogan {
     padding: 1.9rem 4.2rem;
     font-size: 3.2rem;
-    border: 0.5rem solid rgb(255, 255, 255);
+    border: 0.44rem solid rgb(255, 255, 255);
   }
 
   .slogan .angle-right {
@@ -204,7 +204,7 @@
     padding-inline: 13%;
   }
   .home-btn .slogan {
-    padding: 1.8rem 3.8rem;
+    padding: 1.6rem 3.3rem;
     font-size: 3.5rem;
     text-shadow: 0.25rem 0.15rem 0.15rem #4d2000;
   }
