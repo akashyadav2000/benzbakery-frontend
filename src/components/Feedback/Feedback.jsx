@@ -20,9 +20,9 @@ function Feedback() {
       name: /^[A-Za-z][A-Za-z\s]*$/.test(name) && name.length <= 50
         ? ""
         : "Name should only contain alphabets.",
-      email: /^[^\s@]+@[^\s@]+\.(?:com|net|org|edu)$/.test(email) && email.length <= 100
+      email: /^[^\s@]+@([^\s@]+\.)?gmail\.com$/.test(email) && email.length <= 100
         ? ""
-        : "Invalid email address.",
+        : "Please enter a valid Gmail address",
       productName: /^[A-Za-z][A-Za-z\s]*$/.test(productName) && productName.length <= 50
         ? ""
         : "Product name only contain alphabets.",

@@ -25,9 +25,9 @@ function Footer() {
 
   const validateInputs = () => {
     const updatedErrorMessages = {
-      email: /^[^\s@]+@[^\s@]+\.(?:com)$/.test(email) && email.length <= 50
+      email: /^[^\s@]+@([^\s@]+\.)?gmail\.com$/.test(email) && email.length <= 50
         ? ""
-        : "Please enter a valid email.",
+        : "Please enter a valid Gmail",
     };
     const isValid = Object.values(updatedErrorMessages).every(
       (message) => message === ""
