@@ -57,7 +57,7 @@ function Signup() {
     );
   };
 
-  const handleSignup = async (e) => {
+  const signup_handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validateInputs()) {
@@ -84,6 +84,12 @@ function Signup() {
     }
   };
 
+  const handleSignup = () => {
+    if (validateInputs()) {
+      console.log("Signup successful!");
+    }
+  };
+
   return (
     <div className="signup-mobile-bg">
       <div className="signup-container">
@@ -91,7 +97,7 @@ function Signup() {
           <img src="./Images/signup-login-bg.jpg" alt="Signup_Background" />
         </div>
         <div className="signup-form-container" id="signup_form_container">
-          <form onSubmit={handleSignup}>
+          <form onSubmit={signup_handleSubmit}>
             <div className="signup-user-details">
               <div className="signup-title">REGISTRATION</div>
 
@@ -182,7 +188,7 @@ function Signup() {
               <p className="signup-error-messages">{errorMessages.confirmPassword}</p>
 
 
-              <button id="signup_btn" className="signup-btn" type="submit" disabled={loading}>
+              <button id="signup_btn" className="signup-btn" type="submit" onClick={handleSignup} disabled={loading}>
                 {loading ? "Please wait..." : "Sign Up"}
               </button>
 

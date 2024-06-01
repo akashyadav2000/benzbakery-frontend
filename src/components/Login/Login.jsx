@@ -21,6 +21,8 @@ function Login() {
 
 
   const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -54,6 +56,7 @@ function Login() {
   const login_handleSubmit = async (e) => {
     e.preventDefault();
     if (validateInputs()) {
+      setLoading(true);
       try {
         const response = await axios.post("https://benzbakery-backend.onrender.com/login", {
           email,
@@ -64,12 +67,14 @@ function Login() {
           dispatch(login(user));
           setFeedbackMessage("Login successful ...");
           setTimeout(() => {
+            setLoading(false);
             navigate("/");
           }, 2000);
         } else {
           setFeedbackMessage(response.data.message || "Login failed. Please try again.");
         }
       } catch (err) {
+        setLoading(false);
         if (err.response && err.response.data) {
           setFeedbackMessage(err.response.data);
         } else {
@@ -145,8 +150,9 @@ function Login() {
                 className="login-btn"
                 type="submit"
                 onClick={handleLogin}
+                disabled={loading}
               >
-                Log In
+                {loading ? "Please wait..." : "Log In"}
               </button>
 
               {feedbackMessage && (
