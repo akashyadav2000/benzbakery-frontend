@@ -35,9 +35,9 @@ function Login() {
 
   const validateInputs = () => {
     const updatedErrorMessages = {
-      email: /^[^\s@]+@[^\s@]+\.(?:com)$/.test(email)
+      email: /^[^\s@]+@([^\s@]+\.)?gmail\.com$/.test(email)
         ? ""
-        : "Invalid email address",
+        : "Please enter a valid Gmail address",
       password:
         /^(?=.*[A-Za-z0-9])(?=.*[@#$%^&+=])[A-Za-z0-9@#$%^&+=]{8,}$/.test(
           password
@@ -46,17 +46,24 @@ function Login() {
           : "Password must be 8 characters long, include special character and number.",
     };
 
-    setErrorMessages(updatedErrorMessages);
-
-    return Object.values(updatedErrorMessages).every(
+    const isValid = Object.values(updatedErrorMessages).every(
       (message) => message === ""
     );
+
+    setErrorMessages(updatedErrorMessages);
+
+    return { isValid, updatedErrorMessages };
   };
 
   const login_handleSubmit = async (e) => {
     e.preventDefault();
-    if (validateInputs()) {
+
+    const { isValid } = validateInputs();
+
+    if (isValid) {
       setLoading(true);
+      setFeedbackMessage("");
+
       try {
         const response = await axios.post("https://benzbakery-backend.onrender.com/login", {
           email,
@@ -89,8 +96,10 @@ function Login() {
   };
 
   const handleLogin = () => {
-    if (validateInputs()) {
+    const { isValid } = validateInputs();
+    if (isValid) {
       console.log("Login successful!");
+      setFeedbackMessage(""); // Clear the feedback message
     }
   };
 
