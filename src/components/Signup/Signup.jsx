@@ -40,10 +40,9 @@ function Signup() {
       username: /^[A-Za-z][A-Za-z\s]*$/.test(name) && name.length <= 23
         ? ""
         : "Name should only contain alphabets",
-      email: /^[^\s@]+@[^\s@]+\.(?:com)$/.test(email) && email.length <= 50
-
+      email: /^[^\s@]+@([^\s@]+\.)?gmail\.com$/.test(email) && email.length <= 50
         ? ""
-        : "Invalid email address",
+        : "Please enter a valid Gmail address",
       password: /^(?=.*[A-Za-z])(?=.*[@#$%^&+=])(?=.*[0-9])[A-Za-z0-9@#$%^&+=]{8,}$/.test(password) && password.length <= 30
         ? ""
         : "Password must be 8 characters long, include special character and number.",
