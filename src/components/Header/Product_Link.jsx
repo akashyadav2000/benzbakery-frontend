@@ -1,20 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Product_Link = () => {
   return (
     <ul>
       <li>
-        <Link to={"/Cake"}>Cakes</Link>
+        <NavLink to={"/Cake"} className={({ isActive }) =>
+          isActive ? "active-link" : "inactive-link"
+        }>Cakes</NavLink>
       </li>
       <li>
-        <Link to={"/Pastry"}>Pastrys</Link>
+        <NavLink to={"/Pastry"} className={({ isActive }) =>
+          isActive ? "active-link" : "inactive-link"
+        }>Pastrys</NavLink>
       </li>
       <li>
-        <Link to={"/CupCake"}>Cup Cakes</Link>
+        <NavLink to={"/CupCake"} className={({ isActive }) =>
+          isActive ? "active-link" : "inactive-link"
+        }>Cup Cakes</NavLink>
       </li>
       <li>
-        <Link to={"/WeddingCake"}>Wedding Cakes</Link>
+        <NavLink to={"/WeddingCake"} className={({ isActive }) =>
+          isActive ? "active-link" : "inactive-link"
+        }>Wedding Cakes</NavLink>
       </li>
     </ul>
   );

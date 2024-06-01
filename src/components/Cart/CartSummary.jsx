@@ -49,7 +49,7 @@ const CartSummary = () => {
         </div>
       </div>
       <button className="btn-place-order">
-        <div className="css-xjhrni">Proceed to buy</div>
+        <div className="buy-btn">Proceed to buy</div>
       </button>
     </div>
   </>

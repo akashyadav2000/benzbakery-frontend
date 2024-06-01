@@ -18,6 +18,7 @@ function Signup() {
     confirmPassword: "",
   });
   const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -40,7 +41,6 @@ function Signup() {
         ? ""
         : "Name should only contain alphabets",
       email: /^[^\s@]+@[^\s@]+\.(?:com)$/.test(email) && email.length <= 50
-
         ? ""
         : "Invalid email address",
       password: /^(?=.*[A-Za-z])(?=.*[@#$%^&+=])(?=.*[0-9])[A-Za-z0-9@#$%^&+=]{8,}$/.test(password) && password.length <= 30
@@ -60,15 +60,18 @@ function Signup() {
     e.preventDefault();
 
     if (validateInputs()) {
+      setLoading(true);
       try {
         const result = await axios.post("https://benzbakery-backend.onrender.com/signup", { name, email, password });
         const user = { name, email }; // Assuming the response contains user details
         dispatch(login(user));
         setFeedbackMessage("Registration successful...");
         setTimeout(() => {
+          setLoading(false);
           navigate('/Login');
         }, 2000);
       } catch (err) {
+        setLoading(false);
         if (err.response && err.response.data) {
           setFeedbackMessage(err.response.data.message || "An error occurred. Please try again.");
         } else {
@@ -95,7 +98,6 @@ function Signup() {
               <input
                 type="text"
                 id="uname"
-                // placeholder="Username"
                 required
                 className="signup-text-box"
                 autoComplete="username"
@@ -110,7 +112,6 @@ function Signup() {
               <input
                 type="email"
                 id="email"
-                // placeholder="Email-id"
                 required
                 className="signup-text-box"
                 autoComplete="email"
@@ -125,7 +126,6 @@ function Signup() {
               <input
                 type={eye ? "password" : "text"}
                 id="pass"
-                // placeholder="Password"
                 required
                 className="signup-pass-box signup-text-box"
                 autoComplete="new-password"
@@ -153,7 +153,6 @@ function Signup() {
               <input
                 type={ceye ? "password" : "text"}
                 id="cpass"
-                // placeholder="Confirm Password"
                 required
                 className="signup-pass-box signup-text-box"
                 autoComplete="new-password"
@@ -177,8 +176,8 @@ function Signup() {
               )}
               <p className="signup-error-messages">{errorMessages.confirmPassword}</p>
 
-              <button id="signup_btn" className="signup-btn" type="submit">
-                Sign Up
+              <button id="signup_btn" className="signup-btn" type="submit" disabled={loading}>
+                {loading ? "Please wait..." : "Sign Up"}
               </button>
 
               {feedbackMessage && (

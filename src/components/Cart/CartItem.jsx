@@ -20,8 +20,10 @@ function CartItem({ item }) {
   };
 
   const handleIncrement = () => {
-    dispatch(cartActions.addToCart(item.id));
-  };
+    if (itemCount < 5) {
+      dispatch(cartActions.addToCart(item.id));
+    }
+  }
 
   const handleDecrement = () => {
     dispatch(cartActions.removeSingleItem(item.id));

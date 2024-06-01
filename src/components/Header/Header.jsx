@@ -67,9 +67,17 @@ function Header() {
     closeMobileMenu();
   };
 
+  const isActiveProductLink = ['/Cake', '/Pastry', '/CupCake', '/WeddingCake'].includes(location.pathname);
+
   const ProductNavigation = (
     <>
-      <Link to={"/Product"}>Product</Link>
+      <NavLink to={"/Product"}
+        className={({ isActive }) =>
+          isActive || isActiveProductLink ? "active-link" : "inactive-link"
+        }
+      >
+        Product
+      </NavLink>
       {isHomePage ? <Product_AnchorLink /> : <Product_Link />}
     </>
   );
@@ -84,14 +92,28 @@ function Header() {
         <nav className="navigate">
           <ul>
             <li>
-              <NavLink to={"/"} onClick={handleScrollToTop}>Home</NavLink>
+              <NavLink to={"/"} onClick={handleScrollToTop}
+                className={({ isActive }) =>
+                  isActive ? "active-link" : "inactive-link"
+                }
+              >Home</NavLink>
             </li>
-            <li>{ProductNavigation}</li>
             <li>
-              <NavLink to={"About"}>About</NavLink>
+              {ProductNavigation}
             </li>
             <li>
-              <Link to={"Feedback"}>Feedback</Link>
+              <NavLink to={"About"}
+                className={({ isActive }) =>
+                  isActive ? "active-link" : "inactive-link"
+                }
+              >About</NavLink>
+            </li>
+            <li>
+              <NavLink to={"Feedback"}
+                className={({ isActive }) =>
+                  isActive ? "active-link" : "inactive-link"
+                }
+              >Feedback</NavLink>
             </li>
           </ul>
         </nav>
