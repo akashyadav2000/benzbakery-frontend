@@ -49,18 +49,24 @@ function Signup() {
       confirmPassword: password === confirmPassword ? "" : "Passwords do not match",
     };
 
-    setErrorMessages(updatedErrorMessages);
-
-    return Object.values(updatedErrorMessages).every(
+    const isValid = Object.values(updatedErrorMessages).every(
       (message) => message === ""
     );
+
+    setErrorMessages(updatedErrorMessages);
+
+    return { isValid, updatedErrorMessages };
   };
+
 
   const signup_handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (validateInputs()) {
+    const { isValid } = validateInputs();
+
+    if (isValid) {
       setLoading(true);
+      setFeedbackMessage("");
       try {
         const result = await axios.post("https://benzbakery-backend.onrender.com/signup", { name, email, password });
         const user = { name, email }; // Assuming the response contains user details
@@ -84,8 +90,10 @@ function Signup() {
   };
 
   const handleSignup = () => {
-    if (validateInputs()) {
+    const { isValid } = validateInputs();
+    if (isValid) {
       console.log("Signup successful!");
+      setFeedbackMessage(""); // Clear the feedback message
     }
   };
 
