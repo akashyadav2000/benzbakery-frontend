@@ -29,21 +29,27 @@ function Footer() {
         ? ""
         : "Please enter a valid email.",
     };
-    setErrorMessages(updatedErrorMessages);
-
-    return Object.values(updatedErrorMessages).every(
+    const isValid = Object.values(updatedErrorMessages).every(
       (message) => message === ""
     );
+
+    setErrorMessages(updatedErrorMessages);
+
+    return { isValid, updatedErrorMessages };
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validateInputs()) {
+
+    const { isValid } = validateInputs();
+
+    if (isValid) {
+      setFeedbackMessage("");
       try {
         const result = await axios.post("https://benzbakery-backend.onrender.com/newsLetter", { email });
         setFeedbackMessage("Thank you for subscribing!...");
         setEmail(""); // Clear the input field
-        setTimeout(() => setFeedbackMessage(""), 2000000);
+        setTimeout(() => setFeedbackMessage(""), 2000);
       } catch (err) {
         if (err.response && err.response.data) {
           setFeedbackMessage(err.response.data.message || "An error occurred. Please try again.");
