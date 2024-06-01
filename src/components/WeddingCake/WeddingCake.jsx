@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { cocktailActions } from "../Store/cocktailSlice";
 
 function WeddingCake({ weddingCakeItem }) {
@@ -13,7 +14,8 @@ function WeddingCake({ weddingCakeItem }) {
   return (
     <>
       <div className="wed-cake-col" id={weddingCakeItem.id}>
-        <img src={weddingCakeItem.image} alt={weddingCakeItem.alt_Name} />
+        <LazyLoadImage src={weddingCakeItem.image} alt={weddingCakeItem.alt_Name} effect="blur"
+        />
         <div className="price">
           <Link
             to={"/Cocktail"}

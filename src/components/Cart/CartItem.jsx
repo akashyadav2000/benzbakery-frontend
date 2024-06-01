@@ -5,6 +5,7 @@ import "./Cart.css";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../Store/cartSlice";
 import { useSelector } from "react-redux";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function CartItem({ item }) {
   const itemIds = useSelector((state) => state.cart);
@@ -33,7 +34,7 @@ function CartItem({ item }) {
     <>
       <div className="cart-item-container">
         <div className="cart-left-part">
-          <img src={item.image} />
+          <LazyLoadImage src={item.image} effect="blur" />
 
         </div>
         <div className="cart-right-part">
