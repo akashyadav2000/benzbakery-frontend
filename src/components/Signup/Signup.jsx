@@ -41,6 +41,7 @@ function Signup() {
         ? ""
         : "Name should only contain alphabets",
       email: /^[^\s@]+@[^\s@]+\.(?:com)$/.test(email) && email.length <= 50
+
         ? ""
         : "Invalid email address",
       password: /^(?=.*[A-Za-z])(?=.*[@#$%^&+=])(?=.*[0-9])[A-Za-z0-9@#$%^&+=]{8,}$/.test(password) && password.length <= 30
@@ -83,7 +84,6 @@ function Signup() {
     }
   };
 
-
   return (
     <div className="signup-mobile-bg">
       <div className="signup-container">
@@ -99,6 +99,7 @@ function Signup() {
               <input
                 type="text"
                 id="uname"
+                // placeholder="Username"
                 required
                 className="signup-text-box"
                 autoComplete="username"
@@ -113,6 +114,7 @@ function Signup() {
               <input
                 type="email"
                 id="email"
+                // placeholder="Email-id"
                 required
                 className="signup-text-box"
                 autoComplete="email"
@@ -127,6 +129,7 @@ function Signup() {
               <input
                 type={eye ? "password" : "text"}
                 id="pass"
+                // placeholder="Password"
                 required
                 className="signup-pass-box signup-text-box"
                 autoComplete="new-password"
@@ -154,6 +157,7 @@ function Signup() {
               <input
                 type={ceye ? "password" : "text"}
                 id="cpass"
+                // placeholder="Confirm Password"
                 required
                 className="signup-pass-box signup-text-box"
                 autoComplete="new-password"
@@ -176,6 +180,7 @@ function Signup() {
                 />
               )}
               <p className="signup-error-messages">{errorMessages.confirmPassword}</p>
+
 
               <button id="signup_btn" className="signup-btn" type="submit" disabled={loading}>
                 {loading ? "Please wait..." : "Sign Up"}
