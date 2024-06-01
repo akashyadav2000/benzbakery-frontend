@@ -1,7 +1,9 @@
 import { useSelector } from "react-redux";
+import { useState } from "react";
 import "./Cart.css";
 
 const CartSummary = () => {
+  const [showPaymentMessage, setShowPaymentMessage] = useState(false);
   const bagItems = useSelector((state) => state.cart);
 
   const categories = [
@@ -27,6 +29,12 @@ const CartSummary = () => {
 
   let finalPayment = totalValue + CONVENIENCE_FEES;
 
+  const handleProceedToBuy = () => {
+    // Show the payment gateway message when the user clicks on "Proceed to buy"
+    setShowPaymentMessage(true);
+    // Add your logic for proceeding with the payment here
+  };
+
   return (<>
     <div className="cart-summary">
       <div className="bag-details-container">
@@ -48,9 +56,14 @@ const CartSummary = () => {
           <span className="price-item-value">₹{finalPayment}</span>
         </div>
       </div>
-      <button className="btn-place-order">
-        <div className="buy-btn">Proceed to buy</div>
+      <button className="btn-place-order" onClick={handleProceedToBuy}>
+        Proceed to buy
       </button>
+      {showPaymentMessage && (
+        <div className="payment-gateway-message">
+          Payment gateway adding soon
+        </div>
+      )}
     </div>
   </>
   );
