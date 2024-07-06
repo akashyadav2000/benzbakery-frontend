@@ -3,11 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-regular-svg-icons";
-import {
-  faEnvelope,
-  faLock,
-  faCheckCircle,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLock, faCheckCircle, } from "@fortawesome/free-solid-svg-icons";
 import "./Login.css";
 import { login } from "../Store/authSlice";
 import { useDispatch } from "react-redux";
@@ -19,15 +15,12 @@ function Login() {
     password: "",
   });
 
-
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [loading, setLoading] = useState(false);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
 
   const handlePasswordEye = () => {
     setEye(!eye);
@@ -38,12 +31,11 @@ function Login() {
       email: /^[^\s@]+@([^\s@]+\.)?gmail\.com$/.test(email)
         ? ""
         : "Please enter a valid Gmail address",
-      password:
-        /^(?=.*[A-Za-z0-9])(?=.*[@#$%^&+=])[A-Za-z0-9@#$%^&+=]{8,}$/.test(
-          password
-        )
-          ? ""
-          : "Password must be 8 characters long, include special character and number.",
+      password: /^(?=.*[A-Za-z0-9])(?=.*[@#$%^&+=])[A-Za-z0-9@#$%^&+=]{8,}$/.test(
+        password
+      )
+        ? ""
+        : "Password must be 8 characters long, include special character and number.",
     };
 
     const isValid = Object.values(updatedErrorMessages).every(
@@ -61,7 +53,6 @@ function Login() {
     const { isValid } = validateInputs();
 
     if (isValid) {
-      setLoading(true);
       setFeedbackMessage("");
 
       try {
@@ -74,20 +65,19 @@ function Login() {
           dispatch(login(user));
           setFeedbackMessage("Login successful ...");
           setTimeout(() => {
-            setLoading(false);
             navigate("/");
-          }, 2000);
+          }, 1000);
         } else {
           setFeedbackMessage(response.data.message || "Login failed. Please try again.");
         }
       } catch (err) {
-        setLoading(false);
         if (err.response && err.response.data) {
           setFeedbackMessage(err.response.data);
         } else {
-          setFeedbackMessage(
-            response.data.message || "Login failed. Please try again."
-          );
+          setFeedbackMessage("Login failed. Please try again.");
+          // setFeedbackMessage(
+          //   response.data.message || "Login failed. Please try again."
+          // );
         }
       }
     } else {
@@ -161,7 +151,7 @@ function Login() {
                 onClick={handleLogin}
                 disabled={loading}
               >
-                {loading ? "Please wait..." : "Log In"}
+                Log In
               </button>
 
               {feedbackMessage && (

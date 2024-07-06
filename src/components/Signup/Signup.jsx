@@ -58,14 +58,12 @@ function Signup() {
     return { isValid, updatedErrorMessages };
   };
 
-
   const signup_handleSubmit = async (e) => {
     e.preventDefault();
 
     const { isValid } = validateInputs();
 
     if (isValid) {
-      setLoading(true);
       setFeedbackMessage("");
       try {
         const result = await axios.post("https://benzbakery-backend.onrender.com/signup", { name, email, password });
@@ -73,11 +71,9 @@ function Signup() {
         dispatch(login(user));
         setFeedbackMessage("Registration successful...");
         setTimeout(() => {
-          setLoading(false);
           navigate('/Login');
-        }, 2000);
+        }, 1000);
       } catch (err) {
-        setLoading(false);
         if (err.response && err.response.data) {
           setFeedbackMessage(err.response.data.message || "An error occurred. Please try again.");
         } else {
@@ -194,9 +190,8 @@ function Signup() {
               )}
               <p className="signup-error-messages">{errorMessages.confirmPassword}</p>
 
-
-              <button id="signup_btn" className="signup-btn" type="submit" onClick={handleSignup} disabled={loading}>
-                {loading ? "Please wait..." : "Sign Up"}
+              <button id="signup_btn" className="signup-btn" type="submit" onClick={handleSignup}>
+                Sign Up
               </button>
 
               {feedbackMessage && (
