@@ -66,7 +66,7 @@ function Login() {
           setFeedbackMessage("Login successful ...");
           setTimeout(() => {
             navigate("/");
-          }, 1500);
+          }, 1200);
         } else {
           setFeedbackMessage(response.data.message || "Login failed. Please try again.");
         }
