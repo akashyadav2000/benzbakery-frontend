@@ -71,7 +71,7 @@ function Signup() {
         setFeedbackMessage("Registration successful...");
         setTimeout(() => {
           navigate('/Login');
-        }, 1000);
+        }, 1500);
       } catch (err) {
         if (err.response && err.response.data) {
           setFeedbackMessage(err.response.data.message || "An error occurred. Please try again.");
