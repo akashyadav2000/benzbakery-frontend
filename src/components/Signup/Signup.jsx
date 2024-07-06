@@ -18,7 +18,6 @@ function Signup() {
     confirmPassword: "",
   });
   const [feedbackMessage, setFeedbackMessage] = useState("");
-  const [loading, setLoading] = useState(false);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -190,7 +189,11 @@ function Signup() {
               )}
               <p className="signup-error-messages">{errorMessages.confirmPassword}</p>
 
-              <button id="signup_btn" className="signup-btn" type="submit" onClick={handleSignup}>
+              <button
+                id="signup_btn" className="signup-btn"
+                type="submit"
+                onClick={handleSignup}
+              >
                 Sign Up
               </button>
 

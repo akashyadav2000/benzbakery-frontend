@@ -149,7 +149,6 @@ function Login() {
                 className="login-btn"
                 type="submit"
                 onClick={handleLogin}
-                disabled={loading}
               >
                 Log In
               </button>
