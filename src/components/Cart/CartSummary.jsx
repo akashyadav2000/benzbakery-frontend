@@ -33,7 +33,7 @@ const CartSummary = () => {
     try {
       // Replace with your backend API endpoint for order creation
       const { data: order } = await axios.post("http://localhost:5000/create-order", {
-        amount: totalPrice, // totalPrice should already exist in your code
+        amount: finalPayment, // totalPrice should already exist in your code
         receipt: "receipt_" + new Date().getTime(),
       });
 
