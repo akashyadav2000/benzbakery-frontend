@@ -32,7 +32,7 @@ const CartSummary = () => {
   const handleProceedToBuy = async () => {
     try {
       // Replace with your backend API endpoint for order creation
-      const { data: order } = await axios.post("http://localhost:5000/create-order", {
+      const { data: order } = await axios.post("https://benzbakery-backend.onrender.com/create-order", {
         amount: finalPayment, // totalPrice should already exist in your code
         receipt: "receipt_" + new Date().getTime(),
       });
