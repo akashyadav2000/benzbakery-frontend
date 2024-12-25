@@ -50,7 +50,7 @@ const CartSummary = () => {
         description: "Complete your purchase",
         order_id: order.id,
         handler: function (response) {
-          alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
+          // alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
           dispatch(cartActions.clearCart()); // Dispatch the action to clear the cart
         },
         prefill: {
