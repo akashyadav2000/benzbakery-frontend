@@ -28,65 +28,40 @@ const CartSummary = () => {
   let totalItem = bagItems.length;
   let finalPayment = totalValue + CONVENIENCE_FEES;
 
-  // const handleProceedToBuy = () => {
-  //   setShowPaymentMessage(true);
-  // };
-
   const handleProceedToBuy = async () => {
     try {
-      const response = await fetch("http://localhost:3001/create-order", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ amount: finalPayment, currency: "INR" }),
+      // Replace with your backend API endpoint for order creation
+      const { data: order } = await axios.post("http://localhost:5000/create-order", {
+        amount: totalPrice, // totalPrice should already exist in your code
+        receipt: "receipt_" + new Date().getTime(),
       });
 
-      const orderData = await response.json();
-      if (!response.ok) {
-        throw new Error(orderData.error || 'Something went wrong');
-      }
-
-      // Ensure window.Razorpay is available
-      if (typeof window.Razorpay !== 'function') {
-        alert('Razorpay SDK not loaded. Please try again.');
-        return;
-      }
-
+      // Razorpay options
       const options = {
-        key: process.env.REACT_APP_KEY_ID,
-        amount: orderData.amount,
-        currency: orderData.currency,
-        name: "Benz Bakery",
-        description: "Test Transaction",
-        order_id: orderData.id,
-        handler: async (response) => {
-          const verifyResponse = await fetch(
-            "http://localhost:3001/verify-payment",
-            {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(response),
-            }
-          );
-          const verification = await verifyResponse.json();
-          if (verification.success) {
-            alert("Payment Successful");
-          } else {
-            alert("Payment Verification Failed");
-          }
+        key: "YOUR_RAZORPAY_KEY_ID", // Replace with your Razorpay Key ID
+        amount: order.amount,
+        currency: order.currency,
+        name: "Your Shop",
+        description: "Complete your purchase",
+        order_id: order.id,
+        handler: function (response) {
+          alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
         },
         prefill: {
-          name: "Akash Yadav",
-          email: "test@example.com",
-          contact: "9999999999",
+          name: user.name || "Guest", // Replace with your user's name if available
+          email: user.email || "guest@example.com", // Replace with your user's email if available
+          contact: "9999999999", // Replace with your user's contact if available
         },
-        theme: { color: "#F37254" },
+        theme: {
+          color: "#3399cc",
+        },
       };
 
+      // Open Razorpay payment window
       const razorpay = new window.Razorpay(options);
       razorpay.open();
     } catch (error) {
-      console.error(error);
-      alert("Payment failed. Please try again.");
+      console.error("Error while initiating payment:", error);
     }
   };
 
@@ -115,11 +90,11 @@ const CartSummary = () => {
       <button className="btn-place-order" onClick={handleProceedToBuy}>
         Proceed to buy
       </button>
-      {showPaymentMessage && (
+      {/* {showPaymentMessage && (
         <div className="payment-gateway-message">
           Payment gateway adding soon
         </div>
-      )}
+      )} */}
     </div>
   );
 };
