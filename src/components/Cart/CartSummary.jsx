@@ -28,7 +28,7 @@ const CartSummary = () => {
     return accumulator + currentItem.price * itemCount;
   }, 0);
 
-  const CONVENIENCE_FEES = 99;
+  const CONVENIENCE_FEES = 1;
   let totalItem = bagItems.length;
   let finalPayment = totalValue + CONVENIENCE_FEES;
 
