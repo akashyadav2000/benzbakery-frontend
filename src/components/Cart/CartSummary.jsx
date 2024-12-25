@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { useState } from "react";
+import axios from "axios";
 import "./Cart.css";
 
 const CartSummary = () => {
