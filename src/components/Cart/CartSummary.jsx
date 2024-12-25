@@ -39,7 +39,7 @@ const CartSummary = () => {
 
       // Razorpay options
       const options = {
-        key: rzp_test_S0d6DYSmzJxo6F, // Replace with your Razorpay Key ID
+        key: process.env.KEY_ID, // Replace with your Razorpay Key ID
         amount: order.amount,
         currency: order.currency,
         name: "Your Shop",
