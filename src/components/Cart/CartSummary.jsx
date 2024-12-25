@@ -26,16 +26,61 @@ const CartSummary = () => {
 
   const CONVENIENCE_FEES = 99;
   let totalItem = bagItems.length;
-
   let finalPayment = totalValue + CONVENIENCE_FEES;
 
-  const handleProceedToBuy = () => {
-    // Show the payment gateway message when the user clicks on "Proceed to buy"
-    setShowPaymentMessage(true);
-    // Add your logic for proceeding with the payment here
+  // const handleProceedToBuy = () => {
+  //   setShowPaymentMessage(true);
+  // };
+
+  const handleProceedToBuy = async () => {
+    try {
+      const response = await fetch("http://localhost:3001/create-order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ amount: finalPayment, currency: "INR" }),
+      });
+
+      const orderData = await response.json();
+      const options = {
+        key: process.env.REACT_APP_KEY_ID,
+        amount: orderData.amount,
+        currency: orderData.currency,
+        name: "Benz Bakery",
+        description: "Test Transaction",
+        order_id: orderData.id,
+        handler: async (response) => {
+          const verifyResponse = await fetch(
+            "http://localhost:3001/verify-payment",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(response),
+            }
+          );
+          const verification = await verifyResponse.json();
+          if (verification.success) {
+            alert("Payment Successful");
+          } else {
+            alert("Payment Verification Failed");
+          }
+        },
+        prefill: {
+          name: "Akash Yadav",
+          email: "test@example.com",
+          contact: "9999999999",
+        },
+        theme: { color: "#F37254" },
+      };
+
+      const razorpay = new window.Razorpay(options);
+      razorpay.open();
+    } catch (error) {
+      console.error(error);
+      alert("Payment failed. Please try again.");
+    }
   };
 
-  return (<>
+  return (
     <div className="cart-summary">
       <div className="bag-details-container">
         <div className="price-header">PRICE DETAILS ({totalItem} Items)</div>
@@ -65,7 +110,6 @@ const CartSummary = () => {
         </div>
       )}
     </div>
-  </>
   );
 };
 
