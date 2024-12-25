@@ -2,10 +2,13 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 import axios from "axios";
 import "./Cart.css";
+import { selectUser } from "../Store/authSlice";
 
 const CartSummary = () => {
   const [showPaymentMessage, setShowPaymentMessage] = useState(false);
   const bagItems = useSelector((state) => state.cart);
+  const user = useSelector(selectUser);
+  // const user = useSelector((state) => state.auth.user); 
 
   const categories = [
     "cakeItems",
@@ -51,7 +54,6 @@ const CartSummary = () => {
         prefill: {
           name: user.name || "Guest", // Replace with your user's name if available
           email: user.email || "guest@example.com", // Replace with your user's email if available
-          contact: "9999999999", // Replace with your user's contact if available
         },
         theme: {
           color: "#3399cc",
