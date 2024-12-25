@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import "./Cart.css";
 import { selectUser } from "../Store/authSlice";
-import { clearCart } from "../Store/cartSlice";
+import { cartActions } from "../Store/cartSlice";
 
 const CartSummary = () => {
   const [showPaymentMessage, setShowPaymentMessage] = useState(false);
@@ -51,7 +51,7 @@ const CartSummary = () => {
         order_id: order.id,
         handler: function (response) {
           alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
-          dispatch(clearCart());  // Dispatch the action to clear the cart
+          dispatch(cartActions.clearCart()); // Dispatch the action to clear the cart
         },
         prefill: {
           name: user.name || "Guest", // Replace with your user's name if available
