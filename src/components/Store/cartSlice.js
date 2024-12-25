@@ -32,5 +32,6 @@ const cartSlice = createSlice({
   },
 });
 
+export const { addToCart, removeFromCart, removeSingleItem, clearCart } = cartSlice.actions; // Export individual actions
 export const cartActions = cartSlice.actions;
 export default cartSlice;
