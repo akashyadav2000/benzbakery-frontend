@@ -12,7 +12,7 @@ export const CAKE_ITEMS = [
     ingredient:
       "Rainbow sprinkles,all-purpose flour ,baking powder,salt,unsalted butter, melted  granulated sugar,yogurt,milk, Vanilla Buttercream, unsalted butter,vanilla extract",
 
-    price: 1,
+    price: 999,
   },
   {
     id: "002",

@@ -3,7 +3,8 @@ import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import Product_AnchorLink from "./Product_AnchorLink";
 import Product_Link from "./Product_Link";
-import { logout, selectIsAuthenticated, selectUser } from "../Store/authSlice";
+import { selectIsAuthenticated } from "../Store/authSlice";
+import UserProfile from "./UserProfile";
 
 function Header() {
   const location = useLocation();
@@ -13,7 +14,6 @@ function Header() {
 
   const cart = useSelector((store) => store.cart);
   const isAuthenticated = useSelector(selectIsAuthenticated);
-  const user = useSelector(selectUser);
 
   const [showUserInfo, setShowUserInfo] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -54,12 +54,6 @@ function Header() {
     } else {
       navigate("/Login");
     }
-  };
-
-  const handleLogout = () => {
-    dispatch(logout());
-    setShowUserInfo(false);
-    navigate("/Login");
   };
 
   const handleScrollToTop = () => {
@@ -178,30 +172,14 @@ function Header() {
             <li>
               <Link to={"Feedback"}>Feedback</Link>
             </li>
-
           </ul>
         </div>
       </header >
 
-      {isAuthenticated && showUserInfo && (
-        <div className="blur-bg">
-          <div className="user-info">
-            <span className="user-profile-title">User Profile</span>
-            <div className="user-profile">
-              <img src="./Images/user-logo.png" alt="user-profile" />
-
-              <span className="hello-user">Welcome, {user?.name}</span>
-            </div>
-
-            <p>Name: {user?.name}</p>
-            <p>Email: {user?.email}</p>
-            <button onClick={handleLogout} className="logout-btn">
-              Logout
-            </button>
-          </div>
-        </div>
-      )
-      }
+      <UserProfile
+        showUserInfo={showUserInfo}
+        setShowUserInfo={setShowUserInfo}
+      />
     </>
   );
 }

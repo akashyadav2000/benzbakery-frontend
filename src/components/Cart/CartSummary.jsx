@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import "./Cart.css";
 import { selectUser } from "../Store/authSlice";
+import { clearCart } from "../Store/cartSlice";
 
 const CartSummary = () => {
   const [showPaymentMessage, setShowPaymentMessage] = useState(false);
@@ -28,7 +29,7 @@ const CartSummary = () => {
     return accumulator + currentItem.price * itemCount;
   }, 0);
 
-  const CONVENIENCE_FEES = 1;
+  const CONVENIENCE_FEES = 99;
   let totalItem = bagItems.length;
   let finalPayment = totalValue + CONVENIENCE_FEES;
 
@@ -50,6 +51,7 @@ const CartSummary = () => {
         order_id: order.id,
         handler: function (response) {
           alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
+          dispatch(clearCart());  // Dispatch the action to clear the cart
         },
         prefill: {
           name: user.name || "Guest", // Replace with your user's name if available
