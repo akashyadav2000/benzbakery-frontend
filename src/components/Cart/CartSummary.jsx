@@ -41,6 +41,16 @@ const CartSummary = () => {
       });
 
       const orderData = await response.json();
+      if (!response.ok) {
+        throw new Error(orderData.error || 'Something went wrong');
+      }
+
+      // Ensure window.Razorpay is available
+      if (typeof window.Razorpay !== 'function') {
+        alert('Razorpay SDK not loaded. Please try again.');
+        return;
+      }
+
       const options = {
         key: process.env.REACT_APP_KEY_ID,
         amount: orderData.amount,
@@ -79,6 +89,7 @@ const CartSummary = () => {
       alert("Payment failed. Please try again.");
     }
   };
+
 
   return (
     <div className="cart-summary">
