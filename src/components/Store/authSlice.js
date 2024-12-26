@@ -3,7 +3,6 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   isAuthenticated: false,
   user: null,
-  orders: [], // Ensure orders is initialized as an empty array
 };
 
 const authSlice = createSlice({
@@ -12,26 +11,19 @@ const authSlice = createSlice({
   reducers: {
     login(state, action) {
       state.isAuthenticated = true;
-      state.user = action.payload.user;
+      state.user = action.payload; // Store the full user information
     },
     logout(state) {
       state.isAuthenticated = false;
       state.user = null;
-      state.orders = [];
-    },
-    setOrders(state, action) {
-      state.orders = action.payload.orders || [];
     },
   },
 });
 
 // Selectors
-
-export const { login, logout, setOrders } = authSlice.actions;
-export const selectUser = (state) => state.auth.user;
-export default authSlice.reducer;
-
-
 export const selectIsAuthenticated = (state) => state.auth.isAuthenticated;
+export const selectUser = (state) => state.auth.user;
 
+export const { login, logout } = authSlice.actions;
 
+export default authSlice.reducer;
