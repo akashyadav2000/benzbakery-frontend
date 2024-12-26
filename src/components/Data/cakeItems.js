@@ -3,7 +3,6 @@ export const CAKE_ITEMS = [
     id: "001",
     image: "./Images/Sprinkles_Drip.jpg",
     alt_Name: "Sprinkles Drip Cake",
-    next_Page: "",
     item: "Sprinkles Drip",
 
     cakeD:
@@ -18,7 +17,6 @@ export const CAKE_ITEMS = [
     id: "002",
     image: "./Images/Red_Velvet_Cake.jpg",
     alt_Name: "Red Velvet Cake",
-    next_Page: " ",
     item: "Red Velvet Cake",
     cakeD:
       "The velvety-soft texture with the mild cocoa taste is the specialty of a red velvet cake.Perfect combination of red cake crumbs and white cream cheese with a creamy icing on top.",
@@ -31,7 +29,6 @@ export const CAKE_ITEMS = [
     id: "003",
     image: "./Images/Rainbow_Cake.jpg",
     alt_Name: " Rainbow Cake",
-    next_Page: " ",
     item: "Rainbow Cake",
     cakeD:
       "This is a cake about happiness, peace, and equality. There is nothing sad about rainbows and all those beautiful colors in harmony together.baking multiple layers to decorating the finished dessert.",
@@ -44,7 +41,6 @@ export const CAKE_ITEMS = [
     id: "004",
     image: "./Images/Crunchy_Chocolate.jpg",
     alt_Name: "Crunchy Chocolate Cake ",
-    next_Page: " ",
     item: "Crunchy Chocolate",
     cakeD:
       "The Crunchy Chocolate Cake is a decadent delight, featuring layers of rich chocolate cake with a satisfying crunch.,This cake is a symphony of velvety and crunchy sensations.",
@@ -57,7 +53,6 @@ export const CAKE_ITEMS = [
     id: "005",
     image: "./Images/Blackberry_forrest.jpg",
     alt_Name: "Blackberry Forrest Cake",
-    next_Page: " ",
     item: "Blackberry Forrest",
     cakeD:
       "The Blackberry Forest Cake is a luscious twist on the classic, featuring layers of rich chocolate cake, velvety whipped cream, and a generous spread of fresh blackberries.",
@@ -70,7 +65,6 @@ export const CAKE_ITEMS = [
     id: "006",
     image: "./Images/Overload_Fruit.jpg",
     alt_Name: "Overload Fruit Cake ",
-    next_Page: " ",
     item: "Overload Fruit",
 
     cakeD:
@@ -85,7 +79,6 @@ export const CAKE_ITEMS = [
     id: "007",
     image: "./Images/Milkey__Rose.jpg",
     alt_Name: "Milkey Rose Cake",
-    next_Page: " ",
     item: "Milkey Rose",
     cakeD:
       "The Milky Rose Cake is a delicate and elegant dessert featuring layers of light and airy sponge cake adorned with a silky, milky frosting.",
@@ -98,7 +91,6 @@ export const CAKE_ITEMS = [
     id: "008",
     image: "./Images/Black_Forrest.jpg",
     alt_Name: "Black Forrest Cake",
-    next_Page: " ",
     item: "Black Forrest",
     cakeD:
       "The Black Forest Cake is a classic indulgence, boasting layers of moist chocolate cake filled with whipped cream and dark cherries.This iconic dessert is a perfect balance of  cocoa",

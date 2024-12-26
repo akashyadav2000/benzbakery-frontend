@@ -3,7 +3,6 @@ export const PASTRY_ITEMS = [
     id: "011",
     image: "./Images/Rainbow_Pastry.jpg",
     alt_Name: "Rainbow Pastry",
-    next_Page: "",
     item: "Rainbow Pastry",
 
     cakeD:
@@ -18,7 +17,6 @@ export const PASTRY_ITEMS = [
     id: "012",
     image: "./Images/Blueberry__Cream.jpg",
     alt_Name: "Blueberry Cream  Pastry",
-    next_Page: " ",
     item: "Blueberry Cream",
 
     cakeD:
@@ -33,7 +31,6 @@ export const PASTRY_ITEMS = [
     id: "013",
     image: "./Images/Moroccan_Orange.jpg",
     alt_Name: " Moroccan Orange Pastry",
-    next_Page: " ",
     item: "Moroccan Orange",
 
     cakeD:
@@ -48,7 +45,6 @@ export const PASTRY_ITEMS = [
     id: "014",
     image: "./Images/Red_Velvet_Pastry.jpg",
     alt_Name: "Red Velvet Pastry",
-    next_Page: " ",
     item: "Red Velvet Pastry",
 
     cakeD:
@@ -63,7 +59,6 @@ export const PASTRY_ITEMS = [
     id: "015",
     image: "./Images/Blackberry_Chese_Puff.jpg",
     alt_Name: "Blackberry Chese Puff Pastry",
-    next_Page: " ",
     item: "Blackberry Chese Puff",
 
     cakeD:
@@ -78,7 +73,6 @@ export const PASTRY_ITEMS = [
     id: "016",
     image: "./Images/Carrot_Velvet.jpg",
     alt_Name: "Carrot Velvet Pastry",
-    next_Page: " ",
     item: "Carrot Velvet",
 
     cakeD:
@@ -93,7 +87,6 @@ export const PASTRY_ITEMS = [
     id: "017",
     image: "./Images/Tiramisu.jpg",
     alt_Name: "Tiramisu Pastry",
-    next_Page: " ",
     item: "Tiramisu",
 
     cakeD:
@@ -109,7 +102,6 @@ export const PASTRY_ITEMS = [
     id: "018",
     image: "./Images/Medovik.jpeg",
     alt_Name: "Medovik Pastry",
-    next_Page: " ",
     item: "Medovik",
 
     cakeD:
