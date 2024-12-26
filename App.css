@@ -9,11 +9,6 @@
   /* text-transform: capitalize; */
 }
 
-svg {
-  width: 100%; /* Set to a valid length */
-  height: auto; /* Ensure it scales proportionally */
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
