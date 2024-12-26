@@ -4,12 +4,13 @@ import axios from "axios";
 import "./Cart.css";
 import { selectUser } from "../Store/authSlice";
 import { cartActions } from "../Store/cartSlice";
+import { useDispatch } from "react-redux";
 
 const CartSummary = () => {
-  const [showPaymentMessage, setShowPaymentMessage] = useState(false);
   const bagItems = useSelector((state) => state.cart);
   const user = useSelector(selectUser);
   // const user = useSelector((state) => state.auth.user); 
+  const dispatch = useDispatch();
 
   const categories = [
     "cakeItems",
@@ -50,8 +51,10 @@ const CartSummary = () => {
         description: "Complete your purchase",
         order_id: order.id,
         handler: function (response) {
-          // alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
-          dispatch(cartActions.clearCart()); // Dispatch the action to clear the cart
+          console.log(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
+
+          // Clear the cart after successful payment
+          dispatch(cartActions.clearCart());
         },
         prefill: {
           name: user.name || "Guest", // Replace with your user's name if available
@@ -69,6 +72,7 @@ const CartSummary = () => {
       console.error("Error while initiating payment:", error);
     }
   };
+
 
 
   return (
@@ -95,11 +99,6 @@ const CartSummary = () => {
       <button className="btn-place-order" onClick={handleProceedToBuy}>
         Proceed to buy
       </button>
-      {/* {showPaymentMessage && (
-        <div className="payment-gateway-message">
-          Payment gateway adding soon
-        </div>
-      )} */}
     </div>
   );
 };
