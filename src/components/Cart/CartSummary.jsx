@@ -4,6 +4,7 @@ import axios from "axios";
 import "./Cart.css";
 import { selectUser } from "../Store/authSlice";
 import { cartActions } from "../Store/cartSlice";
+import { orderActions } from "../Store/orderSlice";
 import { useDispatch } from "react-redux";
 
 const CartSummary = () => {
@@ -51,10 +52,24 @@ const CartSummary = () => {
         description: "Complete your purchase",
         order_id: order.id,
         handler: function (response) {
-          console.log(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
+          // Dispatch order details to Redux
+          dispatch(
+            orderActions.addOrder({
+              items: finalItems.map((item) => ({
+                name: item.item,
+                quantity: bagItems.filter((id) => id === item.id).length,
+                price: item.price,
+              })),
+              total: finalPayment,
+              orderId: order.id,
+            })
+          );
 
-          // Clear the cart after successful payment
+          // Clear cart
           dispatch(cartActions.clearCart());
+
+          // Redirect to UserProfile
+          navigate("/UserProfile");
         },
         prefill: {
           name: user.name || "Guest", // Replace with your user's name if available
