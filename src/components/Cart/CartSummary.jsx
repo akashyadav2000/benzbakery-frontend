@@ -6,12 +6,14 @@ import { selectUser } from "../Store/authSlice";
 import { cartActions } from "../Store/cartSlice";
 import { orderActions } from "../Store/orderSlice";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const CartSummary = () => {
   const bagItems = useSelector((state) => state.cart);
   const user = useSelector(selectUser);
   // const user = useSelector((state) => state.auth.user); 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const categories = [
     "cakeItems",
