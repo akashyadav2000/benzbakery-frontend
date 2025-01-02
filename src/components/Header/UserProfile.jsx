@@ -42,7 +42,13 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
             <ul>
               {purchaseHistory.map((purchase, index) => (
                 <li key={index}>
-                  <img src={purchase.image} alt={purchase.name} className="product-image" />
+                  {item.image && (
+                    <LazyLoadImage src={item.image} alt={item.item} effect="blur" />
+                  )}
+
+                  {/* <LazyLoadImage src={purchase.image} alt={purchase.name}
+                    className="product-image" effect="blur"
+                  /> */}
                   <strong>Product:</strong> {purchase.name} |
                   <strong>Quantity:</strong> {purchase.quantity} |
                   <strong>Price:</strong> ₹{purchase.price} |

@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import "./Cart.css";
-import { selectUser, selectPurchaseHistory } from "../Store/authSlice";
+import { selectUser } from "../Store/authSlice";
 import { cartActions } from "../Store/cartSlice";
 import { addPurchase } from "../Store/authSlice"; // Import the addPurchase action
 import { useNavigate } from "react-router-dom";
