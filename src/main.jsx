@@ -32,6 +32,8 @@ const WeddingCakeContainer = lazy(() =>
 const Feedback = lazy(() => import("./components/Feedback/Feedback.jsx"));
 const Product = lazy(() => import("./components/Product/Product.jsx"));
 
+const UserProfile = lazy(() => import("./components/Header/UserProfile.jsx"));
+
 // const router = createBrowserRouter([
 //   {
 //     path: "./",
