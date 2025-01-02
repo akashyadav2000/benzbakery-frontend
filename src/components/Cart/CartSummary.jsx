@@ -53,6 +53,8 @@ const CartSummary = () => {
           quantity: itemCount,
           price: item.price,
           total: item.price * itemCount,
+          image: item.image, // Include image here
+
         };
       });
 
