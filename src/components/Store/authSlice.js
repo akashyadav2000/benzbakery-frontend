@@ -20,7 +20,7 @@ const authSlice = createSlice({
       state.purchaseHistory = []; // Clear history on logout
     },
     addPurchase(state, action) {
-      state.purchaseHistory.push(action.payload); // Add new purchase
+      state.purchaseHistory.push(...action.payload); // Add new purchase
     },
   },
 });
@@ -31,4 +31,5 @@ export const { login, logout, addPurchase } = authSlice.actions;
 export const selectIsAuthenticated = (state) => state.auth.isAuthenticated;
 export const selectUser = (state) => state.auth.user;
 export const selectPurchaseHistory = (state) => state.auth.purchaseHistory;
+
 export default authSlice.reducer;

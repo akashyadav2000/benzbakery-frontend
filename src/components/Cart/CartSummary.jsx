@@ -2,14 +2,16 @@ import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import axios from "axios";
 import "./Cart.css";
-import { selectUser } from "../Store/authSlice";
+import { selectUser, selectPurchaseHistory } from "../Store/authSlice";
 import { cartActions } from "../Store/cartSlice"; // Corrected import
-import { addPurchase } from "../Store/purchaseHistorySlice"; // Corrected import
+import { useNavigate } from "react-router-dom";
 
 const CartSummary = () => {
   const bagItems = useSelector((state) => state.cart);
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const addPurchase = useSelector(selectPurchaseHistory);
 
   const categories = [
     "cakeItems",
@@ -71,6 +73,9 @@ const CartSummary = () => {
 
           // Clear the cart after successful payment
           dispatch(cartActions.clearCart());
+
+          // Navigate to UserProfile
+          navigate("/user-profile");
         },
         prefill: {
           name: user?.name || "Guest", // User's name if available

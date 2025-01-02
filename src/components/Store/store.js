@@ -6,7 +6,6 @@ import weddingCakeItemsSlice from "./weddingCakeItemsSlice";
 import cartSlice from "./cartSlice";
 import cocktailSlice from "./cocktailSlice";
 import authReducer from "./authSlice";
-import purchaseHistoryReducer from "./purchaseHistorySlice";
 
 
 
@@ -19,7 +18,6 @@ const store = configureStore({
     cart: cartSlice.reducer,
     cocktail: cocktailSlice.reducer,
     auth: authReducer,
-    purchaseHistory: purchaseHistoryReducer,
   },
 });
 

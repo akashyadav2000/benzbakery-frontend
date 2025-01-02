@@ -1,8 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { selectUser, logout } from "../Store/authSlice";
-import { selectPurchaseHistory } from "../Store/purchaseHistorySlice";
-// import { selectUser, logout, selectPurchaseHistory } from "../Store/authSlice";
+import { selectUser, logout, selectPurchaseHistory } from "../Store/authSlice";
+
 
 const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
   const dispatch = useDispatch();
