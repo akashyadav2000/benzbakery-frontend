@@ -42,13 +42,11 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
             <ul>
               {purchaseHistory.map((purchase, index) => (
                 <li key={index}>
-                  {item.image && (
-                    <LazyLoadImage src={item.image} alt={item.item} effect="blur" />
-                  )}
-
-                  {/* <LazyLoadImage src={purchase.image} alt={purchase.name}
-                    className="product-image" effect="blur"
-                  /> */}
+                  <LazyLoadImage
+                    src={purchase.image} // Assuming the image field exists in the purchase data
+                    alt={purchase.name} // You can also use purchase.name here if available
+                    effect="blur"
+                  />
                   <strong>Product:</strong> {purchase.name} |
                   <strong>Quantity:</strong> {purchase.quantity} |
                   <strong>Price:</strong> ₹{purchase.price} |
