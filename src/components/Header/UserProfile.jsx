@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectUser, logout, selectPurchaseHistory } from "../Store/authSlice";
 
-
 const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
@@ -15,6 +14,15 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
   };
 
   if (!isAuthenticated || !showUserInfo) return null;
+
+  // Calculate total amount including convenience fee
+  const calculateTotalAmount = () => {
+    let total = 0;
+    purchaseHistory.forEach((purchase) => {
+      total += purchase.total;
+    });
+    return total + 99; // Add ₹99 as convenience fee
+  };
 
   return (
     <div className="blur-bg">
@@ -33,6 +41,7 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
             <ul>
               {purchaseHistory.map((purchase, index) => (
                 <li key={index}>
+                  <img src={purchase.image} alt={purchase.name} className="product-image" />
                   <strong>Product:</strong> {purchase.name} |
                   <strong>Quantity:</strong> {purchase.quantity} |
                   <strong>Price:</strong> ₹{purchase.price} |
@@ -43,6 +52,16 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
           ) : (
             <p>No purchases yet!</p>
           )}
+        </div>
+
+        <div className="overall-total">
+          <h3>Overall Total:</h3>
+          <p>₹{calculateTotalAmount()}</p> {/* Display overall total with convenience fee */}
+        </div>
+
+        <div className="convenience-fee">
+          <h4>Convenience Fee:</h4>
+          <p>₹99</p> {/* Display convenience fee */}
         </div>
 
         <button onClick={handleLogout} className="logout-btn">
