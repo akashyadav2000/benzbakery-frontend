@@ -1,9 +1,9 @@
 import { useSelector, useDispatch } from "react-redux";
-import { useState } from "react";
 import axios from "axios";
 import "./Cart.css";
 import { selectUser, selectPurchaseHistory } from "../Store/authSlice";
-import { cartActions } from "../Store/cartSlice"; // Corrected import
+import { cartActions } from "../Store/cartSlice";
+import { addPurchase } from "../Store/authSlice"; // Import the addPurchase action
 import { useNavigate } from "react-router-dom";
 
 const CartSummary = () => {
@@ -11,7 +11,6 @@ const CartSummary = () => {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const addPurchase = useSelector(selectPurchaseHistory);
 
   const categories = [
     "cakeItems",
@@ -58,7 +57,7 @@ const CartSummary = () => {
       });
 
       // Dispatch all purchases to purchase history
-      dispatch(addPurchase(purchaseData));
+      dispatch(addPurchase(purchaseData)); // Corrected action dispatch
 
       // Razorpay options
       const options = {
@@ -75,7 +74,7 @@ const CartSummary = () => {
           dispatch(cartActions.clearCart());
 
           // Navigate to UserProfile
-          navigate("/user-profile");
+          navigate("/UserProfile");
         },
         prefill: {
           name: user?.name || "Guest", // User's name if available
