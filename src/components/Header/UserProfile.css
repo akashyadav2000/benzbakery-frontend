@@ -1,0 +1,6 @@
+.purchase-image {
+  width: 100px; /* Adjust width */
+  height: 100px; /* Adjust height */
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}

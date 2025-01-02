@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectUser, logout, selectPurchaseHistory } from "../Store/authSlice";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import "./UserProfile.css";
 
 const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
   const dispatch = useDispatch();
@@ -46,6 +47,7 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
                     src={purchase.image} // Assuming the image field exists in the purchase data
                     alt={purchase.name} // You can also use purchase.name here if available
                     effect="blur"
+                    className="purchase-image"
                   />
                   <strong>Product:</strong> {purchase.name} |
                   <strong>Quantity:</strong> {purchase.quantity} |
