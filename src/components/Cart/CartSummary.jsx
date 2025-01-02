@@ -1,10 +1,10 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import axios from "axios";
 import "./Cart.css";
 import { selectUser } from "../Store/authSlice";
-import { cartActions, addPurchase } from "../Store/cartSlice";
-import { useDispatch } from "react-redux";
+import { cartActions } from "../Store/cartSlice"; // Corrected import
+import { addPurchase } from "../Store/purchaseHistorySlice"; // Corrected import
 
 const CartSummary = () => {
   const bagItems = useSelector((state) => state.cart);
@@ -55,7 +55,7 @@ const CartSummary = () => {
         };
       });
 
-      // Dispatch all purchases at once
+      // Dispatch all purchases to purchase history
       dispatch(addPurchase(purchaseData));
 
       // Razorpay options
@@ -63,7 +63,7 @@ const CartSummary = () => {
         key: process.env.KEY_ID, // Replace with your Razorpay Key ID
         amount: order.amount,
         currency: order.currency,
-        name: "Your Shop",
+        name: "Benz Bakery",
         description: "Complete your purchase",
         order_id: order.id,
         handler: function (response) {
