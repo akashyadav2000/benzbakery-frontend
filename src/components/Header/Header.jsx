@@ -395,6 +395,7 @@ function Header() {
         </div>
       </header >
 
+      {/* Only show UserProfile when the user is on the /UserProfile route */}
       <UserProfile
         showUserInfo={showUserInfo}
         setShowUserInfo={setShowUserInfo}
