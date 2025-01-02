@@ -3,13 +3,12 @@ import { useState } from "react";
 import axios from "axios";
 import "./Cart.css";
 import { selectUser } from "../Store/authSlice";
-import { cartActions } from "../Store/cartSlice";
+import { cartActions, addPurchase } from "../Store/cartSlice";
 import { useDispatch } from "react-redux";
 
 const CartSummary = () => {
   const bagItems = useSelector((state) => state.cart);
   const user = useSelector(selectUser);
-  // const user = useSelector((state) => state.auth.user); 
   const dispatch = useDispatch();
 
   const categories = [
@@ -19,6 +18,7 @@ const CartSummary = () => {
     "weddingCakeItems",
   ];
 
+  // Fetch all items from categories and match with bagItems
   const finalItems = categories.flatMap((category) => {
     const items = useSelector((state) => state[category]);
     return items.filter((item) => bagItems.includes(item.id));
@@ -31,16 +31,32 @@ const CartSummary = () => {
   }, 0);
 
   const CONVENIENCE_FEES = 99;
-  let totalItem = bagItems.length;
-  let finalPayment = totalValue + CONVENIENCE_FEES;
+  const totalItem = bagItems.length;
+  const finalPayment = totalValue + CONVENIENCE_FEES;
 
   const handleProceedToBuy = async () => {
     try {
-      // Replace with your backend API endpoint for order creation
-      const { data: order } = await axios.post("https://benzbakery-backend.onrender.com/create-order", {
-        amount: finalPayment, // totalPrice should already exist in your code
-        receipt: "receipt_" + new Date().getTime(),
+      const { data: order } = await axios.post(
+        "https://benzbakery-backend.onrender.com/create-order",
+        {
+          amount: finalPayment,
+          receipt: "receipt_" + new Date().getTime(),
+        }
+      );
+
+      // Prepare purchase data
+      const purchaseData = finalItems.map((item) => {
+        const itemCount = bagItems.filter((id) => id === item.id).length;
+        return {
+          name: item.item,
+          quantity: itemCount,
+          price: item.price,
+          total: item.price * itemCount,
+        };
       });
+
+      // Dispatch all purchases at once
+      dispatch(addPurchase(purchaseData));
 
       // Razorpay options
       const options = {
@@ -51,13 +67,14 @@ const CartSummary = () => {
         description: "Complete your purchase",
         order_id: order.id,
         handler: function (response) {
+          console.log("Payment successful:", response);
 
           // Clear the cart after successful payment
           dispatch(cartActions.clearCart());
         },
         prefill: {
-          name: user.name || "Guest", // Replace with your user's name if available
-          email: user.email || "guest@example.com", // Replace with your user's email if available
+          name: user?.name || "Guest", // User's name if available
+          email: user?.email || "guest@example.com", // User's email if available
         },
         theme: {
           color: "#3399cc",
@@ -72,8 +89,6 @@ const CartSummary = () => {
     }
   };
 
-
-
   return (
     <div className="cart-summary">
       <div className="bag-details-container">
@@ -86,7 +101,7 @@ const CartSummary = () => {
         <div className="price-item">
           <span className="price-item-tag">Convenience Fee</span>
           <span className="price-item-value priceDetail-base-discount">
-            ₹99
+            ₹{CONVENIENCE_FEES}
           </span>
         </div>
         <hr className="summary-hr" />
@@ -96,7 +111,7 @@ const CartSummary = () => {
         </div>
       </div>
       <button className="btn-place-order" onClick={handleProceedToBuy}>
-        Proceed to buy
+        Proceed to Buy
       </button>
     </div>
   );

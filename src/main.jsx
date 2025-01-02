@@ -100,6 +100,7 @@ const router = createBrowserRouter(
       <Route path="Signup" element={<Signup />} />
       <Route path="Cart" element={<Cart />} />
       <Route path="Feedback" element={<Feedback />} />
+      <Route path="UserProfile" element={<UserProfile />} />
     </Route>
   )
 );

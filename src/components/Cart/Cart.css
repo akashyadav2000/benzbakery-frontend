@@ -228,6 +228,20 @@
   padding-top: 2rem;
 }
 
+.purchase-history {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.purchase-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
 @media (max-width: 1110px) {
   .cart-container {
     transition: all 0.35s ease-in-out;

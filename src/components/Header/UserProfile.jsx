@@ -1,10 +1,13 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectUser, logout } from "../Store/authSlice";
+import { selectPurchaseHistory } from "../Store/purchaseHistorySlice";
+// import { selectUser, logout, selectPurchaseHistory } from "../Store/authSlice";
 
 const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
+  const purchaseHistory = useSelector(selectPurchaseHistory);
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
   const handleLogout = () => {
@@ -24,6 +27,25 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
         </div>
         <p>Name: {user?.name}</p>
         <p>Email: {user?.email}</p>
+
+        <div className="purchase-history">
+          <h3>Purchase History</h3>
+          {purchaseHistory.length > 0 ? (
+            <ul>
+              {purchaseHistory.map((purchase, index) => (
+                <li key={index}>
+                  <strong>Product:</strong> {purchase.name} |
+                  <strong>Quantity:</strong> {purchase.quantity} |
+                  <strong>Price:</strong> ₹{purchase.price} |
+                  <strong>Total:</strong> ₹{purchase.total}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No purchases yet!</p>
+          )}
+        </div>
+
         <button onClick={handleLogout} className="logout-btn">
           Logout
         </button>
