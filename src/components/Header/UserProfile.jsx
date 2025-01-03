@@ -15,11 +15,7 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
     // setShowUserInfo(false);
   };
 
-  if (!isAuthenticated) {
-    return <p>Please log in to view your profile.</p>;
-  }
-
-  // if (!isAuthenticated || !showUserInfo) return null;
+  if (!isAuthenticated || !showUserInfo) return null;
 
   // Calculate total amount including convenience fee
   const calculateTotalAmount = () => {
@@ -33,6 +29,9 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
   return (
     <div className="blur-bg">
       <div className="user-info">
+        <button onClick={() => setShowUserInfo(false)} className="close-btn">
+          Close
+        </button>
         <span className="user-profile-title">User Profile</span>
         <div className="user-profile">
           <img src="./Images/user-logo.png" alt="user-profile" />

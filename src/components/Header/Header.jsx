@@ -269,7 +269,7 @@ function Header() {
     e.preventDefault();
     closeMobileMenu();
     if (isAuthenticated) {
-      navigate("/UserProfile"); // Navigate to the UserProfile route
+      setShowUserInfo((prev) => !prev); // Toggle UserProfile
       // setShowUserInfo(!showUserInfo);
     } else {
       navigate("/Login");
@@ -399,7 +399,7 @@ function Header() {
       {/* Only show UserProfile when the user is on the /UserProfile route */}
       <UserProfile
         showUserInfo={showUserInfo}
-        setShowUserInfo={setShowUserInfo}
+        setShowUserInfo={setShowUserInfo} // Pass callback for closing
       />
     </>
   );
