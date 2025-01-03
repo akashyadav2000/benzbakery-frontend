@@ -78,26 +78,26 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
 
   const totalAmount = calculateTotalAmount();
 
-  // Consolidated rendering logic
-  const profileContent = (
-    <>
-      <UserDetails user={user} />
-      <PurchaseHistory purchaseHistory={purchaseHistory} />
-      <TotalAmount total={totalAmount} />
-      <ConvenienceFee />
-      <button onClick={handleLogout} className="logout-btn">
-        Logout
-      </button>
-    </>
-  );
-
   // Full-page rendering for /UserProfile
   if (location.pathname === "/UserProfile") {
-    return <div className="full-profile-page">{profileContent}</div>;
+    console.log("Rendering full-page UserProfile");
+    return (
+      <div className="full-profile-page">
+        <h1>User Profile</h1>
+        <UserDetails user={user} />
+        <PurchaseHistory purchaseHistory={purchaseHistory} />
+        <TotalAmount total={totalAmount} />
+        <ConvenienceFee />
+        <button onClick={handleLogout} className="logout-btn">
+          Logout
+        </button>
+      </div>
+    );
   }
 
-  // Inline rendering for other pages
+  // Inline rendering for other pages (like modal)
   if (showUserInfo) {
+    console.log("Rendering inline UserProfile");
     return (
       <div className="blur-bg">
         <div className="user-info">
@@ -105,7 +105,13 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
             Close
           </button>
           <span className="user-profile-title">User Profile</span>
-          {profileContent}
+          <UserDetails user={user} />
+          <PurchaseHistory purchaseHistory={purchaseHistory} />
+          <TotalAmount total={totalAmount} />
+          <ConvenienceFee />
+          <button onClick={handleLogout} className="logout-btn">
+            Logout
+          </button>
         </div>
       </div>
     );
