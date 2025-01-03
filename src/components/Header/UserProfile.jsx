@@ -53,7 +53,7 @@ const ConvenienceFee = () => (
   </div>
 );
 
-const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
+const UserProfile = ({ showUserInfo }) => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
   const purchaseHistory = useSelector(selectPurchaseHistory);
