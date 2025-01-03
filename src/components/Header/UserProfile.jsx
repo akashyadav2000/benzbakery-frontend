@@ -53,7 +53,7 @@ const ConvenienceFee = () => (
   </div>
 );
 
-const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
+const UserProfile = () => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
   const purchaseHistory = useSelector(selectPurchaseHistory);
@@ -72,47 +72,24 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
     return total + 99; // Add ₹99 as convenience fee
   };
 
+  if (!isAuthenticated) {
+    return <p>Please log in to view your profile.</p>;
+  }
+
   const totalAmount = calculateTotalAmount();
 
-  // Render full profile page if at `/UserProfile`
-  if (location.pathname === "/UserProfile") {
-    return (
-      <div className="full-profile-page">
-        <h1>User Profile</h1>
-        <UserDetails user={user} />
-        <PurchaseHistory purchaseHistory={purchaseHistory} />
-        <TotalAmount total={totalAmount} />
-        <ConvenienceFee />
-        <button onClick={handleLogout} className="logout-btn">
-          Logout
-        </button>
-      </div>
-    );
-  }
-
-  // Render compact profile popup if `showUserInfo` is true
-  if (showUserInfo) {
-    return (
-      <div className="blur-bg">
-        <div className="user-info">
-          <button onClick={() => setShowUserInfo(false)} className="close-btn">
-            Close
-          </button>
-          <span className="user-profile-title">User Profile</span>
-          <UserDetails user={user} />
-          <PurchaseHistory purchaseHistory={purchaseHistory} />
-          <TotalAmount total={totalAmount} />
-          <ConvenienceFee />
-          <button onClick={handleLogout} className="logout-btn">
-            Logout
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  // Do not render if no conditions are met
-  return null;
+  return (
+    <div className="full-profile-page">
+      <h1>User Profile</h1>
+      <UserDetails user={user} />
+      <PurchaseHistory purchaseHistory={purchaseHistory} />
+      <TotalAmount total={totalAmount} />
+      <ConvenienceFee />
+      <button onClick={handleLogout} className="logout-btn">
+        Logout
+      </button>
+    </div>
+  );
 };
 
 export default UserProfile;
