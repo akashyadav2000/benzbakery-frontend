@@ -19,9 +19,9 @@ function Header() {
   const [showUserInfo, setShowUserInfo] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    setShowUserInfo(false);
-  }, [location]);
+  // useEffect(() => {
+  //   setShowUserInfo(false);
+  // }, [location]);
 
   function toggleMobileMenu(menu) {
     setMenuOpen(!menuOpen);
@@ -55,12 +55,19 @@ function Header() {
     //   setShowUserInfo((prev) => !prev);
     // // setShowUserInfo(!showUserInfo);
 
+    // if (isAuthenticated) {
+    //   if (location.pathname !== "/UserProfile") {
+    //     navigate("/UserProfile");
+    //   } else {
+    //     setShowUserInfo((prev) => !prev);
+    //   }
+    // } else {
+    //   navigate("/Login");
+    // }
+
     if (isAuthenticated) {
-      if (location.pathname !== "/UserProfile") {
-        navigate("/UserProfile"); // Navigate to the profile page
-      } else {
-        setShowUserInfo((prev) => !prev); // Toggle inline profile display
-      }
+      navigate("/UserProfile"); // Always navigate to the profile page
+      setShowUserInfo(true); // Ensure the inline profile display is shown
     } else {
       navigate("/Login");
     }

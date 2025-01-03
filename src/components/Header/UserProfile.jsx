@@ -22,7 +22,10 @@ const UserProfile = ({ showUserInfo }) => {
     return total + 99; // Adding ₹99 as convenience fee
   };
 
-  if (!isAuthenticated || !showUserInfo) return null;
+  // if (!isAuthenticated || !showUserInfo) return null;
+
+  if (!isAuthenticated || location.pathname !== "/UserProfile") return null;
+
 
   return (
     <div className="blur-bg">
