@@ -34,7 +34,7 @@ const UserProfile = ({ showUserInfo }) => {
         <div className="user-profile">
           <img src="./Images/user-logo.png" alt="user-profile" />
           <span className="hello-user">Welcome, {user?.name}</span><br />
-          <span className="hello-user"> {user?.email}</span>
+          <span className="user-email"> {user?.email}</span>
         </div>
         {/* <p>Name: {user?.name}</p>
         <p>Email: {user?.email}</p> */}
