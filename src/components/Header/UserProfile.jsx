@@ -5,6 +5,54 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./UserProfile.css";
 import { useLocation } from "react-router-dom";
 
+const UserDetails = ({ user }) => (
+  <div className="user-profile">
+    <img src="./Images/user-logo.png" alt="user-profile" />
+    <p>Name: {user?.name}</p>
+    <p>Email: {user?.email}</p>
+  </div>
+);
+
+const PurchaseHistory = ({ purchaseHistory }) => (
+  <div className="purchase-history">
+    <h3>Purchase History</h3>
+    {purchaseHistory.length > 0 ? (
+      <ul>
+        {purchaseHistory.map((purchase, index) => (
+          <li key={index}>
+            <LazyLoadImage
+              src={purchase.image}
+              alt={purchase.name}
+              effect="blur"
+              className="purchase-image"
+            />
+            <strong>Product:</strong> {purchase.name} |
+            <strong>Quantity:</strong> {purchase.quantity} |
+            <strong>Price:</strong> ₹{purchase.price} |
+            <strong>Total:</strong> ₹{purchase.total}
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p>No purchases yet!</p>
+    )}
+  </div>
+);
+
+const TotalAmount = ({ total }) => (
+  <div className="overall-total">
+    <h3>Overall Total:</h3>
+    <p>₹{total}</p>
+  </div>
+);
+
+const ConvenienceFee = () => (
+  <div className="convenience-fee">
+    <h4>Convenience Fee:</h4>
+    <p>₹99</p>
+  </div>
+);
+
 const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
@@ -16,7 +64,6 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
     dispatch(logout());
   };
 
-  // Calculate total amount including convenience fee
   const calculateTotalAmount = () => {
     let total = 0;
     purchaseHistory.forEach((purchase) => {
@@ -25,56 +72,20 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
     return total + 99; // Add ₹99 as convenience fee
   };
 
-  // If the user is not authenticated, show login prompt
   if (!isAuthenticated) {
     return <p>Please log in to view your profile.</p>;
   }
 
-  // Full-page rendering for /UserProfile
+  const totalAmount = calculateTotalAmount();
+
   if (location.pathname === "/UserProfile") {
     return (
       <div className="full-profile-page">
         <h1>User Profile</h1>
-        <div className="user-profile">
-          <img src="./Images/user-logo.png" alt="user-profile" />
-          <p>Name: {user?.name}</p>
-          <p>Email: {user?.email}</p>
-        </div>
-
-        <div className="purchase-history">
-          <h3>Purchase History</h3>
-          {purchaseHistory.length > 0 ? (
-            <ul>
-              {purchaseHistory.map((purchase, index) => (
-                <li key={index}>
-                  <LazyLoadImage
-                    src={purchase.image}
-                    alt={purchase.name}
-                    effect="blur"
-                    className="purchase-image"
-                  />
-                  <strong>Product:</strong> {purchase.name} |
-                  <strong>Quantity:</strong> {purchase.quantity} |
-                  <strong>Price:</strong> ₹{purchase.price} |
-                  <strong>Total:</strong> ₹{purchase.total}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>No purchases yet!</p>
-          )}
-        </div>
-
-        <div className="overall-total">
-          <h3>Overall Total:</h3>
-          <p>₹{calculateTotalAmount()}</p>
-        </div>
-
-        <div className="convenience-fee">
-          <h4>Convenience Fee:</h4>
-          <p>₹99</p>
-        </div>
-
+        <UserDetails user={user} />
+        <PurchaseHistory purchaseHistory={purchaseHistory} />
+        <TotalAmount total={totalAmount} />
+        <ConvenienceFee />
         <button onClick={handleLogout} className="logout-btn">
           Logout
         </button>
@@ -82,7 +93,6 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
     );
   }
 
-  // Inline rendering for other pages
   if (!showUserInfo) return null;
 
   return (
@@ -92,47 +102,10 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
           Close
         </button>
         <span className="user-profile-title">User Profile</span>
-        <div className="user-profile">
-          <img src="./Images/user-logo.png" alt="user-profile" />
-          <span className="hello-user">Welcome, {user?.name}</span>
-        </div>
-        <p>Name: {user?.name}</p>
-        <p>Email: {user?.email}</p>
-
-        <div className="purchase-history">
-          <h3>Purchase History</h3>
-          {purchaseHistory.length > 0 ? (
-            <ul>
-              {purchaseHistory.map((purchase, index) => (
-                <li key={index}>
-                  <LazyLoadImage
-                    src={purchase.image}
-                    alt={purchase.name}
-                    effect="blur"
-                    className="purchase-image"
-                  />
-                  <strong>Product:</strong> {purchase.name} |
-                  <strong>Quantity:</strong> {purchase.quantity} |
-                  <strong>Price:</strong> ₹{purchase.price} |
-                  <strong>Total:</strong> ₹{purchase.total}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>No purchases yet!</p>
-          )}
-        </div>
-
-        <div className="overall-total">
-          <h3>Overall Total:</h3>
-          <p>₹{calculateTotalAmount()}</p>
-        </div>
-
-        <div className="convenience-fee">
-          <h4>Convenience Fee:</h4>
-          <p>₹99</p>
-        </div>
-
+        <UserDetails user={user} />
+        <PurchaseHistory purchaseHistory={purchaseHistory} />
+        <TotalAmount total={totalAmount} />
+        <ConvenienceFee />
         <button onClick={handleLogout} className="logout-btn">
           Logout
         </button>
