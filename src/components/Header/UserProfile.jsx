@@ -33,8 +33,8 @@ const UserProfile = ({ showUserInfo }) => {
         <span className="user-profile-title">User Profile</span>
         <div className="user-profile">
           <img src="./Images/user-logo.png" alt="user-profile" />
-          <span className="hello-user">Welcome, {user?.name}<br />
-            {user?.email}</span>
+          <span className="hello-user">Name: {user?.name}<br />
+            Email: {user?.email}</span>
 
         </div>
         {/* <span className="user-email"> {user?.email}</span> */}
@@ -42,7 +42,7 @@ const UserProfile = ({ showUserInfo }) => {
         <p>Email: {user?.email}</p> */}
 
         <div className="purchase-history">
-          <h3>Purchase History</h3>
+          <p className="purchase-history-head">Purchase History</p>
           {purchaseHistory.length > 0 ? (
             <ul>
               {purchaseHistory.map((purchase, index) => (

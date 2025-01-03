@@ -4,3 +4,7 @@
   object-fit: cover; /* Ensures the image maintains aspect ratio */
   border-radius: 8px; /* Optional: Add rounded corners */
 }
+.purchase-history-head {
+  font-size: 5rem;
+  margin-block: 3rem;
+}
