@@ -5,11 +5,17 @@
   border-radius: 8px; /* Optional: Add rounded corners */
 }
 .purchase-history-head {
+  font-family: "Roboto Serif", serif;
   font-size: 2rem;
-  margin-top: 1rem;
+  margin-block: 2rem;
+  font-weight: 400;
   /* margin-block: 3rem; */
 }
 .no-purchase {
+  font-family: "Roboto Serif", serif;
   font-size: 2.2rem;
   color: red;
+  font-weight: 500;
+  margin-block: 1rem;
+  text-align: center;
 }
