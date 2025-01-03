@@ -273,7 +273,7 @@ header .user-cart a {
 
 .user-profile-title {
   font-family: "Roboto Serif", serif;
-  font-weight: 500;
+  font-weight: 400;
   color: rgb(0, 0, 0);
   font-size: 2.4rem;
   padding-bottom: 2.5rem;
@@ -284,7 +284,7 @@ header .user-cart a {
   font-weight: 400;
   color: rgb(255 120 0);
   font-size: 1.9rem;
-  text-shadow: 0.1rem 0.1rem white;
+  /* text-shadow: 0.1rem 0.1rem white; */
   /* margin-top: -5.5rem; */
   /* margin-top: -3.5rem; */
   line-height: 3.5rem;
