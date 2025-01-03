@@ -268,13 +268,28 @@ function Header() {
   const handleLoginClick = (e) => {
     e.preventDefault();
     closeMobileMenu();
+
+    // if (isAuthenticated) {
+    //   setShowUserInfo((prev) => !prev);
+    // // setShowUserInfo(!showUserInfo);
+
     if (isAuthenticated) {
-      setShowUserInfo((prev) => !prev); // Toggle UserProfile
-      // setShowUserInfo(!showUserInfo);
+      if (location.pathname !== "/UserProfile") {
+        navigate("/UserProfile"); // Navigate to the profile page
+      } else {
+        setShowUserInfo((prev) => !prev); // Toggle inline profile display
+      }
     } else {
       navigate("/Login");
     }
   };
+
+  // Close UserProfile inline display when navigating away
+  useEffect(() => {
+    if (location.pathname !== "/UserProfile") {
+      setShowUserInfo(false);
+    }
+  }, [location]);
 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });

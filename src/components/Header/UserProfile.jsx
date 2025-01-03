@@ -3,19 +3,38 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectUser, logout, selectPurchaseHistory } from "../Store/authSlice";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import "./UserProfile.css";
+import { useLocation } from "react-router-dom";
 
 const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
   const purchaseHistory = useSelector(selectPurchaseHistory);
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+  const location = useLocation();
 
   const handleLogout = () => {
     dispatch(logout());
     // setShowUserInfo(false);
   };
 
-  if (!isAuthenticated || !showUserInfo) return null;
+  // Full-page rendering for /UserProfile
+  if (location.pathname === "/UserProfile") {
+    return (
+      <div className="full-profile-page">
+        <h1>User Profile</h1>
+        {/* Render full UserProfile details */}
+      </div>
+    );
+  }
+
+  // Inline rendering for other pages
+  if (!showUserInfo) return null;
+
+  // if (!isAuthenticated) {
+  //   return <p>Please log in to view your profile.</p>;
+  // }
+
+  // if (!isAuthenticated || !showUserInfo) return null;
 
   // Calculate total amount including convenience fee
   const calculateTotalAmount = () => {
