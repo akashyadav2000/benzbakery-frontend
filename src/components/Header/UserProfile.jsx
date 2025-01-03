@@ -33,8 +33,8 @@ const UserProfile = ({ showUserInfo }) => {
         <span className="user-profile-title">User Profile</span>
         <div className="user-profile">
           <img src="./Images/user-logo.png" alt="user-profile" />
-          <p className="hello-user">Welcome, {user?.name}</p>
-          <p className="user-email"> {user?.email}</p>
+          <span className="hello-user">Welcome, {user?.name}</span>
+          <span className="user-email"> {user?.email}</span>
         </div>
         {/* <p>Name: {user?.name}</p>
         <p>Email: {user?.email}</p> */}
