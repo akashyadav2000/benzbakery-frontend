@@ -12,10 +12,14 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
 
   const handleLogout = () => {
     dispatch(logout());
-    setShowUserInfo(false);
+    // setShowUserInfo(false);
   };
 
-  if (!isAuthenticated || !showUserInfo) return null;
+  if (!isAuthenticated) {
+    return <p>Please log in to view your profile.</p>;
+  }
+
+  // if (!isAuthenticated || !showUserInfo) return null;
 
   // Calculate total amount including convenience fee
   const calculateTotalAmount = () => {

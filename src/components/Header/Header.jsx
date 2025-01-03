@@ -269,7 +269,8 @@ function Header() {
     e.preventDefault();
     closeMobileMenu();
     if (isAuthenticated) {
-      setShowUserInfo(!showUserInfo);
+      navigate("/UserProfile"); // Navigate to the UserProfile route
+      // setShowUserInfo(!showUserInfo);
     } else {
       navigate("/Login");
     }
