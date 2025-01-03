@@ -78,20 +78,20 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
 
   const totalAmount = calculateTotalAmount();
 
-  // if (location.pathname === "/UserProfile") {
-  //   return (
-  //     <div className="full-profile-page">
-  //       <h1>User Profile</h1>
-  //       <UserDetails user={user} />
-  //       <PurchaseHistory purchaseHistory={purchaseHistory} />
-  //       <TotalAmount total={totalAmount} />
-  //       <ConvenienceFee />
-  //       <button onClick={handleLogout} className="logout-btn">
-  //         Logout
-  //       </button>
-  //     </div>
-  //   );
-  // }
+  if (location.pathname === "/UserProfile") {
+    return (
+      <div className="full-profile-page">
+        <h1>User Profile</h1>
+        <UserDetails user={user} />
+        <PurchaseHistory purchaseHistory={purchaseHistory} />
+        <TotalAmount total={totalAmount} />
+        <ConvenienceFee />
+        <button onClick={handleLogout} className="logout-btn">
+          Logout
+        </button>
+      </div>
+    );
+  }
 
   if (!showUserInfo) return null;
 
