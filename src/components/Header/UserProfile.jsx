@@ -34,7 +34,7 @@ const UserProfile = ({ showUserInfo }) => {
         <div className="user-profile">
           <img src="./Images/user-logo.png" alt="user-profile" />
           <span className="hello-user">Name: {user?.name}<br />
-            Email: {user?.email}</span>
+            {user?.email}</span>
 
         </div>
         {/* <span className="user-email"> {user?.email}</span> */}
@@ -61,7 +61,7 @@ const UserProfile = ({ showUserInfo }) => {
               ))}
             </ul>
           ) : (
-            <p>No purchases yet!</p>
+            <p className="no-purchase">* No purchases yet! *</p>
           )}
         </div>
 
