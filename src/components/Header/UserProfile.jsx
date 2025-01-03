@@ -4,7 +4,7 @@ import { selectUser, logout, selectPurchaseHistory } from "../Store/authSlice";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./UserProfile.css";
 
-const UserProfile = () => {
+const UserProfile = ({ showUserInfo }) => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
   const purchaseHistory = useSelector(selectPurchaseHistory);
@@ -19,14 +19,13 @@ const UserProfile = () => {
     purchaseHistory.forEach((purchase) => {
       total += purchase.total;
     });
-    return total;
+    return total + 99; // Adding ₹99 as convenience fee
   };
 
-  if (!isAuthenticated) return null;
+  // if (!isAuthenticated || !showUserInfo) return null;
 
-  const totalAmount = calculateTotalAmount();
-  const convenienceFee = 99;
-  const finalTotal = totalAmount + convenienceFee;
+  if (!isAuthenticated || location.pathname !== "/UserProfile") return null;
+
 
   return (
     <div className="blur-bg">
@@ -34,11 +33,8 @@ const UserProfile = () => {
         <span className="user-profile-title">User Profile</span>
         <div className="user-profile">
           <img src="./Images/user-logo.png" alt="user-profile" />
-          <span className="hello-user">
-            Name: {user?.name}
-            <br />
-            {user?.email}
-          </span>
+          <span className="hello-user">Name: {user?.name}<br />
+            {user?.email}</span>
         </div>
 
         <div className="purchase-history">
@@ -78,15 +74,14 @@ const UserProfile = () => {
           )}
         </div>
 
-        <div className="summary">
-          <div className="summary-item">
-            <span>Convenience Fee:</span>
-            <span>₹{convenienceFee}</span>
-          </div>
-          <div className="summary-item total">
-            <span>Final Total:</span>
-            <span>₹{finalTotal}</span>
-          </div>
+        <div className="overall-total">
+          <h3>Overall Total:</h3>
+          <p>₹{calculateTotalAmount()}</p>
+        </div>
+
+        <div className="convenience-fee">
+          <h4>Convenience Fee:</h4>
+          <p>₹99</p>
         </div>
 
         <button onClick={handleLogout} className="logout-btn">
