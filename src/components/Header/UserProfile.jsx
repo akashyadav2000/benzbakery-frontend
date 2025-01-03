@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectUser, logout, selectPurchaseHistory } from "../Store/authSlice";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./UserProfile.css";
 import { useLocation } from "react-router-dom";
 
@@ -14,27 +14,7 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
 
   const handleLogout = () => {
     dispatch(logout());
-    // setShowUserInfo(false);
   };
-
-  // Full-page rendering for /UserProfile
-  if (location.pathname === "/UserProfile") {
-    return (
-      <div className="full-profile-page">
-        <h1>User Profile</h1>
-        {/* Render full UserProfile details */}
-      </div>
-    );
-  }
-
-  // Inline rendering for other pages
-  if (!showUserInfo) return null;
-
-  // if (!isAuthenticated) {
-  //   return <p>Please log in to view your profile.</p>;
-  // }
-
-  // if (!isAuthenticated || !showUserInfo) return null;
 
   // Calculate total amount including convenience fee
   const calculateTotalAmount = () => {
@@ -44,6 +24,66 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
     });
     return total + 99; // Add ₹99 as convenience fee
   };
+
+  // If the user is not authenticated, show login prompt
+  if (!isAuthenticated) {
+    return <p>Please log in to view your profile.</p>;
+  }
+
+  // Full-page rendering for /UserProfile
+  if (location.pathname === "/UserProfile") {
+    return (
+      <div className="full-profile-page">
+        <h1>User Profile</h1>
+        <div className="user-profile">
+          <img src="./Images/user-logo.png" alt="user-profile" />
+          <p>Name: {user?.name}</p>
+          <p>Email: {user?.email}</p>
+        </div>
+
+        <div className="purchase-history">
+          <h3>Purchase History</h3>
+          {purchaseHistory.length > 0 ? (
+            <ul>
+              {purchaseHistory.map((purchase, index) => (
+                <li key={index}>
+                  <LazyLoadImage
+                    src={purchase.image}
+                    alt={purchase.name}
+                    effect="blur"
+                    className="purchase-image"
+                  />
+                  <strong>Product:</strong> {purchase.name} |
+                  <strong>Quantity:</strong> {purchase.quantity} |
+                  <strong>Price:</strong> ₹{purchase.price} |
+                  <strong>Total:</strong> ₹{purchase.total}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No purchases yet!</p>
+          )}
+        </div>
+
+        <div className="overall-total">
+          <h3>Overall Total:</h3>
+          <p>₹{calculateTotalAmount()}</p>
+        </div>
+
+        <div className="convenience-fee">
+          <h4>Convenience Fee:</h4>
+          <p>₹99</p>
+        </div>
+
+        <button onClick={handleLogout} className="logout-btn">
+          Logout
+        </button>
+      </div>
+    );
+  }
+
+  // Inline rendering for other pages
+  if (!showUserInfo) return null;
 
   return (
     <div className="blur-bg">
@@ -66,8 +106,8 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
               {purchaseHistory.map((purchase, index) => (
                 <li key={index}>
                   <LazyLoadImage
-                    src={purchase.image} // Assuming the image field exists in the purchase data
-                    alt={purchase.name} // You can also use purchase.name here if available
+                    src={purchase.image}
+                    alt={purchase.name}
                     effect="blur"
                     className="purchase-image"
                   />
@@ -85,12 +125,12 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
 
         <div className="overall-total">
           <h3>Overall Total:</h3>
-          <p>₹{calculateTotalAmount()}</p> {/* Display overall total with convenience fee */}
+          <p>₹{calculateTotalAmount()}</p>
         </div>
 
         <div className="convenience-fee">
           <h4>Convenience Fee:</h4>
-          <p>₹99</p> {/* Display convenience fee */}
+          <p>₹99</p>
         </div>
 
         <button onClick={handleLogout} className="logout-btn">
