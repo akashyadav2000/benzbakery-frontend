@@ -72,15 +72,10 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
     return total + 99; // Add ₹99 as convenience fee
   };
 
-  if (!isAuthenticated) {
-    return <p>Please log in to view your profile.</p>;
-  }
-
   const totalAmount = calculateTotalAmount();
 
-  // Full-page rendering for /UserProfile
+  // Render full profile page if at `/UserProfile`
   if (location.pathname === "/UserProfile") {
-    console.log("Rendering full-page UserProfile");
     return (
       <div className="full-profile-page">
         <h1>User Profile</h1>
@@ -95,9 +90,8 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
     );
   }
 
-  // Inline rendering for other pages (like modal)
+  // Render compact profile popup if `showUserInfo` is true
   if (showUserInfo) {
-    console.log("Rendering inline UserProfile");
     return (
       <div className="blur-bg">
         <div className="user-info">
@@ -117,6 +111,7 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
     );
   }
 
+  // Do not render if no conditions are met
   return null;
 };
 
