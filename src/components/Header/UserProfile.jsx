@@ -78,6 +78,7 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
 
   const totalAmount = calculateTotalAmount();
 
+  // Full-page rendering for /UserProfile
   if (location.pathname === "/UserProfile") {
     return (
       <div className="full-profile-page">
@@ -93,25 +94,28 @@ const UserProfile = ({ showUserInfo, setShowUserInfo }) => {
     );
   }
 
-  if (!showUserInfo) return null;
-
-  return (
-    <div className="blur-bg">
-      <div className="user-info">
-        <button onClick={() => setShowUserInfo(false)} className="close-btn">
-          Close
-        </button>
-        <span className="user-profile-title">User Profile</span>
-        <UserDetails user={user} />
-        <PurchaseHistory purchaseHistory={purchaseHistory} />
-        <TotalAmount total={totalAmount} />
-        <ConvenienceFee />
-        <button onClick={handleLogout} className="logout-btn">
-          Logout
-        </button>
+  // Inline rendering for other pages
+  if (showUserInfo) {
+    return (
+      <div className="blur-bg">
+        <div className="user-info">
+          <button onClick={() => setShowUserInfo(false)} className="close-btn">
+            Close
+          </button>
+          <span className="user-profile-title">User Profile</span>
+          <UserDetails user={user} />
+          <PurchaseHistory purchaseHistory={purchaseHistory} />
+          <TotalAmount total={totalAmount} />
+          <ConvenienceFee />
+          <button onClick={handleLogout} className="logout-btn">
+            Logout
+          </button>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+
+  return null;
 };
 
 export default UserProfile;
