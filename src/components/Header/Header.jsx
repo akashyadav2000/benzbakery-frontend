@@ -1,22 +1,31 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import Product_AnchorLink from "./Product_AnchorLink";
 import Product_Link from "./Product_Link";
+import { selectIsAuthenticated } from "../Store/authSlice";
 import UserProfile from "./UserProfile";
+
 
 function Header() {
   const location = useLocation();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const isHomePage = location.pathname === "/";
 
   const cart = useSelector((store) => store.cart);
-  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+  const isAuthenticated = useSelector(selectIsAuthenticated);
 
+  const [showUserInfo, setShowUserInfo] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setShowUserInfo(false);
+  }, [location]);
 
   function toggleMobileMenu(menu) {
     setMenuOpen(!menuOpen);
+    setShowUserInfo(false); //"user-info" div closes when the "hamburger-icon" is clicked,
     menu.classList.toggle("open");
   }
 
@@ -41,12 +50,28 @@ function Header() {
   const handleLoginClick = (e) => {
     e.preventDefault();
     closeMobileMenu();
+
+    // if (isAuthenticated) {
+    //   setShowUserInfo((prev) => !prev);
+    // // setShowUserInfo(!showUserInfo);
+
     if (isAuthenticated) {
-      navigate("/UserProfile");
+      if (location.pathname !== "/UserProfile") {
+        navigate("/UserProfile"); // Navigate to the profile page
+      } else {
+        setShowUserInfo((prev) => !prev); // Toggle inline profile display
+      }
     } else {
       navigate("/Login");
     }
   };
+
+  // Close UserProfile inline display when navigating away
+  useEffect(() => {
+    if (location.pathname !== "/UserProfile") {
+      setShowUserInfo(false);
+    }
+  }, [location]);
 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -84,7 +109,9 @@ function Header() {
                 }
               >Home</NavLink>
             </li>
-            <li>{ProductNavigation}</li>
+            <li>
+              {ProductNavigation}
+            </li>
             <li>
               <NavLink to={"About"}
                 className={({ isActive }) =>
@@ -142,6 +169,7 @@ function Header() {
             <li>
               <Link to={"Product"} className="drop-down">Product</Link>
             </li>
+
             <li>
               <Link to={"Cake"} className="drop-down">Cakes</Link>
             </li>
@@ -154,6 +182,7 @@ function Header() {
             <li>
               <Link to={"WeddingCake"} className="drop-down">Wedding Cakes</Link>
             </li>
+
             <li>
               <NavLink to={"About"}>About</NavLink>
             </li>
@@ -162,9 +191,13 @@ function Header() {
             </li>
           </ul>
         </div>
-      </header>
+      </header >
 
-      <UserProfile />
+      {/* Only show UserProfile when the user is on the /UserProfile route */}
+      <UserProfile
+        showUserInfo={showUserInfo}
+        setShowUserInfo={setShowUserInfo} // Pass callback for closing
+      />
     </>
   );
 }
