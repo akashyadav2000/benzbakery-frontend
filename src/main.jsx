@@ -3,10 +3,9 @@ import ReactDOM from "react-dom/client";
 import "../App.css";
 import {
   Route,
-  Routes,
-  RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
+  RouterProvider,
 } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./components/Store/store.js";
@@ -18,75 +17,14 @@ const CocktailContainer = lazy(() => import("./components/Cocktail/CocktailConta
 const About = lazy(() => import("./components/About/About.jsx"));
 const Login = lazy(() => import("./components/Login/Login.jsx"));
 const Signup = lazy(() => import("./components/Signup/Signup.jsx"));
-const PastryContainer = lazy(() =>
-  import("./components/Pastry/PastryContainer.jsx")
-);
+const PastryContainer = lazy(() => import("./components/Pastry/PastryContainer.jsx"));
 const Cart = lazy(() => import("./components/Cart/Cart.jsx"));
 const CakeContainer = lazy(() => import("./components/Cake/CakeContainer.jsx"));
-const CupCakeContainer = lazy(() =>
-  import("./components/CupCake/CupCakeContainer.jsx")
-);
-const WeddingCakeContainer = lazy(() =>
-  import("./components/WeddingCake/WeddingCakeContainer.jsx")
-);
+const CupCakeContainer = lazy(() => import("./components/CupCake/CupCakeContainer.jsx"));
+const WeddingCakeContainer = lazy(() => import("./components/WeddingCake/WeddingCakeContainer.jsx"));
 const Feedback = lazy(() => import("./components/Feedback/Feedback.jsx"));
 const Product = lazy(() => import("./components/Product/Product.jsx"));
 const UserProfile = lazy(() => import("./components/Header/UserProfile.jsx"));
-// import UserProfile from "./components/Header/UserProfile.jsx";
-
-
-// const router = createBrowserRouter([
-//   {
-//     path: "./",
-//     element: <Layout />,
-//     children: [
-//       {
-//         path: "./",
-//         element: <Home />,
-//       },
-//       {
-//         path: "./Product",
-//         element: <Product />,
-//       },
-//       {
-//         path: "./Cake",
-//         element: <CakeContainer />,
-//       },
-//       {
-//         path: "./Pastry",
-//         element: <PastryContainer />,
-//       },
-//       {
-//         path: "./CupCake",
-//         element: <CupCakeContainer />,
-//       },
-//       {
-//         path: "./WeddingCake",
-//         element: <WeddingCakeContainer />,
-//       },
-//       {
-//         path: "./About",
-//         element: <About />,
-//       },
-//       {
-//         path: "./Login",
-//         element: <Login />,
-//       },
-//       {
-//         path: "./Signup",
-//         element: <Signup />,
-//       },
-//       {
-//         path: "./Cart",
-//         element: <Cart />,
-//       },
-//       {
-//         path: "./Feedback",
-//         element: <Feedback />,
-//       },
-//     ],
-//   },
-// ]);
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -110,7 +48,7 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Suspense fallback={<></>}>
+    <Suspense fallback={<div>Loading...</div>}>
       <Provider store={store}>
         <RouterProvider router={router} />
       </Provider>

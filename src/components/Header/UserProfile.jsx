@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectUser, logout, selectPurchaseHistory } from "../Store/authSlice";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./UserProfile.css";
-import { useLocation } from "react-router-dom";
 
 const UserDetails = ({ user }) => (
   <div className="user-profile">
@@ -58,7 +57,6 @@ const UserProfile = () => {
   const user = useSelector(selectUser);
   const purchaseHistory = useSelector(selectPurchaseHistory);
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
-  const location = useLocation();
 
   const handleLogout = () => {
     dispatch(logout());
