@@ -66,7 +66,7 @@ function Header() {
     // }
 
     if (isAuthenticated) {
-      navigate("/UserProfile"); // Always navigate to the profile page
+      navigate("/UserProfile", { state: { previousPage: location.pathname } }); // Pass current route
       setShowUserInfo(true); // Ensure the inline profile display is shown
     } else {
       navigate("/Login");

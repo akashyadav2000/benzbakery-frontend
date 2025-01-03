@@ -4,3 +4,8 @@
   object-fit: cover; /* Ensures the image maintains aspect ratio */
   border-radius: 8px; /* Optional: Add rounded corners */
 }
+
+.background-container {
+  padding: 20px;
+  background-color: inherit; /* Keeps the parent page's background */
+}
