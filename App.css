@@ -705,9 +705,10 @@ header .user-cart a {
     padding-bottom: 2.5rem;
   }
   .hello-user {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    line-height: 4rem;
     text-shadow: 0.1rem 0.1rem white;
-    margin-top: -5.8rem;
+    /* margin-top: -5.8rem; */
   }
 
   .user-info p {
@@ -716,7 +717,8 @@ header .user-cart a {
   }
 
   .user-profile img {
-    height: 11.4rem;
+    /* height: 11.4rem; */
+    height: 9.4rem;
     margin-right: 2.3rem;
   }
   .logout-btn {
@@ -730,6 +732,29 @@ header .user-cart a {
   }
   .wed-cake-col {
     box-shadow: 0 0.8rem 1.2rem rgb(236, 35, 119);
+  }
+  .purchase-table td img {
+    width: 8rem;
+    height: 9rem;
+    object-fit: cover;
+  }
+
+  .purchase-table th {
+    font-weight: 600;
+    font-size: 1.65rem;
+  }
+
+  .purchase-table th,
+  .purchase-table td {
+    border: 1px solid #ff8724;
+    padding: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.55rem;
+  }
+
+  .convenience-fee span {
+    font-size: 1.8rem;
   }
 }
 
