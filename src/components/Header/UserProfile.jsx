@@ -68,20 +68,19 @@ const UserProfile = ({ showUserInfo }) => {
                   </tr>
                 ))}
               </tbody>
+              <div className="convenience-fee">
+                <span>Convenience Fee: ₹99</span>
+              </div>
+              <div className="overall-total">
+                <span>Overall Total: <span className="overall-total-span">₹{calculateTotalAmount()}</span></span>
+              </div>
+
+
             </table>
+
           ) : (
             <p className="no-purchase">* No purchases yet! *</p>
           )}
-        </div>
-
-        <div className="overall-total">
-          <h3>Overall Total:</h3>
-          <p>₹{calculateTotalAmount()}</p>
-        </div>
-
-        <div className="convenience-fee">
-          <h4>Convenience Fee:</h4>
-          <p>₹99</p>
         </div>
 
         <button onClick={handleLogout} className="logout-btn">
