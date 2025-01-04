@@ -66,6 +66,9 @@
   font-weight: bold;
   font-size: 1.5rem;
 }
+.convenience-fee {
+  display: flex;
+}
 
 .convenience-fee span {
   font-family: "Roboto Serif", serif;

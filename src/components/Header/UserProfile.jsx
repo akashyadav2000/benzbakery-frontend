@@ -70,8 +70,6 @@ const UserProfile = ({ showUserInfo }) => {
               </tbody>
               <div className="convenience-fee">
                 <span>Convenience Fee: ₹99</span>
-              </div>
-              <div className="overall-total">
                 <span>Overall Total: <span className="overall-total-span">₹{calculateTotalAmount()}</span></span>
               </div>
 
