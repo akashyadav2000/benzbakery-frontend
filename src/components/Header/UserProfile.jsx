@@ -71,8 +71,10 @@ const UserProfile = ({ showUserInfo }) => {
                 </tbody>
               </table>
               <div className="convenience-fee">
-                <span>Convenience Fee: ₹99</span><span>Overall Total: <span className="overall-total-span">₹{calculateTotalAmount()}</span></span>
+                <span>Convenience Fee: ₹99</span>
+                <span>Overall Total: <span className="overall-total-span">₹{calculateTotalAmount()}</span></span>
               </div>
+
             </div>
           ) : (
             <p className="no-purchase">* No purchases yet! *</p>
