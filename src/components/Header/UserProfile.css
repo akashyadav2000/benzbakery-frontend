@@ -68,6 +68,7 @@
 }
 .convenience-fee {
   display: flex;
+  flex-direction: column;
 }
 
 .convenience-fee span {

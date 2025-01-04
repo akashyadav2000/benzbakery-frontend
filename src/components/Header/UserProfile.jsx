@@ -40,42 +40,41 @@ const UserProfile = ({ showUserInfo }) => {
         <div className="purchase-history">
           <p className="purchase-history-head">Purchase History</p>
           {purchaseHistory.length > 0 ? (
-            <table className="purchase-table">
-              <thead>
-                <tr>
-                  <th>Product</th>
-                  <th>Item Name</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                {purchaseHistory.map((purchase, index) => (
-                  <tr key={index}>
-                    <td>
-                      <LazyLoadImage
-                        src={purchase.image}
-                        alt={purchase.name}
-                        effect="blur"
-                        className="purchase-image"
-                      />
-                    </td>
-                    <td>{purchase.name}</td>
-                    <td>₹{purchase.price}</td>
-                    <td>{purchase.quantity}</td>
-                    <td>₹{purchase.total}</td>
+            <div>
+              <table className="purchase-table">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
                   </tr>
-                ))}
-              </tbody>
+                </thead>
+                <tbody>
+                  {purchaseHistory.map((purchase, index) => (
+                    <tr key={index}>
+                      <td>
+                        <LazyLoadImage
+                          src={purchase.image}
+                          alt={purchase.name}
+                          effect="blur"
+                          className="purchase-image"
+                        />
+                      </td>
+                      <td>{purchase.name}</td>
+                      <td>₹{purchase.price}</td>
+                      <td>{purchase.quantity}</td>
+                      <td>₹{purchase.total}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
               <div className="convenience-fee">
                 <span>Convenience Fee: ₹99</span>
                 <span>Overall Total: <span className="overall-total-span">₹{calculateTotalAmount()}</span></span>
               </div>
-
-
-            </table>
-
+            </div>
           ) : (
             <p className="no-purchase">* No purchases yet! *</p>
           )}
