@@ -240,7 +240,7 @@ header .user-cart a {
   padding-left: 2rem;
 } */
 
-.blur-bg {
+/* .blur-bg {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -260,11 +260,30 @@ header .user-cart a {
   margin-top: 6.5rem;
   backdrop-filter: blur(2rem);
   background-color: rgb(255, 238, 241);
-  /* background-color: rgb(255 255 255 / 85%); */
   position: absolute;
   right: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
+} */
+
+.blur-bg {
+  max-height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enable scrolling for overflowing content */
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6); /* Optional blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info {
+  width: 90%; /* Center and constrain the profile width */
+  max-height: 90vh; /* Restrict height to prevent overflow */
+  overflow-y: auto; /* Enable scrolling inside the profile */
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .user-profile {
   display: flex;
