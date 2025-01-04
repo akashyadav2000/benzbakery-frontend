@@ -282,7 +282,8 @@ header .user-cart a {
 .hello-user {
   font-family: "Roboto Serif", serif;
   font-weight: 400;
-  color: rgb(255 120 0);
+  /* color: rgb(255 120 0); */
+  color: #ff1818;
   font-size: 1.9rem;
   /* text-shadow: 0.1rem 0.1rem white; */
   /* margin-top: -5.5rem; */

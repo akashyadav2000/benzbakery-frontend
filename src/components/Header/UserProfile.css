@@ -70,17 +70,15 @@
   display: flex;
   justify-content: space-between; /* Ensures spacing between items */
   align-items: center; /* Aligns items vertically in the center */
-  margin-top: 1rem;
+  margin-top: 1.55rem;
   font-size: 1.5rem;
 }
 
 .convenience-fee span {
   font-family: "Roboto Serif", serif;
   font-size: 1.7rem;
-  margin-right: 1rem; /* Optional: Adjust spacing between spans */
 }
 
 .overall-total-span {
-  color: red;
-  font-weight: bold;
+  color: #ff1818;
 }
