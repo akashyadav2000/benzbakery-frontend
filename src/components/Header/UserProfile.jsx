@@ -37,8 +37,8 @@ const UserProfile = ({ showUserInfo }) => {
             {user?.email}</span>
         </div>
 
-        <div className="purchase-history">
-          <p className="purchase-history-head">Purchase History</p>
+        <div className="user-purchase-history">
+          <p className="user-purchase-history-head">Purchase History</p>
           {purchaseHistory.length > 0 ? (
             <div>
               <table className="purchase-table">

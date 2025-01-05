@@ -4,7 +4,14 @@
   object-fit: cover; /* Ensures the image maintains aspect ratio */
   border-radius: 8px; /* Optional: Add rounded corners */
 }
-.purchase-history-head {
+
+.user-purchase-history {
+  flex: 1;
+  overflow-y: auto; /* Enable scrolling for the table */
+  max-height: calc(90vh - 10rem); /* Adjust based on remaining space */
+  margin-top: 1rem;
+}
+.user-purchase-history-head {
   font-family: "Roboto Serif", serif;
   font-size: 2rem;
   margin-block: 2rem;
@@ -24,6 +31,13 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+}
+
+.purchase-table thead {
+  position: sticky; /* Fix table headers */
+  top: 0;
+  background-color: #f2f2f2; /* Header background */
+  z-index: 5; /* Ensure it stays on top of table rows */
 }
 
 .purchase-table th,
@@ -68,10 +82,14 @@
 }
 .convenience-fee {
   display: flex;
-  justify-content: space-between; /* Ensures spacing between items */
-  align-items: center; /* Aligns items vertically in the center */
+  justify-content: space-between;
+  align-items: center;
   margin-top: 1.55rem;
   font-size: 1.5rem;
+  position: sticky; /* Fix convenience fee and total at the bottom */
+  bottom: 0;
+  background-color: rgb(255, 238, 241); /* Match background color */
+  z-index: 10; /* Ensure visibility */
 }
 
 .convenience-fee span {
