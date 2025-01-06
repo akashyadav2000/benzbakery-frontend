@@ -40,7 +40,7 @@ const UserProfile = ({ showUserInfo }) => {
         <div className="user-purchase-history">
           <p className="user-purchase-history-head">Purchase History</p>
           {purchaseHistory.length > 0 ? (
-            <div className="purchase-table-wrapper">
+            <div>
               <table className="purchase-table">
                 <thead>
                   <tr>
