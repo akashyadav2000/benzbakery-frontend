@@ -51,18 +51,28 @@ function Header() {
     e.preventDefault();
     closeMobileMenu();
 
+    // if (isAuthenticated) {
+    //   setShowUserInfo((prev) => !prev);
+    // // setShowUserInfo(!showUserInfo);
+
+    // if (isAuthenticated) {
+    //   if (location.pathname !== "/UserProfile") {
+    //     navigate("/UserProfile");
+    //   } else {
+    //     setShowUserInfo((prev) => !prev);
+    //   }
+    // } else {
+    //   navigate("/Login");
+    // }
+
     if (isAuthenticated) {
-      if (location.pathname !== "/UserProfile") {
-        navigate("/UserProfile"); // Navigate to UserProfile
-        setShowUserInfo(true); // Ensure the profile is shown
-      } else {
-        setShowUserInfo((prev) => !prev); // Toggle the profile visibility
-      }
+      navigate("/UserProfile");
+      setShowUserInfo(true); // Ensure the profile is shown
+      // setShowUserInfo((prev) => !prev);
     } else {
       navigate("/Login");
     }
   };
-
 
   // Close UserProfile inline display when navigating away
   useEffect(() => {
@@ -194,7 +204,7 @@ function Header() {
       {/* Only show UserProfile when the user is on the /UserProfile route */}
       <UserProfile
         showUserInfo={showUserInfo}
-      // setShowUserInfo={setShowUserInfo} 
+        setShowUserInfo={setShowUserInfo} // Pass callback for closing
       />
     </>
   );
