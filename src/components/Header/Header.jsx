@@ -67,7 +67,7 @@ function Header() {
 
     if (isAuthenticated) {
       navigate("/UserProfile"); // Always navigate to the profile page
-      setShowUserInfo((prev) => !prev); // Toggle UserProfile visibility
+      // setShowUserInfo((prev) => !prev);
     } else {
       navigate("/Login");
     }
