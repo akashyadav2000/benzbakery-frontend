@@ -265,7 +265,7 @@ header .user-cart a {
   right: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  max-height: 90vh; /* Ensure it doesn't overflow the viewport */
+  max-height: 100vh; /* Ensure it doesn't overflow the viewport */
   overflow: hidden; /* Prevent content spill */
 }
 .user-profile {
