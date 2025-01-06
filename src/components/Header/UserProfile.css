@@ -7,31 +7,19 @@
 
 .user-purchase-history {
   flex: 1;
-  /* overflow-y: auto;
-  max-height: calc(90vh - 10rem); */
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  overflow-y: auto;
+  max-height: calc(90vh - 10rem);
 }
 .user-purchase-history-head {
-  font-family: "Roboto Serif", serif;
+  /* font-family: "Roboto Serif", serif;
   font-size: 2rem;
   margin-block: 2rem;
-  font-weight: 400;
-  /* margin-block: 3rem; */
-  position: sticky; /* Fix "Purchase History" heading */
-  top: 0; /* Sticks to the top */
-  background-color: rgb(255, 238, 241); /* Match background */
-  z-index: 10;
-  padding: 0.5rem 0;
+  font-weight: 400; */
+  position: sticky;
+  top: 0; /* Stick to the top */
+  z-index: 10; /* Ensure it stays on top */
+  background-color: inherit; /* Keep the original background */
 }
-
-.purchase-table-wrapper {
-  flex: 1;
-  overflow-y: auto; /* Enable vertical scrolling */
-  max-height: calc(90vh - 15rem); /* Adjust based on layout */
-}
-
 .no-purchase {
   font-family: "Roboto Serif", serif;
   font-size: 2.2rem;
@@ -49,9 +37,8 @@
 
 .purchase-table thead {
   position: sticky; /* Fix table headers */
-  top: 0;
-  top: 4rem; /* Adjust to align below the heading */
-
+  /* top: 0; */
+  top: 3rem; /* Space below the heading */
   background-color: #f2f2f2; /* Header background */
   z-index: 5; /* Ensure it stays on top of table rows */
 }
@@ -100,6 +87,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+
   margin-top: 1.55rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
