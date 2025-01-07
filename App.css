@@ -273,10 +273,9 @@ header .user-cart a {
 .user-profile {
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
   background-color: rgb(255, 238, 241); /* Match background color */
-  z-index: 10; /* Ensure it stays on top */
 }
 
 .user-profile-title {
