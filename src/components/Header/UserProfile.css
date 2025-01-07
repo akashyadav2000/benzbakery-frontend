@@ -37,6 +37,7 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+  table-layout: fixed; /* Ensures consistent column width */
 }
 
 .purchase-table thead {
@@ -51,6 +52,7 @@
   display: block; /* Allows independent scrolling */
   max-height: 50vh; /* Set height for scrolling content */
   overflow-y: auto; /* Enable scrolling for tbody */
+  scrollbar-gutter: stable; /* Keeps the scrollbar space reserved outside */
 }
 
 .purchase-table th,
