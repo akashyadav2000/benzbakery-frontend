@@ -37,7 +37,7 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
-  table-layout: fixed; /* Ensures consistent column width */
+  /* table-layout: fixed; */
 }
 
 .purchase-table thead {
@@ -52,7 +52,7 @@
   display: block; /* Allows independent scrolling */
   max-height: 50vh; /* Set height for scrolling content */
   overflow-y: auto; /* Enable scrolling for tbody */
-  scrollbar-gutter: stable; /* Keeps the scrollbar space reserved outside */
+  /* scrollbar-gutter: stable; */
 }
 
 .purchase-table th,
@@ -62,7 +62,7 @@
   text-align: center;
   font-weight: 500;
   font-size: 1.35rem;
-  width: 20%; /* Ensure proper alignment for fixed layout */
+  /* width: 20%;  */
 }
 
 .purchase-table th {
