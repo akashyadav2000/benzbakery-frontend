@@ -6,11 +6,11 @@
 }
 
 .user-purchase-history {
-  /* flex: 1;
-  overflow-y: auto; */
-  /* max-height: calc(90vh - 10rem); */
-  max-height: 90vh;
-  overflow: hidden; /* Prevent scrolling of the container */
+  /* flex: 1; */
+  overflow-y: auto;
+  max-height: calc(90vh - 10rem);
+  /* max-height: 90vh;
+  overflow: hidden; */
 }
 .user-purchase-history-head {
   font-family: "Roboto Serif", serif;
@@ -18,9 +18,9 @@
   margin-block: 2rem;
   font-weight: 400;
   /* margin-block: 3rem; */
+  align-items: center;
   position: sticky; /* Fixes the title */
   top: 0; /* Keeps it at the top */
-  background-color: #fff; /* Matches background color */
   z-index: 10; /* Ensures it stays above content */
   padding: 0.5rem 0; /* Optional: Add padding */
 }
@@ -40,20 +40,20 @@
   /* table-layout: fixed; */
 }
 
-/* .purchase-table thead {
-  display: block; 
+.purchase-table thead {
+  /* display: block;  */
   position: sticky;
   top: 0;
   background-color: #f2f2f2;
   z-index: 5;
-} */
+}
 
-/* .purchase-table tbody {
+.purchase-table tbody {
   display: block;
-  max-height: 50vh; 
-  overflow-y: auto; 
+  max-height: 50vh;
+  overflow-y: auto;
   scrollbar-gutter: stable;
-} */
+}
 
 .purchase-table th,
 .purchase-table td {

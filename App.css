@@ -252,6 +252,7 @@ header .user-cart a {
 .user-info {
   display: flex;
   flex-direction: column;
+
   width: auto;
   /* max-width: 55rem; */
   height: auto;
