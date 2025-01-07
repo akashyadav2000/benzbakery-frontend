@@ -1,29 +1,17 @@
 .purchase-image {
-  width: 100px; /* Adjust width */
-  height: 100px; /* Adjust height */
-  object-fit: cover; /* Ensures the image maintains aspect ratio */
-  border-radius: 8px; /* Optional: Add rounded corners */
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .user-purchase-history {
-  /* flex: 1; */
-  overflow-y: auto;
-  max-height: calc(90vh - 10rem);
-  /* max-height: 90vh;
-  overflow: hidden; */
-}
-.user-purchase-history-head {
   font-family: "Roboto Serif", serif;
   font-size: 2rem;
   margin-block: 2rem;
   font-weight: 400;
-  /* margin-block: 3rem; */
-  align-items: center;
-  position: sticky; /* Fixes the title */
-  top: 0; /* Keeps it at the top */
-  z-index: 10; /* Ensures it stays above content */
-  padding: 0.5rem 0; /* Optional: Add padding */
 }
+
 .no-purchase {
   font-family: "Roboto Serif", serif;
   font-size: 2.2rem;
@@ -37,22 +25,13 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
-  /* table-layout: fixed; */
 }
 
 .purchase-table thead {
-  /* display: block;  */
   position: sticky;
   top: 0;
   background-color: #f2f2f2;
   z-index: 5;
-}
-
-.purchase-table tbody {
-  display: block;
-  max-height: 50vh;
-  overflow-y: auto;
-  /* scrollbar-gutter: stable; */
 }
 
 .purchase-table th,
@@ -64,34 +43,17 @@
   font-size: 1.65rem;
 }
 
-.purchase-table thead,
-.purchase-table tbody tr {
-  display: table; /* Ensures they behave like table elements */
-  width: 100%; /* Align widths of thead and tbody */
-
-  table-layout: fixed; /* Force consistent column widths */
-}
-
 .purchase-table th {
   background-color: #f2f2f2;
   font-weight: 600;
   font-size: 1.9rem;
-  position: sticky; /* Sticky header */
-  top: 0;
-  z-index: 5;
-}
-
-.purchase-table tbody tr {
-  overflow-y: auto; /* Ensure only content moves */
 }
 
 .purchase-table td img {
-  /* width: 50px;
-  height: 50px; */
   width: 7rem;
   height: 8rem;
   object-fit: cover;
-  display: block; /* Prevent extra spacing */
+  display: block;
 }
 
 .summary {
@@ -111,6 +73,7 @@
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 .convenience-fee {
   display: flex;
   justify-content: space-between;
@@ -118,10 +81,10 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  position: sticky; /* Fix convenience fee and total at the bottom */
+  position: sticky;
   bottom: 0;
-  background-color: rgb(255, 238, 241); /* Match background color */
-  z-index: 10; /* Ensure visibility */
+  background-color: rgb(255, 238, 241);
+  z-index: 10;
 }
 
 .convenience-fee span {
