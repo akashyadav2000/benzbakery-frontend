@@ -37,7 +37,7 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
-  table-layout: fixed;
+  /* table-layout: fixed; */
 }
 
 .purchase-table thead {
@@ -62,10 +62,6 @@
   text-align: center;
   font-weight: 500;
   font-size: 1.65rem;
-  overflow: hidden; /* Prevent content overflow */
-  text-overflow: ellipsis; /* Handle long text with dots */
-  white-space: nowrap; /* Prevent text wrapping */
-  /* width: 20%;  */
 }
 
 .purchase-table thead,
@@ -80,6 +76,9 @@
   background-color: #f2f2f2;
   font-weight: 600;
   font-size: 1.9rem;
+  position: sticky; /* Sticky header */
+  top: 0;
+  z-index: 5;
 }
 
 .purchase-table tbody tr {
