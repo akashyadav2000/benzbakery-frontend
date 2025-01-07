@@ -37,7 +37,7 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
-  /* table-layout: fixed; */
+  table-layout: fixed;
 }
 
 .purchase-table thead {
@@ -52,7 +52,7 @@
   display: block;
   max-height: 50vh;
   overflow-y: auto;
-  scrollbar-gutter: stable;
+  /* scrollbar-gutter: stable; */
 }
 
 .purchase-table th,
@@ -63,6 +63,12 @@
   font-weight: 500;
   font-size: 1.65rem;
   /* width: 20%;  */
+}
+
+.purchase-table thead,
+.purchase-table tbody tr {
+  display: table; /* Ensures they behave like table elements */
+  width: 100%; /* Align widths of thead and tbody */
 }
 
 .purchase-table th {
