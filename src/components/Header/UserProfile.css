@@ -6,10 +6,11 @@
 }
 
 .user-purchase-history {
-  flex: 1;
-  overflow-y: auto;
-  max-height: calc(90vh - 10rem);
-  position: relative; /* Ensures child sticky elements work correctly */
+  /* flex: 1;
+  overflow-y: auto; */
+  /* max-height: calc(90vh - 10rem); */
+  max-height: 90vh;
+  overflow: hidden; /* Prevent scrolling of the container */
 }
 .user-purchase-history-head {
   font-family: "Roboto Serif", serif;
@@ -39,10 +40,17 @@
 }
 
 .purchase-table thead {
-  position: sticky; /* Fix table headers */
+  display: block; /* Keep the header separate from scrolling content */
+  position: sticky;
   top: 0;
-  background-color: #f2f2f2; /* Header background */
-  z-index: 5; /* Ensure it stays on top of table rows */
+  background-color: #f2f2f2;
+  z-index: 5;
+}
+
+.purchase-table tbody {
+  display: block; /* Allows independent scrolling */
+  max-height: 50vh; /* Set height for scrolling content */
+  overflow-y: auto; /* Enable scrolling for tbody */
 }
 
 .purchase-table th,
@@ -52,6 +60,7 @@
   text-align: center;
   font-weight: 500;
   font-size: 1.35rem;
+  width: 20%; /* Ensure proper alignment for fixed layout */
 }
 
 .purchase-table th {
