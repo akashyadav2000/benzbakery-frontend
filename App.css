@@ -254,14 +254,13 @@ header .user-cart a {
   flex-direction: column;
   text-transform: capitalize;
   width: auto;
-  max-width: 55rem;
+  /* max-width: 55rem; */
   height: auto;
-  /* padding: 1.5rem 3rem 3rem; */
   padding: 8.5rem 3rem 2.5rem;
   /* margin-top: 6.5rem; */
   backdrop-filter: blur(2rem);
   background-color: rgb(255, 238, 241);
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;

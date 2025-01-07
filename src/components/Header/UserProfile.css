@@ -40,20 +40,20 @@
   /* table-layout: fixed; */
 }
 
-.purchase-table thead {
-  display: block; /* Keep the header separate from scrolling content */
+/* .purchase-table thead {
+  display: block; 
   position: sticky;
   top: 0;
   background-color: #f2f2f2;
   z-index: 5;
-}
+} */
 
-.purchase-table tbody {
-  display: block; /* Allows independent scrolling */
-  max-height: 50vh; /* Set height for scrolling content */
-  overflow-y: auto; /* Enable scrolling for tbody */
-  /* scrollbar-gutter: stable; */
-}
+/* .purchase-table tbody {
+  display: block;
+  max-height: 50vh; 
+  overflow-y: auto; 
+  scrollbar-gutter: stable;
+} */
 
 .purchase-table th,
 .purchase-table td {
