@@ -247,12 +247,12 @@ header .user-cart a {
   z-index: 2;
   backdrop-filter: blur(0.4rem);
   background-color: rgba(42, 42, 42, 0.3);
+  overflow-y: auto; /* Enables scrolling on the entire page */
 }
 
 .user-info {
   display: flex;
   flex-direction: column;
-
   width: auto;
   /* max-width: 55rem; */
   height: auto;
@@ -266,11 +266,14 @@ header .user-cart a {
   overflow-wrap: break-word;
   /* max-height: 100vh;
   overflow: hidden;  */
+  flex-grow: 1; /* Ensures it grows to fit available space */
+  max-height: 100vh; /* Ensures the height is not exceeding the screen */
+  overflow: auto; /* Allows scrolling within the user-info container */
 }
 .user-profile {
   display: flex;
   align-items: center;
-  position: sticky; /* Fix username and email at the top */
+  position: sticky;
   top: 0;
   background-color: rgb(255, 238, 241); /* Match background color */
   z-index: 10; /* Ensure it stays on top */
