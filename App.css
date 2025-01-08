@@ -254,9 +254,10 @@ header .user-cart a {
   display: flex;
   flex-direction: column;
   width: auto;
+  min-height: 100%;
   /* max-width: 55rem; */
   height: auto;
-  padding: 8.5rem 22rem 2.5rem;
+  padding: 8.5rem 25rem 2.5rem;
   /* margin-top: 6.5rem; */
   backdrop-filter: blur(2rem);
   background-color: rgb(255, 238, 241);
