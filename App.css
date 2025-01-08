@@ -728,11 +728,15 @@ header .user-cart a {
     height: 9.4rem;
     margin-right: 2.3rem;
   } */
-  .logout-btn {
+  /* .logout-btn {
     border: 0.2rem solid whitesmoke;
     font-size: 2.6rem;
     padding-block: 0.95rem;
     margin-top: 1.1rem;
+  } */
+
+  .user-profile-title {
+    padding-block: 2rem;
   }
   .cake-col {
     box-shadow: 0 1.2rem 1.7rem rgb(236, 35, 119);
@@ -853,6 +857,9 @@ header .user-cart a {
     padding-block: 1.2rem;
     margin-top: 1.5rem;
   } */
+  .user-info {
+    padding-inline: 5rem;
+  }
 }
 
 @media (max-width: 670px) {
@@ -919,6 +926,10 @@ header .user-cart a {
     padding-block: 1.5rem;
     margin-top: 1.8rem;
   } */
+  .user-profile-title {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
 }
 @media (max-width: 577px) {
   html {
