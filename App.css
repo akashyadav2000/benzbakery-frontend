@@ -255,18 +255,12 @@ header .user-cart a {
   flex-direction: column;
   width: auto;
   min-height: 100%;
-  /* max-width: 55rem; */
   height: auto;
   padding: 8.5rem 25rem 2.5rem;
-  /* margin-top: 6.5rem; */
   backdrop-filter: blur(2rem);
   background-color: rgb(255, 238, 241);
-  /* position: absolute; */
-  /* right: 0; */
   word-wrap: break-word;
   overflow-wrap: break-word;
-  /* max-height: 100vh;
-  overflow: hidden;  */
   flex-grow: 1; /* Ensures it grows to fit available space */
   max-height: 100vh; /* Ensures the height is not exceeding the screen */
   overflow: auto; /* Allows scrolling within the user-info container */
@@ -274,8 +268,6 @@ header .user-cart a {
 .user-profile {
   display: flex;
   align-items: center;
-  /* position: sticky;
-  top: 0; */
   background-color: rgb(255, 238, 241); /* Match background color */
 }
 
@@ -290,12 +282,7 @@ header .user-cart a {
 .hello-user {
   font-family: "Roboto Serif", serif;
   font-weight: 400;
-  /* color: rgb(255 120 0); */
-  /* color: #ff1818; */
   font-size: 1.9rem;
-  /* text-shadow: 0.1rem 0.1rem white; */
-  /* margin-top: -5.5rem; */
-  /* margin-top: -3.5rem; */
   line-height: 3.5rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -534,6 +521,10 @@ header .user-cart a {
   html {
     font-size: 55.6%;
   }
+
+  .user-info {
+    padding-inline: 20rem;
+  }
 }
 
 @media screen and (max-width: 1280px) and (max-height: 800px) {
@@ -545,6 +536,9 @@ header .user-cart a {
 @media screen and (min-width: 1280px) and (max-width: 1366px) {
   html {
     font-size: 50.6%;
+  }
+  .user-info {
+    padding-inline: 20rem;
   }
 }
 
