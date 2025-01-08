@@ -860,6 +860,15 @@ header .user-cart a {
   .user-info {
     padding-inline: 5rem;
   }
+
+  .user-purchase-history-head {
+    margin-top: 1.2rem;
+    margin-bottom: 2.8rem;
+  }
+  .user-profile-title {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width: 670px) {
@@ -926,9 +935,10 @@ header .user-cart a {
     padding-block: 1.5rem;
     margin-top: 1.8rem;
   } */
+
   .user-profile-title {
-    padding-top: 5rem;
-    padding-bottom: 1rem;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
   }
 }
 @media (max-width: 577px) {
@@ -1078,5 +1088,9 @@ header .user-cart a {
   }
   .wed-cake-col img {
     margin-bottom: -0.37rem;
+  }
+  .user-purchase-history-head {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 }
