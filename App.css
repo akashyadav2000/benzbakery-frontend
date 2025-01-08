@@ -582,7 +582,7 @@ header .user-cart a {
   }
 
   .user-info {
-    padding-inline: 20rem;
+    padding-inline: 15rem;
   }
 }
 
@@ -698,6 +698,9 @@ header .user-cart a {
   }
   .rupees {
     font-size: 2.3rem;
+  }
+  .user-info {
+    padding-inline: 10rem;
   }
   /* .user-info {
     max-width: 55rem;
