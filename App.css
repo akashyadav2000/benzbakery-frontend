@@ -820,6 +820,7 @@ header .user-cart a {
   .wed-cake-col {
     box-shadow: 0 1rem 1.5rem rgb(236, 35, 119);
   }
+  /*   
   .user-info {
     max-width: 65rem;
     padding: 1.8rem 3.3rem 3.3rem;
@@ -851,7 +852,7 @@ header .user-cart a {
     font-size: 2.78rem;
     padding-block: 1.2rem;
     margin-top: 1.5rem;
-  }
+  } */
 }
 
 @media (max-width: 670px) {
@@ -887,7 +888,7 @@ header .user-cart a {
   .wed-cake-col {
     box-shadow: 0 0.6rem 2rem rgb(236, 35, 119);
   }
-  .user-info {
+  /*.user-info {
     max-width: 75rem;
     padding: 2.2rem 3.7rem 3.7rem;
     margin-top: 10.1rem;
@@ -917,7 +918,7 @@ header .user-cart a {
     font-size: 3.3rem;
     padding-block: 1.5rem;
     margin-top: 1.8rem;
-  }
+  } */
 }
 @media (max-width: 577px) {
   html {
@@ -943,7 +944,7 @@ header .user-cart a {
   .cake-col img {
     margin-bottom: -0.33rem;
   }
-  .user-info {
+  /* .user-info {
     max-width: 75rem;
     padding: 2.4rem 3.9rem 3.9rem;
     margin-top: 10.8rem;
@@ -972,7 +973,7 @@ header .user-cart a {
     font-size: 3.5rem;
     padding-block: 1.5rem;
     margin-top: 2.2rem;
-  }
+  } */
 }
 
 @media (max-width: 500px) {
@@ -992,8 +993,8 @@ header .user-cart a {
     font-size: 29%;
   }
   .user-info {
-    width: 100%;
-    max-width: 100%;
+    /* width: 100%;
+    max-width: 100%; */
     padding: 5rem 6rem 3.5rem;
   }
   .blur-bg {
