@@ -72,6 +72,7 @@ const UserProfile = ({ showUserInfo }) => {
               </table>
               <div className="convenience-fee">
                 <span>Convenience Fee: ₹99</span>
+                <span>Total Items: {purchaseHistory.reduce((acc, item) => acc + item.quantity, 0)}</span>
                 <span>Overall Total: <span className="overall-total-span">₹{calculateTotalAmount()}</span></span>
               </div>
 

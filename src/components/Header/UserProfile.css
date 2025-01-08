@@ -8,8 +8,10 @@
 .user-purchase-history {
   font-family: "Roboto Serif", serif;
   font-size: 2rem;
-  margin-block: 2rem;
-  font-weight: 400;
+  /* margin-block: 2rem; */
+  font-weight: 500;
+  text-align: center; /* Center content */
+  margin-bottom: 20px; /* Add space at the bottom */
 }
 
 .no-purchase {
@@ -24,7 +26,8 @@
 .purchase-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
+  margin: 0 auto; /* Center the table horizontally */
+  /* margin-top: 1rem; */
   table-layout: fixed; /* Prevents content shifting */
 }
 
