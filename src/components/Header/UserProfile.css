@@ -14,7 +14,8 @@
 .user-purchase-history-head {
   font-family: "Roboto Serif", serif;
   font-size: 2.2rem;
-  margin-block: 2rem;
+  margin-bottom: 1.2rem;
+  color: #ff1818;
 }
 
 .no-purchase {
@@ -55,7 +56,7 @@
 
 .purchase-table th {
   background-color: #f2f2f2;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.9rem;
 }
 
@@ -100,7 +101,8 @@
 
 .convenience-fee span {
   font-family: "Roboto Serif", serif;
-  font-size: 1.7rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .overall-total-span {
