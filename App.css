@@ -580,6 +580,10 @@ header .user-cart a {
   .cake-row {
     padding-bottom: 2rem;
   }
+
+  .user-info {
+    padding-inline: 20rem;
+  }
 }
 
 /* @media (max-width: 1084px) {
