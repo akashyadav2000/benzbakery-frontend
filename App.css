@@ -699,7 +699,7 @@ header .user-cart a {
   .rupees {
     font-size: 2.3rem;
   }
-  .user-info {
+  /* .user-info {
     max-width: 55rem;
     padding: 1.8rem 3.3rem 3.3rem;
     margin-top: 8rem;
@@ -714,7 +714,6 @@ header .user-cart a {
     font-size: 2.2rem;
     line-height: 4rem;
     text-shadow: 0.1rem 0.1rem white;
-    /* margin-top: -5.8rem; */
   }
 
   .user-info p {
@@ -723,10 +722,9 @@ header .user-cart a {
   }
 
   .user-profile img {
-    /* height: 11.4rem; */
     height: 9.4rem;
     margin-right: 2.3rem;
-  }
+  } */
   .logout-btn {
     border: 0.2rem solid whitesmoke;
     font-size: 2.6rem;
