@@ -461,15 +461,14 @@ header .user-cart a {
 }
 
 /* new css */
-.cake-col:hover .rupees {
+/* .cake-col:hover .rupees {
+  color: #cf661a;
+} */
+.rupees:hover {
   color: #cf661a;
 }
-.cake-col:hover .price {
-  background: radial-gradient(
-    circle at 49.8% 44.4%,
-    #d5dee7 0%,
-    #b8e2a3 90%
-  ); /* Hover background */
+.price:hover {
+  background: radial-gradient(circle at 49.8% 44.4%, #d5dee7 0%, #b8e2a3 90%);
 }
 
 .price {
