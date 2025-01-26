@@ -7,7 +7,7 @@ import { cocktailActions } from "../Store/cocktailSlice";
 function Cake({ cakeItem }) {
   const dispatch = useDispatch();
 
-  const handldeAddCocktail = () => {
+  const handleAddCocktail = () => {
     dispatch(cocktailActions.addToCocktail(cakeItem.id));
   };
 
