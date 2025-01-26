@@ -17,17 +17,17 @@ function WeddingCake({ weddingCakeItem }) {
         to="/Cocktail"
         onClick={handleAddCocktail}
         className="wed-cake-col"
-        id={cakeItem.id}
+        id={weddingCakeItem.id}
       >
         <LazyLoadImage
-          alt={cakeItem.alt_Name}
-          src={cakeItem.image}
+          alt={weddingCakeItem.alt_Name}
+          src={weddingCakeItem.image}
           effect="blur"
         />
         <div className="price">
           <span className="rupees">
-            {cakeItem.item}
-            <br />₹ {cakeItem.price}
+            {weddingCakeItem.item}
+            <br />₹ {weddingCakeItem.price}
           </span>
         </div>
       </Link>
