@@ -13,23 +13,24 @@ function Cake({ cakeItem }) {
 
   return (
     <>
-      <div className="cake-col" id={cakeItem.id}>
+      <Link
+        to="/Cocktail"
+        onClick={handleAddCocktail}
+        className="cake-col"
+        id={cakeItem.id}
+      >
         <LazyLoadImage
           alt={cakeItem.alt_Name}
           src={cakeItem.image}
           effect="blur"
         />
         <div className="price">
-          <Link
-            to={"/Cocktail"}
-            onClick={handldeAddCocktail}
-            className="rupees"
-          >
+          <span className="rupees">
             {cakeItem.item}
             <br />₹ {cakeItem.price}
-          </Link>
+          </span>
         </div>
-      </div>
+      </Link>
     </>
   );
 }

@@ -442,6 +442,7 @@ header .user-cart a {
   box-shadow: 0 0.675rem 1.5rem rgb(236, 35, 119);
   text-align: center;
   transition: all 0.5s ease-in-out;
+  text-decoration: none; /* Prevent Link underline */
 }
 
 .cake-col img {
@@ -457,6 +458,18 @@ header .user-cart a {
 .cake-col:hover {
   transform: scale(107%);
   box-shadow: 0 0.675rem 10.5rem #b8e2a3;
+}
+
+/* new css */
+.cake-col:hover .rupees {
+  color: #cf661a;
+}
+.cake-col:hover .price {
+  background: radial-gradient(
+    circle at 49.8% 44.4%,
+    #d5dee7 0%,
+    #b8e2a3 90%
+  ); /* Hover background */
 }
 
 .price {
@@ -475,13 +488,13 @@ header .user-cart a {
   color: black;
 }
 
-.rupees:hover {
+/* .rupees:hover {
   color: #cf661a;
 }
 
 .price:hover {
   background: radial-gradient(circle at 49.8% 44.4%, #d5dee7 0%, #b8e2a3 90%);
-}
+} */
 
 /* .product-div {
   padding-top: 14px;
