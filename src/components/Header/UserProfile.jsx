@@ -2,16 +2,19 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectUser, logout, selectPurchaseHistory } from "../Store/authSlice";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./UserProfile.css";
 
 const UserProfile = ({ showUserInfo }) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate(); // Initialize navigate
   const user = useSelector(selectUser);
   const purchaseHistory = useSelector(selectPurchaseHistory);
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
   const handleLogout = () => {
     dispatch(logout());
+    navigate("/Login"); // Redirect to the Login page
   };
 
   const calculateTotalAmount = () => {
