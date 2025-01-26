@@ -7,26 +7,30 @@ import { cocktailActions } from "../Store/cocktailSlice";
 function Pastry({ pastryItem }) {
   const dispatch = useDispatch();
 
-  const handldeAddCocktail = () => {
+  const handleAddCocktail = () => {
     dispatch(cocktailActions.addToCocktail(pastryItem.id));
   };
 
   return (
     <>
-      <div className="cake-col" id={pastryItem.id}>
-        <LazyLoadImage src={pastryItem.image} alt={pastryItem.alt_Name} effect="blur"
+      <Link
+        to="/Cocktail"
+        onClick={handleAddCocktail}
+        className="cake-col"
+        id={pastryItem.id}
+      >
+        <LazyLoadImage
+          alt={pastryItem.alt_Name}
+          src={pastryItem.image}
+          effect="blur"
         />
         <div className="price">
-          <Link
-            to={"/Cocktail"}
-            onClick={handldeAddCocktail}
-            className="rupees"
-          >
+          <span className="rupees">
             {pastryItem.item}
             <br />₹ {pastryItem.price}
-          </Link>
+          </span>
         </div>
-      </div>
+      </Link>
     </>
   );
 }

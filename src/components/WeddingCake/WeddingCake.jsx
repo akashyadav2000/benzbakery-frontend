@@ -1,32 +1,36 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { cocktailActions } from "../Store/cocktailSlice";
 
 function WeddingCake({ weddingCakeItem }) {
   const dispatch = useDispatch();
 
-  const handldeAddCocktail = () => {
+  const handleAddCocktail = () => {
     dispatch(cocktailActions.addToCocktail(weddingCakeItem.id));
   };
 
   return (
     <>
-      <div className="wed-cake-col" id={weddingCakeItem.id}>
-        <LazyLoadImage src={weddingCakeItem.image} alt={weddingCakeItem.alt_Name} effect="blur"
+      <Link
+        to="/Cocktail"
+        onClick={handleAddCocktail}
+        className="wed-cake-col"
+        id={cakeItem.id}
+      >
+        <LazyLoadImage
+          alt={cakeItem.alt_Name}
+          src={cakeItem.image}
+          effect="blur"
         />
         <div className="price">
-          <Link
-            to={"/Cocktail"}
-            onClick={handldeAddCocktail}
-            className="rupees"
-          >
-            {weddingCakeItem.item}
-            <br />₹ {weddingCakeItem.price}
-          </Link>
+          <span className="rupees">
+            {cakeItem.item}
+            <br />₹ {cakeItem.price}
+          </span>
         </div>
-      </div>
+      </Link>
     </>
   );
 }
