@@ -460,14 +460,17 @@ header .user-cart a {
   box-shadow: 0 0.675rem 10.5rem #b8e2a3;
 }
 
-/* new css */
-/* .cake-col:hover .rupees {
-  color: #cf661a;
-} */
-.rupees:hover {
+.cake-col:hover .rupees {
   color: #cf661a;
 }
-.price:hover {
+.wed-cake-col:hover .rupees {
+  color: #cf661a;
+}
+
+.cake-col:hover .price {
+  background: radial-gradient(circle at 49.8% 44.4%, #d5dee7 0%, #b8e2a3 90%);
+}
+.wed-cake-col:hover .price {
   background: radial-gradient(circle at 49.8% 44.4%, #d5dee7 0%, #b8e2a3 90%);
 }
 
